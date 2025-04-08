@@ -1,0 +1,13 @@
+# Implementation Plan Step 2.2.1: Optimization API Endpoint
+
+- **Task**: Create a POST endpoint `/run_optimizer` in `app.py`. This endpoint should:
+    1. Import the necessary functions from the `core` module (`generate_dummy_data`, `solve_rail_optimization`).
+    2. Call `generate_dummy_data()` (or later, accept input data).
+    3. Call `solve_rail_optimization()` with the data.
+    4. Return the results dictionary as a JSON response using `jsonify`. Include basic error handling if the solver fails.
+- **Files**:
+    - `webapp/app.py`: Implement the `/run_optimizer` route.
+    - `core/optimizer.py`: Ensure it's importable and returns results dictionary.
+    - `core/data_generator.py`: Ensure it's importable.
+- **Step Dependencies**: Step 1.4.2, Step 2.1.2
+- **User Instructions**: Test the endpoint using a tool like `curl` or Postman, or wait for the next step to trigger it from the browser.

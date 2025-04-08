@@ -1,0 +1,8 @@
+# Implementation Plan Step 2.1.2: Basic HTML Template
+
+- **Task**: Create a simple `index.html` template with a title, a button (e.g., "Run Optimization"), and a placeholder div where results will be displayed.
+- **Files**:
+    - `webapp/templates/index.html`: Basic HTML structure.
+    - `webapp/app.py`: Add a route `/` that renders `index.html`.
+- **Step Dependencies**: Step 2.1.1
+- **User Instructions**: Run `python run_web.py` and navigate to `http://127.0.0.1:5000/` in a browser to see the basic page.

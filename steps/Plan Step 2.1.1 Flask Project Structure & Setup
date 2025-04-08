@@ -1,0 +1,12 @@
+# Implementation Plan Step 2.1.1: Flask Project Structure & Setup
+
+- **Task**: Create the `webapp` directory structure (`webapp/`, `webapp/static/js/`, `webapp/templates/`). Create a basic Flask app instance in `app.py`. Create `requirements.txt` (or update existing one) to include `Flask`.
+- **Files**:
+    - `webapp/__init__.py`: Create empty file.
+    - `webapp/app.py`: Basic Flask app setup (`from flask import Flask; app = Flask(__name__)`).
+    - `webapp/static/js/`: Create directory.
+    - `webapp/templates/`: Create directory.
+    - `requirements.txt`: Add `Flask`.
+    - `run_web.py`: Script to run the Flask development server (`from webapp.app import app; if __name__ == '__main__': app.run(debug=True)`).
+- **Step Dependencies**: Step 1.1.1
+- **User Instructions**: Install Flask: `pip install Flask`. Run `python run_web.py` and check if the server starts.

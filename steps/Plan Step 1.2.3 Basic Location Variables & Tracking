@@ -1,0 +1,7 @@
+# Implementation Plan Step 1.2.3: Basic Location Variables & Tracking (Route/Idle)
+
+- **Task**: Create the `loc_start_vs` integer variables (location at the *start* of shift s). Add the initial location constraint (`loc_start_vs[(v_i, 0)]`). Implement the location transition logic for shifts `s > 0`, considering *only* routes (`loc_start_next == route_end`, `loc_start_curr == route_start`) and idle state (`loc_start_next == loc_start_curr`). Use helper Boolean variables (`route_assigned_lit`, `idle_lit`) and `OnlyEnforceIf`.
+- **Files**:
+    - `rail_optimizer/core/optimizer.py`: Add `loc_start_vs` variables and transition constraints for route/idle.
+- **Step Dependencies**: Step 1.2.2
+- **User Instructions**: Run `python run_core_test.py`. Check solver status.

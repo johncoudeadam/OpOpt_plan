@@ -1,0 +1,7 @@
+# Implementation Plan Step 1.3.4: Full Vehicle Activity Exclusivity
+
+- **Task**: Update/Refine Constraint C2 (Vehicle Uniqueness). Ensure the logic correctly enforces `sum(routes) + sum(maintenance) <= 1` for each vehicle `v` and shift `s`, using the `maint_active_s` variables created earlier. Update the location tracking logic (Step 1.2.3) to correctly handle the `maint_active_lit` case for location transitions.
+- **Files**:
+    - `rail_optimizer/core/optimizer.py`: Refine C2 constraint and the location transition logic in the main loop to correctly account for maintenance activity.
+- **Step Dependencies**: Step 1.3.3
+- **User Instructions**: Run `python run_core_test.py`. Check solver status.

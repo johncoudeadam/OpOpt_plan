@@ -1,0 +1,7 @@
+# Implementation Plan Step 1.2.4: Location Capacity Constraint
+
+- **Task**: Implement Constraint C4 (Location Capacity). Use `model.AddCount` for each location `l` and shift `s` on the `loc_start_vs` variables to ensure the count is within `locations[l]['capacity']`.
+- **Files**:
+    - `rail_optimizer/core/optimizer.py`: Add `AddCount` constraints for location capacity.
+- **Step Dependencies**: Step 1.2.3
+- **User Instructions**: Run `python run_core_test.py`. Check solver status. Infeasibility might occur here if dummy data requires exceeding capacity.

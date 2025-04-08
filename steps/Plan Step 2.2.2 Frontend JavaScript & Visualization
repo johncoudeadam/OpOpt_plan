@@ -1,0 +1,12 @@
+# Implementation Plan Step 2.2.2: Frontend JavaScript & Visualization
+
+- **Task**: Create `visualization.js`. Add JavaScript to `index.html` (or link to `visualization.js`) that:
+    1. Adds an event listener to the "Run Optimization" button.
+    2. On click, sends a POST request to `/run_optimizer`.
+    3. Receives the JSON response.
+    4. Calls a function (adapted from the original `schedule_visualization.html` script) to parse the JSON data and render the timeline visualization in the placeholder div. Include loading/error states.
+- **Files**:
+    - `webapp/static/js/visualization.js`: Implement API call and rendering logic.
+    - `webapp/templates/index.html`: Add placeholder div, button ID, and script tag for `visualization.js`.
+- **Step Dependencies**: Step 2.2.1
+- **User Instructions**: Run `python run_web.py`, open the page, click the button, and verify that the schedule visualization appears based on the optimizer's output.

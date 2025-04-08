@@ -1,0 +1,141 @@
+<project_request>
+# Project Name
+[Rail Operations & Maintenance Optimizer] (Suggestions: RailOptiPlanner, TrackMaster Scheduler)
+
+## Project Description
+A tool to optimize the operational planning of rail vehicle traffic and maintenance over a 14-day horizon. It considers shift-level granularity, assigns vehicles to predefined routes with flexibility, respects location capacities and maintenance resource constraints (manhours), and schedules maintenance. It handles both preventive maintenance (optimizing scheduling around optimal km) and corrective maintenance (ensuring completion before a max km deadline), considering depot capabilities and vehicle routing needs.
+
+## Target Audience
+Operational Planners, Maintenance Schedulers, Depot Managers
+
+## Desired Features
+### Core Planning Logic
+- [X] Planning horizon: 14 days.
+- [X] Time granularity: Shift level (Day shift, Night shift).
+- [X] Vehicle fleet: Homogeneous (all vehicles are the same type).
+- [X] Input: Initial state of all vehicles (location, current km count, any pending corrective maintenance with remaining km window).
+- [X] Input: Definition of locations (Depots, Parkings) including capacities.
+    - [X] Depots have specific available manhours per shift (shared pool for all maintenance types).
+- [X] Input: Definition of maintenance activities:
+    - [X] **Preventive:** Optimal km trigger, maximum km limit, required manhours, depot specialization.
+    - [X] **Corrective:** Triggered by defects, defined by a maximum km window (e.g., 'must fix within next 500 km'), required manhours, depot specialization. Some corrective tasks are safety-critical.
+- [X] Output: A schedule assigning vehicles to routes and maintenance activities over the 14-day horizon.
+
+### Traffic Planning
+- [X] Routes are predefined for each day shift.
+- [X] Route definition includes: ID, start location, end location, total km.
+- [X] One vehicle must be assigned to each defined route for the day shifts.
+- [X] Tool performs the assignment/reassignment of specific vehicles to specific routes to meet all constraints.
+- [X] Vehicles are stationary during night shifts (cannot be moved between locations).
+- [X] Location capacities (max number of vehicles per depot/parking) must be respected at all times.
+- [X] Constraint: If a vehicle requires maintenance (preventive or corrective), its preceding day shift route *must* end at a depot capable of performing the required maintenance.
+
+### Maintenance Planning
+- [X] Maintenance can be performed if a vehicle is at a capable depot for a shift.
+- [X] Maintenance types: Preventive and Corrective (including safety-critical).
+- [X] Constraint: Maintenance activities consume available manhours at the depot. Activities requiring more manhours than available in one shift will span consecutive shifts (vehicle remains at depot, consumes hours each shift until complete, assuming availability).
+- [X] Objective (Preventive): Schedule maintenance as close to optimal km as possible, measured by minimizing the sum of absolute differences: `sum(|actual_km - optimal_km|)`.
+- [X] Constraint (Preventive & Corrective): Schedule maintenance before the respective maximum km is reached. This is a hard, non-negotiable constraint for all maintenance types, including safety-critical corrective tasks.
+- [X] Constraint: Respect depot specialization (activity must match depot capability).
+- [X] Scheduling Logic (Corrective): Schedule corrective tasks at any feasible point before the `max_km` deadline, allowing flexibility (e.g., grouping with other tasks if vehicle is already at a capable depot).
+
+### Optimization Goal
+- [X] Primary Objective: Minimize the total deviation from optimal km for all scheduled *preventive* maintenance activities (`sum(|actual_km - optimal_km|)`).
+- [X] Primary Constraint: Find a feasible schedule that respects *all* defined constraints:
+    - [X] Route coverage (all day shift routes assigned).
+    - [X] Location capacity (depots/parkings).
+    - [X] Maintenance maximum km limits (Preventive & Corrective, including safety-critical).
+    - [X] Maintenance manhour availability per depot/shift.
+    - [X] Depot specialization for maintenance activities.
+    - [X] Vehicle routing to appropriate depots for required maintenance.
+    - [X] Multi-shift maintenance completion.
+
+## Design Requests
+- [ ] [No specific design requests yet]
+
+## Other Notes
+- [X] Focus initially on the core optimization algorithm and logic.
+- [ ] Future integration into a web application is planned.
+- [X] Generate dummy test data:
+    - [X] 10 vehicles (define initial km, location, pending corrective tasks [max km window, manhours, required depot type if specialized, safety-critical flag]).
+    - [X] 10 maintenance activity definitions (mix of preventive [opt/max km, manhours, specialization] and corrective rules/types).
+    - [X] 2 Depots (define capacity, manhours/shift, specialized activities if any).
+    - [X] 2 Parkings (define capacity).
+    - [X] 8 predefined routes per day shift for 14 days (define ID, start/end loc, km).
+- [X] Acknowledge computational complexity due to resource constraints, multi-shift activities, and assignment flexibility.
+</project_request>
+
+<project_rules>
+Follow python best practice
+you are an expert in Constraint programming, especially using google OR tools
+</project_rules>
+
+<following the implementation steps>
+You are an AI code generator responsible for implementing a web application based on a provided technical specification and implementation plan.
+
+Your task is to systematically implement each step of the plan, one at a time described in the md files i will provide
+
+First, carefully review the available inputs:
+
+<project_request>
+<project_rules>
+<md files>
+<existing_code>
+
+Your task is to:
+Generate the necessary code for all files specified in that step
+
+
+The implementation plan is just a suggestion meant to provide a high-level overview of the objective. Use it to guide you, but you do not have to adhere to it strictly. Make sure to follow the given rules as you work along the lines of the plan.
+
+For EVERY file you modify or create, you MUST provide the COMPLETE file contents in the format above.
+
+Each file should be wrapped in a code block with its file path above it and a "Here's what I did and why":
+
+Here's what I did and why: [text here...]
+Filepath: src/components/Example.tsx
+```
+/**
+ * @description 
+ * This component handles [specific functionality].
+ * It is responsible for [specific responsibilities].
+ * 
+ * Key features:
+ * - Feature 1: Description
+ * - Feature 2: Description
+ * 
+ * @dependencies
+ * - DependencyA: Used for X
+ * - DependencyB: Used for Y
+ * 
+ * @notes
+ * - Important implementation detail 1
+ * - Important implementation detail 2
+ */
+
+
+Documentation requirements:
+- File-level documentation explaining the purpose and scope
+- Component/function-level documentation detailing inputs, outputs, and behavior
+- Inline comments explaining complex logic or business rules
+- Type documentation for all interfaces and types
+- Notes about edge cases and error handling
+- Any assumptions or limitations
+
+Guidelines:
+- Implement exactly one step at a time
+- Ensure all code follows the project rules and technical specification
+- Include ALL necessary imports and dependencies
+- Write clean, well-documented code with appropriate error handling
+- Always provide COMPLETE file contents - never use ellipsis (...) or placeholder comments
+- Never skip any sections of any file - provide the entire file every time
+- Handle edge cases and add input validation where appropriate
+- Follow TypeScript best practices and ensure type safety
+- Include necessary tests as specified in the testing strategy
+
+return a "Here's what I did and why" explanation of what you did for that file.
+
+Then end with "STEP X COMPLETE. Here's what I did and why:" followed by an explanation of what you did and then a "USER INSTRUCTIONS: Please do the following:" followed by manual instructions for the user for things you can't do like installing libraries, updating configurations on services, etc.
+
+You also have permission to update the implementation plan if needed. If you update the implementation plan, include each modified step in full and return them as markdown code blocks at the end of the user instructions. No need to mark the current step as complete - that is implied.
+</following the implementation steps>

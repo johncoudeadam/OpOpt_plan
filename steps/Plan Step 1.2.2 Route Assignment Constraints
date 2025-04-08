@@ -1,0 +1,7 @@
+# Implementation Plan Step 1.2.2: Route Assignment Constraints
+
+- **Task**: Add Constraint C1 (Route Coverage: `AddExactlyOne` for each route `r` over vehicles `v`) and the basic part of C2 (Vehicle Uniqueness: `Add(sum(assign_vr) <= 1)` for each vehicle `v` and shift `s`, considering only routes for now).
+- **Files**:
+    - `rail_optimizer/core/optimizer.py`: Add C1 and basic C2 constraints.
+- **Step Dependencies**: Step 1.2.1
+- **User Instructions**: Run `python run_core_test.py`. Check solver status. Expect 'FEASIBLE' or 'OPTIMAL' (if objective added prematurely) or 'INFEASIBLE' if dummy data/constraints conflict. Should not be 'MODEL_INVALID'.

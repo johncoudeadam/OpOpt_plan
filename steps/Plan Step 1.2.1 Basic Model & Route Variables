@@ -1,0 +1,8 @@
+# Implementation Plan Step 1.2.1: Basic Model & Route Variables
+
+- **Task**: Create the main optimizer file. Import `cp_model` and the data generator. Implement the `solve_rail_optimization` function structure. Inside it, initialize `cp_model.CpModel()`. Extract basic data (vehicles, routes, shifts). Create the `assign_vr` Boolean variables for route assignment. Add basic solver call and status printing (no results processing yet).
+- **Files**:
+    - `rail_optimizer/core/optimizer.py`: Implement basic `solve_rail_optimization` structure, variable creation (`assign_vr`).
+    - `rail_optimizer/run_core_test.py`: Script to import data generator and optimizer, call solve function, and print status.
+- **Step Dependencies**: Step 1.1.2
+- **User Instructions**: Run `python run_core_test.py`. Expect 'UNKNOWN' or possibly 'FEASIBLE' status (as there are no constraints yet).

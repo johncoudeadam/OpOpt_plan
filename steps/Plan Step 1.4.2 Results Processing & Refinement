@@ -1,0 +1,7 @@
+# Implementation Plan Step 1.4.2: Results Processing & Refinement
+
+- **Task**: Implement the results processing logic within `solve_rail_optimization`. If a solution is found, extract route assignments, maintenance schedules (start/end/depot/km), and idle periods for each vehicle/shift. Format this into the nested dictionary/list structure used by the visualization (`schedule_results.json`). Add comments throughout the optimizer code. Ensure all parts of the spec (except potentially advanced manhours) are covered. Consider adding back the constraint to force corrective maintenance (`model.Add(performed_lit == 1)`) here, checking if the model remains feasible.
+- **Files**:
+    - `rail_optimizer/core/optimizer.py`: Implement detailed results extraction and formatting. Add comments. Re-evaluate forcing corrective maintenance.
+- **Step Dependencies**: Step 1.4.1 (or 1.3.5 if skipping manhours)
+- **User Instructions**: Run `python run_core_test.py`. Verify `schedule_results.json` is created with the expected structure if a solution is found.

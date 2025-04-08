@@ -1,0 +1,7 @@
+# Implementation Plan Step 1.3.1: Maintenance Variables
+
+- **Task**: Create variables related to maintenance instances (`all_maint_instances` list): `maint_performed` (Bool), `maint_start_s` (Int), `maint_assigned_depot` (Int restricted domain), `km_at_maint_start` (Int), `maint_intervals` (OptionalIntervalVar). Link the interval's presence to `maint_performed`. Create helper `maint_active_s` Booleans linked to the interval variables. (Do *not* force corrective `maint_performed` to be 1 yet).
+- **Files**:
+    - `rail_optimizer/core/optimizer.py`: Add maintenance-related variables and the `NewOptionalIntervalVar`. Add logic to create `maint_active_s` based on interval presence and shift range.
+- **Step Dependencies**: Step 1.2.5
+- **User Instructions**: Run `python run_core_test.py`. Check solver status.

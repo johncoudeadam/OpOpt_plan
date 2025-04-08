@@ -1,0 +1,7 @@
+# Implementation Plan Step 1.2.5: KM Tracking
+
+- **Task**: Implement Constraint C5 (KM Accumulation). Create `km_at_shift_start` variables. Set initial KM. Add constraints to calculate `km_next_start = km_prev_start + km_added`, where `km_added` depends on the `assign_vr` variables for the current shift `s`.
+- **Files**:
+    - `rail_optimizer/core/optimizer.py`: Add KM variables and accumulation constraints.
+- **Step Dependencies**: Step 1.2.4 (needs `assign_vr`)
+- **User Instructions**: Run `python run_core_test.py`. Check solver status.

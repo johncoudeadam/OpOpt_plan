@@ -1,0 +1,8 @@
+# Implementation Plan Step 1.1.2: Dummy Data Generation
+
+- **Task**: Implement the `generate_dummy_data` function in a new file. Ensure it produces data structures (lists/dicts) matching the technical specification (vehicles, locations with capacity, routes with shift/start/end/km, maintenance types with rules, initial corrective tasks). Include basic validation within the function (e.g., check if locations exist). Add a simple script to run this function and print the generated data as JSON.
+- **Files**:
+    - `rail_optimizer/core/data_generator.py`: Implement `generate_dummy_data`.
+    - `rail_optimizer/test_data_gen.py`: Add script to call `generate_dummy_data` and print output.
+- **Step Dependencies**: Step 1.1.1
+- **User Instructions**: Run `python test_data_gen.py` to verify data generation.
