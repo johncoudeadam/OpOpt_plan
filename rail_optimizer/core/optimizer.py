@@ -193,6 +193,18 @@ def solve_rail_optimization(data: Dict[str, Any], time_limit_seconds: int = 60) 
                     max_km = maint_type["max_km"]
                     optimal_km = maint_type["optimal_km"]
                     
+                    # Check if this vehicle has this preventive maintenance type pending
+                    for pending_task in vehicle.get("pending_preventive_tasks", []):
+                        if pending_task["maintenance_type_id"] == maint_id:
+                            # Calculate the max KM based on initial KM and remaining KM window
+                            initial_km = vehicle["initial_km"]
+                            remaining_km = pending_task["remaining_km"]
+                            max_km = initial_km + remaining_km
+                            
+                            # We'll track preventive tasks and ensure at least one instance of each is performed
+                            # This will be handled in a separate constraint after all maintenance instances are created
+                            break
+                    
                     # Add constraint: km_at_maint_start <= max_km
                     # Only enforce if maintenance is performed
                     model.Add(km_at_maint_start[instance_id] <= max_km)\
@@ -514,102 +526,6 @@ def solve_rail_optimization(data: Dict[str, Any], time_limit_seconds: int = 60) 
         
         # Set the initial KM (shift index 0)
         model.Add(km_at_shift_start[(vehicle_id, 0)] == initial_km)
-        
-        # C8: Force corrective maintenance to be performed
-        # For each pending corrective task, ensure at least one corresponding maintenance instance is performed
-        for pending_task in vehicle.get("pending_corrective_tasks", []):
-            corrective_type_id = pending_task["maintenance_type_id"]
-            
-            # Find all maintenance instances for this vehicle and corrective type
-            corrective_instances = []
-            for instance in all_maint_instances:
-                if instance["vehicle_id"] == vehicle_id and instance["maint_id"] == corrective_type_id:
-                    corrective_instances.append(instance["id"])
-            
-            # If there are instances available, add constraint to ensure at least one is performed
-            if corrective_instances:
-                # Create a list of maint_performed variables for these instances
-                corrective_vars = [maint_performed[instance_id] for instance_id in corrective_instances]
-                
-                # Add constraint: at least one corrective maintenance instance must be performed
-                model.Add(sum(corrective_vars) >= 1)
-        
-        # C11: Routing to Depot Constraint
-        # For each maintenance instance, if it's performed, ensure the vehicle is at a depot capable of performing the maintenance
-        # This applies to both preventive and corrective maintenance
-        for instance in all_maint_instances:
-            if instance["vehicle_id"] == vehicle_id:
-                instance_id = instance["id"]
-                start_idx = instance["start_idx"]
-                
-                # If this maintenance is performed, ensure the vehicle is at the assigned depot at the start
-                # This is already covered by C8 Part 1, but we need to ensure the route before maintenance ends at the depot
-                
-                # If maintenance starts after day 1 (not the first shift), we need to ensure the previous route ends at the depot
-                if start_idx > 1:  # Skip initial state (0) and first shift (1)
-                    # Get the previous shift index
-                    prev_idx = start_idx - 1
-                    prev_day, prev_shift = all_shifts_with_initial[prev_idx]
-                    
-                    # Only apply for day shifts (since routes only happen during day shifts)
-                    if prev_shift == "day":
-                        # Get all routes for the previous shift
-                        prev_shift_routes = routes_by_day_shift.get((prev_day, prev_shift), [])
-                        
-                        # For each route in the previous shift
-                        for route in prev_shift_routes:
-                            route_id = route["id"]
-                            end_location = route["end_location"]
-                            end_location_index = location_id_to_index[end_location]
-                            
-                            # If the vehicle is assigned to this route and maintenance is performed,
-                            # the route's end location must match the maintenance assigned depot
-                            route_assigned_lit = assign_vr[(vehicle_id, route_id)]
-                            
-                            # Create a combined literal for both conditions
-                            combined_lit = model.NewBoolVar(f"combined_{vehicle_id}_{route_id}_{instance_id}")
-                            model.AddBoolAnd([route_assigned_lit, maint_performed[instance_id]]).OnlyEnforceIf(combined_lit)
-                            model.AddBoolOr([route_assigned_lit.Not(), maint_performed[instance_id].Not()]).OnlyEnforceIf(combined_lit.Not())
-                            
-                            # If both conditions are true, the route's end location must match the maintenance assigned depot
-                            model.Add(end_location_index == maint_assigned_depot[instance_id]).OnlyEnforceIf(combined_lit)
-    
-    # Update KM for each shift based on route assignments
-    for curr_shift_idx, (day, shift) in enumerate(all_shifts_with_initial[:-1]):  # Exclude the last shift as we don't need to update beyond it
-        # Skip the initial state (already handled)
-        if day == 0 and shift == "initial":
-            continue
-            
-        # Get routes for this shift
-        shift_routes = routes_by_day_shift.get((day, shift), [])
-        
-        for vehicle in vehicles:
-            vehicle_id = vehicle["id"]
-            
-            # For each route in this shift
-            route_km_terms = []
-            for route in shift_routes:
-                route_id = route["id"]
-                distance_km = route["distance_km"]
-                
-                # Create a term for this route's contribution to KM
-                # If the vehicle is assigned to this route, add the route's distance
-                route_assigned_lit = assign_vr[(vehicle_id, route_id)]
-                route_km_term = model.NewIntVar(0, distance_km, f"route_km_term_{vehicle_id}_{route_id}")
-                
-                # route_km_term = distance_km if route is assigned, 0 otherwise
-                model.Add(route_km_term == distance_km).OnlyEnforceIf(route_assigned_lit)
-                model.Add(route_km_term == 0).OnlyEnforceIf(route_assigned_lit.Not())
-                
-                route_km_terms.append(route_km_term)
-            
-            # If no routes in this shift, KM doesn't change
-            if not route_km_terms:
-                model.Add(km_at_shift_start[(vehicle_id, curr_shift_idx + 1)] == km_at_shift_start[(vehicle_id, curr_shift_idx)])
-            else:
-                # KM at next shift start = KM at current shift start + sum of route KM terms
-                model.Add(km_at_shift_start[(vehicle_id, curr_shift_idx + 1)] == 
-                         km_at_shift_start[(vehicle_id, curr_shift_idx)] + sum(route_km_terms))
     
     # C9/C10: Manhour Constraints - Ensure depot manhour capacity is not exceeded
     # For each depot, create a cumulative constraint for manhour resources
@@ -704,6 +620,29 @@ def solve_rail_optimization(data: Dict[str, Any], time_limit_seconds: int = 60) 
         
         # For each pending corrective task
         for pending_task in vehicle.get("pending_corrective_tasks", []):
+            maint_id = pending_task["maintenance_type_id"]
+            
+            # Find all maintenance instances for this vehicle and maintenance type
+            task_instances = []
+            for instance in all_maint_instances:
+                if instance["vehicle_id"] == vehicle_id and instance["maint_id"] == maint_id:
+                    task_instances.append(instance["id"])
+            
+            # If there are instances, add a constraint to ensure at least one is performed
+            if task_instances:
+                # Create a list of Boolean variables for each instance
+                performed_vars = [maint_performed[instance_id] for instance_id in task_instances]
+                
+                # Add constraint: at least one instance must be performed
+                model.Add(sum(performed_vars) >= 1)
+    
+    # C9: Force Preventive Maintenance - Ensure at least one instance of each pending preventive task is performed
+    # For each vehicle with pending preventive tasks
+    for vehicle in vehicles:
+        vehicle_id = vehicle["id"]
+        
+        # For each pending preventive task
+        for pending_task in vehicle.get("pending_preventive_tasks", []):
             maint_id = pending_task["maintenance_type_id"]
             
             # Find all maintenance instances for this vehicle and maintenance type

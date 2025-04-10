@@ -5,65 +5,71 @@
         "location": "depot_2",
         "km": 18918
       },
-      "pending_corrective_tasks": []
+      "pending_corrective_tasks": [],
+      "pending_preventive_tasks": [
+        {
+          "maintenance_type_id": "preventive_1",
+          "remaining_km": 73
+        },
+        {
+          "maintenance_type_id": "preventive_2",
+          "remaining_km": 445
+        },
+        {
+          "maintenance_type_id": "preventive_3",
+          "remaining_km": 90
+        }
+      ]
     },
     "vehicle_2": {
       "initial_state": {
         "location": "depot_1",
-        "km": 1501
+        "km": 3309
       },
       "pending_corrective_tasks": [
         {
-          "maintenance_type_id": "corrective_2",
-          "remaining_km": 346
+          "maintenance_type_id": "corrective_3",
+          "remaining_km": 514
+        }
+      ],
+      "pending_preventive_tasks": [
+        {
+          "maintenance_type_id": "preventive_3",
+          "remaining_km": 2125
         },
         {
-          "maintenance_type_id": "corrective_1",
-          "remaining_km": 288
+          "maintenance_type_id": "preventive_2",
+          "remaining_km": 3226
+        },
+        {
+          "maintenance_type_id": "preventive_3",
+          "remaining_km": 2125
         }
       ]
     },
     "vehicle_3": {
       "initial_state": {
-        "location": "depot_1",
-        "km": 12455
-      },
-      "pending_corrective_tasks": [
-        {
-          "maintenance_type_id": "corrective_4",
-          "remaining_km": 700
-        }
-      ]
-    },
-    "vehicle_4": {
-      "initial_state": {
         "location": "depot_2",
-        "km": 5329
+        "km": 6865
       },
       "pending_corrective_tasks": [
         {
           "maintenance_type_id": "corrective_3",
-          "remaining_km": 264
-        }
-      ]
-    },
-    "vehicle_5": {
-      "initial_state": {
-        "location": "depot_2",
-        "km": 22997
-      },
-      "pending_corrective_tasks": [
-        {
-          "maintenance_type_id": "corrective_1",
-          "remaining_km": 673
+          "remaining_km": 123
         },
         {
-          "maintenance_type_id": "corrective_2",
-          "remaining_km": 596
+          "maintenance_type_id": "corrective_5",
+          "remaining_km": 700
+        }
+      ],
+      "pending_preventive_tasks": [
+        {
+          "maintenance_type_id": "preventive_5",
+          "remaining_km": 7789
         }
       ]
     },
-    "vehicle_6": {
+    "vehicle_4": {
       "initial_state": {
         "location": "depot_1",
         "km": 5354
@@ -73,33 +79,40 @@
           "maintenance_type_id": "corrective_4",
           "remaining_km": 326
         }
-      ]
-    },
-    "vehicle_7": {
-      "initial_state": {
-        "location": "depot_1",
-        "km": 22433
-      },
-      "pending_corrective_tasks": [
+      ],
+      "pending_preventive_tasks": [
         {
-          "maintenance_type_id": "corrective_1",
-          "remaining_km": 284
+          "maintenance_type_id": "preventive_5",
+          "remaining_km": 9300
+        },
+        {
+          "maintenance_type_id": "preventive_2",
+          "remaining_km": 1181
+        },
+        {
+          "maintenance_type_id": "preventive_3",
+          "remaining_km": 80
         }
       ]
     },
-    "vehicle_8": {
+    "vehicle_5": {
       "initial_state": {
         "location": "depot_1",
-        "km": 10336
+        "km": 7505
       },
-      "pending_corrective_tasks": [
+      "pending_corrective_tasks": [],
+      "pending_preventive_tasks": [
         {
-          "maintenance_type_id": "corrective_3",
-          "remaining_km": 117
+          "maintenance_type_id": "preventive_4",
+          "remaining_km": 8985
+        },
+        {
+          "maintenance_type_id": "preventive_3",
+          "remaining_km": 83
         }
       ]
     },
-    "vehicle_9": {
+    "vehicle_6": {
       "initial_state": {
         "location": "depot_1",
         "km": 18585
@@ -113,17 +126,97 @@
           "maintenance_type_id": "corrective_4",
           "remaining_km": 455
         }
+      ],
+      "pending_preventive_tasks": [
+        {
+          "maintenance_type_id": "preventive_4",
+          "remaining_km": 123
+        },
+        {
+          "maintenance_type_id": "preventive_3",
+          "remaining_km": 121
+        },
+        {
+          "maintenance_type_id": "preventive_2",
+          "remaining_km": 431
+        }
+      ]
+    },
+    "vehicle_7": {
+      "initial_state": {
+        "location": "depot_2",
+        "km": 24478
+      },
+      "pending_corrective_tasks": [
+        {
+          "maintenance_type_id": "corrective_4",
+          "remaining_km": 647
+        },
+        {
+          "maintenance_type_id": "corrective_4",
+          "remaining_km": 420
+        }
+      ],
+      "pending_preventive_tasks": [
+        {
+          "maintenance_type_id": "preventive_2",
+          "remaining_km": 310
+        }
+      ]
+    },
+    "vehicle_8": {
+      "initial_state": {
+        "location": "depot_2",
+        "km": 2978
+      },
+      "pending_corrective_tasks": [],
+      "pending_preventive_tasks": [
+        {
+          "maintenance_type_id": "preventive_2",
+          "remaining_km": 3557
+        }
+      ]
+    },
+    "vehicle_9": {
+      "initial_state": {
+        "location": "depot_1",
+        "km": 22298
+      },
+      "pending_corrective_tasks": [
+        {
+          "maintenance_type_id": "corrective_5",
+          "remaining_km": 115
+        }
+      ],
+      "pending_preventive_tasks": [
+        {
+          "maintenance_type_id": "preventive_4",
+          "remaining_km": 355
+        },
+        {
+          "maintenance_type_id": "preventive_4",
+          "remaining_km": 320
+        }
       ]
     },
     "vehicle_10": {
       "initial_state": {
         "location": "depot_2",
-        "km": 4681
+        "km": 18128
       },
-      "pending_corrective_tasks": [
+      "pending_corrective_tasks": [],
+      "pending_preventive_tasks": [
         {
-          "maintenance_type_id": "corrective_2",
-          "remaining_km": 302
+          "maintenance_type_id": "preventive_1",
+          "remaining_km": 399
+        },
+        {
+          "maintenance_type_id": "preventive_5",
+          "remaining_km": 434
+        },
+        {
+          "maintenance_type_id": "preventive_3",
+          "remaining_km": 443
         }
       ]
     }
@@ -225,784 +318,784 @@
       "shift": "day",
       "start_location": "depot_2",
       "end_location": "depot_1",
-      "distance_km": 279
+      "distance_km": 125
     },
     "route_day1_2": {
       "day": 1,
       "shift": "day",
       "start_location": "depot_2",
       "end_location": "depot_1",
-      "distance_km": 106
+      "distance_km": 166
     },
     "route_day1_3": {
       "day": 1,
       "shift": "day",
       "start_location": "depot_1",
       "end_location": "depot_2",
-      "distance_km": 73
+      "distance_km": 298
     },
     "route_day1_4": {
       "day": 1,
       "shift": "day",
       "start_location": "depot_1",
       "end_location": "depot_2",
-      "distance_km": 89
+      "distance_km": 272
     },
     "route_day1_5": {
       "day": 1,
       "shift": "day",
-      "start_location": "depot_1",
-      "end_location": "depot_2",
-      "distance_km": 202
+      "start_location": "depot_2",
+      "end_location": "depot_1",
+      "distance_km": 89
     },
     "route_day1_6": {
       "day": 1,
       "shift": "day",
-      "start_location": "depot_1",
-      "end_location": "depot_2",
-      "distance_km": 147
+      "start_location": "depot_2",
+      "end_location": "depot_1",
+      "distance_km": 188
     },
     "route_day1_7": {
       "day": 1,
       "shift": "day",
-      "start_location": "depot_2",
-      "end_location": "depot_1",
-      "distance_km": 298
+      "start_location": "depot_1",
+      "end_location": "depot_2",
+      "distance_km": 175
     },
     "route_day1_8": {
       "day": 1,
       "shift": "day",
       "start_location": "depot_1",
       "end_location": "depot_2",
-      "distance_km": 224
+      "distance_km": 287
     },
     "route_day2_1": {
       "day": 2,
       "shift": "day",
       "start_location": "depot_2",
       "end_location": "depot_1",
-      "distance_km": 78
+      "distance_km": 111
     },
     "route_day2_2": {
       "day": 2,
       "shift": "day",
-      "start_location": "depot_2",
-      "end_location": "depot_1",
-      "distance_km": 90
+      "start_location": "depot_1",
+      "end_location": "depot_2",
+      "distance_km": 274
     },
     "route_day2_3": {
       "day": 2,
       "shift": "day",
-      "start_location": "depot_2",
-      "end_location": "depot_1",
-      "distance_km": 294
+      "start_location": "depot_1",
+      "end_location": "depot_2",
+      "distance_km": 237
     },
     "route_day2_4": {
       "day": 2,
       "shift": "day",
       "start_location": "depot_2",
       "end_location": "depot_1",
-      "distance_km": 179
+      "distance_km": 300
     },
     "route_day2_5": {
       "day": 2,
       "shift": "day",
       "start_location": "depot_1",
       "end_location": "depot_2",
-      "distance_km": 265
+      "distance_km": 218
     },
     "route_day2_6": {
       "day": 2,
       "shift": "day",
-      "start_location": "depot_1",
-      "end_location": "depot_2",
-      "distance_km": 145
+      "start_location": "depot_2",
+      "end_location": "depot_1",
+      "distance_km": 117
     },
     "route_day2_7": {
       "day": 2,
       "shift": "day",
-      "start_location": "depot_1",
-      "end_location": "depot_2",
-      "distance_km": 203
+      "start_location": "depot_2",
+      "end_location": "depot_1",
+      "distance_km": 287
     },
     "route_day2_8": {
       "day": 2,
       "shift": "day",
-      "start_location": "depot_2",
-      "end_location": "depot_1",
-      "distance_km": 54
+      "start_location": "depot_1",
+      "end_location": "depot_2",
+      "distance_km": 152
     },
     "route_day3_1": {
       "day": 3,
       "shift": "day",
-      "start_location": "depot_1",
-      "end_location": "depot_2",
-      "distance_km": 274
+      "start_location": "depot_2",
+      "end_location": "depot_1",
+      "distance_km": 280
     },
     "route_day3_2": {
       "day": 3,
       "shift": "day",
       "start_location": "depot_2",
       "end_location": "depot_1",
-      "distance_km": 64
+      "distance_km": 113
     },
     "route_day3_3": {
       "day": 3,
       "shift": "day",
       "start_location": "depot_1",
       "end_location": "depot_2",
-      "distance_km": 71
+      "distance_km": 136
     },
     "route_day3_4": {
       "day": 3,
       "shift": "day",
-      "start_location": "depot_2",
-      "end_location": "depot_1",
-      "distance_km": 300
+      "start_location": "depot_1",
+      "end_location": "depot_2",
+      "distance_km": 200
     },
     "route_day3_5": {
       "day": 3,
       "shift": "day",
       "start_location": "depot_1",
       "end_location": "depot_2",
-      "distance_km": 218
+      "distance_km": 68
     },
     "route_day3_6": {
       "day": 3,
       "shift": "day",
-      "start_location": "depot_2",
-      "end_location": "depot_1",
-      "distance_km": 117
+      "start_location": "depot_1",
+      "end_location": "depot_2",
+      "distance_km": 67
     },
     "route_day3_7": {
       "day": 3,
       "shift": "day",
-      "start_location": "depot_2",
-      "end_location": "depot_1",
-      "distance_km": 287
+      "start_location": "depot_1",
+      "end_location": "depot_2",
+      "distance_km": 68
     },
     "route_day3_8": {
       "day": 3,
       "shift": "day",
       "start_location": "depot_1",
       "end_location": "depot_2",
-      "distance_km": 152
+      "distance_km": 221
     },
     "route_day4_1": {
       "day": 4,
       "shift": "day",
       "start_location": "depot_2",
       "end_location": "depot_1",
-      "distance_km": 280
+      "distance_km": 188
     },
     "route_day4_2": {
       "day": 4,
       "shift": "day",
-      "start_location": "depot_2",
-      "end_location": "depot_1",
-      "distance_km": 113
+      "start_location": "depot_1",
+      "end_location": "depot_2",
+      "distance_km": 112
     },
     "route_day4_3": {
       "day": 4,
       "shift": "day",
-      "start_location": "depot_1",
-      "end_location": "depot_2",
-      "distance_km": 136
+      "start_location": "depot_2",
+      "end_location": "depot_1",
+      "distance_km": 98
     },
     "route_day4_4": {
       "day": 4,
       "shift": "day",
       "start_location": "depot_1",
       "end_location": "depot_2",
-      "distance_km": 200
+      "distance_km": 218
     },
     "route_day4_5": {
       "day": 4,
       "shift": "day",
-      "start_location": "depot_1",
-      "end_location": "depot_2",
-      "distance_km": 68
+      "start_location": "depot_2",
+      "end_location": "depot_1",
+      "distance_km": 158
     },
     "route_day4_6": {
       "day": 4,
       "shift": "day",
-      "start_location": "depot_1",
-      "end_location": "depot_2",
-      "distance_km": 67
+      "start_location": "depot_2",
+      "end_location": "depot_1",
+      "distance_km": 271
     },
     "route_day4_7": {
       "day": 4,
       "shift": "day",
       "start_location": "depot_1",
       "end_location": "depot_2",
-      "distance_km": 68
+      "distance_km": 65
     },
     "route_day4_8": {
       "day": 4,
       "shift": "day",
-      "start_location": "depot_1",
-      "end_location": "depot_2",
-      "distance_km": 221
+      "start_location": "depot_2",
+      "end_location": "depot_1",
+      "distance_km": 254
     },
     "route_day5_1": {
       "day": 5,
       "shift": "day",
-      "start_location": "depot_2",
-      "end_location": "depot_1",
-      "distance_km": 188
+      "start_location": "depot_1",
+      "end_location": "depot_2",
+      "distance_km": 99
     },
     "route_day5_2": {
       "day": 5,
       "shift": "day",
       "start_location": "depot_1",
       "end_location": "depot_2",
-      "distance_km": 112
+      "distance_km": 85
     },
     "route_day5_3": {
       "day": 5,
       "shift": "day",
       "start_location": "depot_2",
       "end_location": "depot_1",
-      "distance_km": 98
+      "distance_km": 121
     },
     "route_day5_4": {
       "day": 5,
       "shift": "day",
-      "start_location": "depot_1",
-      "end_location": "depot_2",
-      "distance_km": 218
+      "start_location": "depot_2",
+      "end_location": "depot_1",
+      "distance_km": 273
     },
     "route_day5_5": {
       "day": 5,
       "shift": "day",
-      "start_location": "depot_2",
-      "end_location": "depot_1",
-      "distance_km": 158
+      "start_location": "depot_1",
+      "end_location": "depot_2",
+      "distance_km": 256
     },
     "route_day5_6": {
       "day": 5,
       "shift": "day",
-      "start_location": "depot_2",
-      "end_location": "depot_1",
-      "distance_km": 271
+      "start_location": "depot_1",
+      "end_location": "depot_2",
+      "distance_km": 216
     },
     "route_day5_7": {
       "day": 5,
       "shift": "day",
       "start_location": "depot_1",
       "end_location": "depot_2",
-      "distance_km": 65
+      "distance_km": 287
     },
     "route_day5_8": {
       "day": 5,
       "shift": "day",
-      "start_location": "depot_2",
-      "end_location": "depot_1",
-      "distance_km": 254
+      "start_location": "depot_1",
+      "end_location": "depot_2",
+      "distance_km": 154
     },
     "route_day6_1": {
       "day": 6,
       "shift": "day",
-      "start_location": "depot_1",
-      "end_location": "depot_2",
-      "distance_km": 99
+      "start_location": "depot_2",
+      "end_location": "depot_1",
+      "distance_km": 104
     },
     "route_day6_2": {
       "day": 6,
       "shift": "day",
-      "start_location": "depot_1",
-      "end_location": "depot_2",
-      "distance_km": 85
+      "start_location": "depot_2",
+      "end_location": "depot_1",
+      "distance_km": 92
     },
     "route_day6_3": {
       "day": 6,
       "shift": "day",
       "start_location": "depot_2",
       "end_location": "depot_1",
-      "distance_km": 121
+      "distance_km": 149
     },
     "route_day6_4": {
       "day": 6,
       "shift": "day",
       "start_location": "depot_2",
       "end_location": "depot_1",
-      "distance_km": 273
+      "distance_km": 123
     },
     "route_day6_5": {
       "day": 6,
       "shift": "day",
-      "start_location": "depot_1",
-      "end_location": "depot_2",
-      "distance_km": 256
+      "start_location": "depot_2",
+      "end_location": "depot_1",
+      "distance_km": 89
     },
     "route_day6_6": {
       "day": 6,
       "shift": "day",
       "start_location": "depot_1",
       "end_location": "depot_2",
-      "distance_km": 216
+      "distance_km": 105
     },
     "route_day6_7": {
       "day": 6,
       "shift": "day",
       "start_location": "depot_1",
       "end_location": "depot_2",
-      "distance_km": 287
+      "distance_km": 241
     },
     "route_day6_8": {
       "day": 6,
       "shift": "day",
-      "start_location": "depot_1",
-      "end_location": "depot_2",
-      "distance_km": 154
+      "start_location": "depot_2",
+      "end_location": "depot_1",
+      "distance_km": 62
     },
     "route_day7_1": {
       "day": 7,
       "shift": "day",
       "start_location": "depot_2",
       "end_location": "depot_1",
-      "distance_km": 104
+      "distance_km": 64
     },
     "route_day7_2": {
       "day": 7,
       "shift": "day",
-      "start_location": "depot_2",
-      "end_location": "depot_1",
-      "distance_km": 92
+      "start_location": "depot_1",
+      "end_location": "depot_2",
+      "distance_km": 67
     },
     "route_day7_3": {
       "day": 7,
       "shift": "day",
-      "start_location": "depot_2",
-      "end_location": "depot_1",
-      "distance_km": 149
+      "start_location": "depot_1",
+      "end_location": "depot_2",
+      "distance_km": 153
     },
     "route_day7_4": {
       "day": 7,
       "shift": "day",
-      "start_location": "depot_2",
-      "end_location": "depot_1",
-      "distance_km": 123
+      "start_location": "depot_1",
+      "end_location": "depot_2",
+      "distance_km": 198
     },
     "route_day7_5": {
       "day": 7,
       "shift": "day",
-      "start_location": "depot_2",
-      "end_location": "depot_1",
-      "distance_km": 89
+      "start_location": "depot_1",
+      "end_location": "depot_2",
+      "distance_km": 157
     },
     "route_day7_6": {
       "day": 7,
       "shift": "day",
-      "start_location": "depot_1",
-      "end_location": "depot_2",
-      "distance_km": 105
+      "start_location": "depot_2",
+      "end_location": "depot_1",
+      "distance_km": 102
     },
     "route_day7_7": {
       "day": 7,
       "shift": "day",
-      "start_location": "depot_1",
-      "end_location": "depot_2",
-      "distance_km": 241
+      "start_location": "depot_2",
+      "end_location": "depot_1",
+      "distance_km": 117
     },
     "route_day7_8": {
       "day": 7,
       "shift": "day",
       "start_location": "depot_2",
       "end_location": "depot_1",
-      "distance_km": 62
+      "distance_km": 221
     },
     "route_day8_1": {
       "day": 8,
       "shift": "day",
       "start_location": "depot_2",
       "end_location": "depot_1",
-      "distance_km": 64
+      "distance_km": 130
     },
     "route_day8_2": {
       "day": 8,
       "shift": "day",
       "start_location": "depot_1",
       "end_location": "depot_2",
-      "distance_km": 67
+      "distance_km": 167
     },
     "route_day8_3": {
       "day": 8,
       "shift": "day",
       "start_location": "depot_1",
       "end_location": "depot_2",
-      "distance_km": 153
+      "distance_km": 187
     },
     "route_day8_4": {
       "day": 8,
       "shift": "day",
       "start_location": "depot_1",
       "end_location": "depot_2",
-      "distance_km": 198
+      "distance_km": 83
     },
     "route_day8_5": {
       "day": 8,
       "shift": "day",
-      "start_location": "depot_1",
-      "end_location": "depot_2",
-      "distance_km": 157
+      "start_location": "depot_2",
+      "end_location": "depot_1",
+      "distance_km": 275
     },
     "route_day8_6": {
       "day": 8,
       "shift": "day",
-      "start_location": "depot_2",
-      "end_location": "depot_1",
-      "distance_km": 102
+      "start_location": "depot_1",
+      "end_location": "depot_2",
+      "distance_km": 122
     },
     "route_day8_7": {
       "day": 8,
       "shift": "day",
-      "start_location": "depot_2",
-      "end_location": "depot_1",
-      "distance_km": 117
+      "start_location": "depot_1",
+      "end_location": "depot_2",
+      "distance_km": 263
     },
     "route_day8_8": {
       "day": 8,
       "shift": "day",
       "start_location": "depot_2",
       "end_location": "depot_1",
-      "distance_km": 221
+      "distance_km": 220
     },
     "route_day9_1": {
       "day": 9,
       "shift": "day",
       "start_location": "depot_2",
       "end_location": "depot_1",
-      "distance_km": 130
+      "distance_km": 290
     },
     "route_day9_2": {
       "day": 9,
       "shift": "day",
       "start_location": "depot_1",
       "end_location": "depot_2",
-      "distance_km": 167
+      "distance_km": 79
     },
     "route_day9_3": {
       "day": 9,
       "shift": "day",
       "start_location": "depot_1",
       "end_location": "depot_2",
-      "distance_km": 187
+      "distance_km": 119
     },
     "route_day9_4": {
       "day": 9,
       "shift": "day",
-      "start_location": "depot_1",
-      "end_location": "depot_2",
-      "distance_km": 83
+      "start_location": "depot_2",
+      "end_location": "depot_1",
+      "distance_km": 233
     },
     "route_day9_5": {
       "day": 9,
       "shift": "day",
       "start_location": "depot_2",
       "end_location": "depot_1",
-      "distance_km": 275
+      "distance_km": 225
     },
     "route_day9_6": {
       "day": 9,
       "shift": "day",
-      "start_location": "depot_1",
-      "end_location": "depot_2",
-      "distance_km": 122
+      "start_location": "depot_2",
+      "end_location": "depot_1",
+      "distance_km": 114
     },
     "route_day9_7": {
       "day": 9,
       "shift": "day",
       "start_location": "depot_1",
       "end_location": "depot_2",
-      "distance_km": 263
+      "distance_km": 212
     },
     "route_day9_8": {
       "day": 9,
       "shift": "day",
       "start_location": "depot_2",
       "end_location": "depot_1",
-      "distance_km": 220
+      "distance_km": 61
     },
     "route_day10_1": {
       "day": 10,
       "shift": "day",
-      "start_location": "depot_2",
-      "end_location": "depot_1",
-      "distance_km": 290
+      "start_location": "depot_1",
+      "end_location": "depot_2",
+      "distance_km": 247
     },
     "route_day10_2": {
       "day": 10,
       "shift": "day",
       "start_location": "depot_1",
       "end_location": "depot_2",
-      "distance_km": 79
+      "distance_km": 91
     },
     "route_day10_3": {
       "day": 10,
       "shift": "day",
-      "start_location": "depot_1",
-      "end_location": "depot_2",
-      "distance_km": 119
+      "start_location": "depot_2",
+      "end_location": "depot_1",
+      "distance_km": 193
     },
     "route_day10_4": {
       "day": 10,
       "shift": "day",
-      "start_location": "depot_2",
-      "end_location": "depot_1",
-      "distance_km": 233
+      "start_location": "depot_1",
+      "end_location": "depot_2",
+      "distance_km": 69
     },
     "route_day10_5": {
       "day": 10,
       "shift": "day",
-      "start_location": "depot_2",
-      "end_location": "depot_1",
-      "distance_km": 225
+      "start_location": "depot_1",
+      "end_location": "depot_2",
+      "distance_km": 263
     },
     "route_day10_6": {
       "day": 10,
       "shift": "day",
       "start_location": "depot_2",
       "end_location": "depot_1",
-      "distance_km": 114
+      "distance_km": 160
     },
     "route_day10_7": {
       "day": 10,
       "shift": "day",
       "start_location": "depot_1",
       "end_location": "depot_2",
-      "distance_km": 212
+      "distance_km": 128
     },
     "route_day10_8": {
       "day": 10,
       "shift": "day",
       "start_location": "depot_2",
       "end_location": "depot_1",
-      "distance_km": 61
+      "distance_km": 280
     },
     "route_day11_1": {
       "day": 11,
       "shift": "day",
-      "start_location": "depot_1",
-      "end_location": "depot_2",
-      "distance_km": 247
+      "start_location": "depot_2",
+      "end_location": "depot_1",
+      "distance_km": 224
     },
     "route_day11_2": {
       "day": 11,
       "shift": "day",
       "start_location": "depot_1",
       "end_location": "depot_2",
-      "distance_km": 91
+      "distance_km": 140
     },
     "route_day11_3": {
       "day": 11,
       "shift": "day",
       "start_location": "depot_2",
       "end_location": "depot_1",
-      "distance_km": 193
+      "distance_km": 286
     },
     "route_day11_4": {
       "day": 11,
       "shift": "day",
       "start_location": "depot_1",
       "end_location": "depot_2",
-      "distance_km": 69
+      "distance_km": 299
     },
     "route_day11_5": {
       "day": 11,
       "shift": "day",
       "start_location": "depot_1",
       "end_location": "depot_2",
-      "distance_km": 263
+      "distance_km": 56
     },
     "route_day11_6": {
       "day": 11,
       "shift": "day",
-      "start_location": "depot_2",
-      "end_location": "depot_1",
-      "distance_km": 160
+      "start_location": "depot_1",
+      "end_location": "depot_2",
+      "distance_km": 250
     },
     "route_day11_7": {
       "day": 11,
       "shift": "day",
-      "start_location": "depot_1",
-      "end_location": "depot_2",
-      "distance_km": 128
+      "start_location": "depot_2",
+      "end_location": "depot_1",
+      "distance_km": 118
     },
     "route_day11_8": {
       "day": 11,
       "shift": "day",
-      "start_location": "depot_2",
-      "end_location": "depot_1",
-      "distance_km": 280
+      "start_location": "depot_1",
+      "end_location": "depot_2",
+      "distance_km": 147
     },
     "route_day12_1": {
       "day": 12,
       "shift": "day",
-      "start_location": "depot_2",
-      "end_location": "depot_1",
-      "distance_km": 224
+      "start_location": "depot_1",
+      "end_location": "depot_2",
+      "distance_km": 106
     },
     "route_day12_2": {
       "day": 12,
       "shift": "day",
       "start_location": "depot_1",
       "end_location": "depot_2",
-      "distance_km": 140
+      "distance_km": 139
     },
     "route_day12_3": {
       "day": 12,
       "shift": "day",
       "start_location": "depot_2",
       "end_location": "depot_1",
-      "distance_km": 286
+      "distance_km": 107
     },
     "route_day12_4": {
       "day": 12,
       "shift": "day",
       "start_location": "depot_1",
       "end_location": "depot_2",
-      "distance_km": 299
+      "distance_km": 152
     },
     "route_day12_5": {
       "day": 12,
       "shift": "day",
-      "start_location": "depot_1",
-      "end_location": "depot_2",
-      "distance_km": 56
+      "start_location": "depot_2",
+      "end_location": "depot_1",
+      "distance_km": 271
     },
     "route_day12_6": {
       "day": 12,
       "shift": "day",
       "start_location": "depot_1",
       "end_location": "depot_2",
-      "distance_km": 250
+      "distance_km": 139
     },
     "route_day12_7": {
       "day": 12,
       "shift": "day",
       "start_location": "depot_2",
       "end_location": "depot_1",
-      "distance_km": 118
+      "distance_km": 290
     },
     "route_day12_8": {
       "day": 12,
       "shift": "day",
       "start_location": "depot_1",
       "end_location": "depot_2",
-      "distance_km": 147
+      "distance_km": 274
     },
     "route_day13_1": {
       "day": 13,
       "shift": "day",
-      "start_location": "depot_1",
-      "end_location": "depot_2",
-      "distance_km": 106
+      "start_location": "depot_2",
+      "end_location": "depot_1",
+      "distance_km": 198
     },
     "route_day13_2": {
       "day": 13,
       "shift": "day",
-      "start_location": "depot_1",
-      "end_location": "depot_2",
-      "distance_km": 139
+      "start_location": "depot_2",
+      "end_location": "depot_1",
+      "distance_km": 77
     },
     "route_day13_3": {
       "day": 13,
       "shift": "day",
       "start_location": "depot_2",
       "end_location": "depot_1",
-      "distance_km": 107
+      "distance_km": 236
     },
     "route_day13_4": {
       "day": 13,
       "shift": "day",
-      "start_location": "depot_1",
-      "end_location": "depot_2",
-      "distance_km": 152
+      "start_location": "depot_2",
+      "end_location": "depot_1",
+      "distance_km": 205
     },
     "route_day13_5": {
       "day": 13,
       "shift": "day",
-      "start_location": "depot_2",
-      "end_location": "depot_1",
-      "distance_km": 271
+      "start_location": "depot_1",
+      "end_location": "depot_2",
+      "distance_km": 280
     },
     "route_day13_6": {
       "day": 13,
       "shift": "day",
       "start_location": "depot_1",
       "end_location": "depot_2",
-      "distance_km": 139
+      "distance_km": 61
     },
     "route_day13_7": {
       "day": 13,
       "shift": "day",
       "start_location": "depot_2",
       "end_location": "depot_1",
-      "distance_km": 290
+      "distance_km": 183
     },
     "route_day13_8": {
       "day": 13,
       "shift": "day",
       "start_location": "depot_1",
       "end_location": "depot_2",
-      "distance_km": 274
+      "distance_km": 160
     },
     "route_day14_1": {
       "day": 14,
       "shift": "day",
-      "start_location": "depot_2",
-      "end_location": "depot_1",
-      "distance_km": 198
+      "start_location": "depot_1",
+      "end_location": "depot_2",
+      "distance_km": 209
     },
     "route_day14_2": {
       "day": 14,
       "shift": "day",
       "start_location": "depot_2",
       "end_location": "depot_1",
-      "distance_km": 77
+      "distance_km": 234
     },
     "route_day14_3": {
       "day": 14,
       "shift": "day",
       "start_location": "depot_2",
       "end_location": "depot_1",
-      "distance_km": 236
+      "distance_km": 220
     },
     "route_day14_4": {
       "day": 14,
       "shift": "day",
       "start_location": "depot_2",
       "end_location": "depot_1",
-      "distance_km": 205
+      "distance_km": 153
     },
     "route_day14_5": {
       "day": 14,
       "shift": "day",
-      "start_location": "depot_1",
-      "end_location": "depot_2",
-      "distance_km": 280
+      "start_location": "depot_2",
+      "end_location": "depot_1",
+      "distance_km": 99
     },
     "route_day14_6": {
       "day": 14,
       "shift": "day",
-      "start_location": "depot_1",
-      "end_location": "depot_2",
-      "distance_km": 61
+      "start_location": "depot_2",
+      "end_location": "depot_1",
+      "distance_km": 223
     },
     "route_day14_7": {
       "day": 14,
       "shift": "day",
-      "start_location": "depot_2",
-      "end_location": "depot_1",
-      "distance_km": 183
+      "start_location": "depot_1",
+      "end_location": "depot_2",
+      "distance_km": 153
     },
     "route_day14_8": {
       "day": 14,
       "shift": "day",
       "start_location": "depot_1",
       "end_location": "depot_2",
-      "distance_km": 160
+      "distance_km": 123
     }
   },
   "statistics": {
@@ -1013,6 +1106,7 @@
     "total_maintenance_types": 10,
     "preventive_maintenance_types": 5,
     "corrective_maintenance_types": 5,
-    "total_pending_corrective_tasks": 12
+    "total_pending_corrective_tasks": 9,
+    "total_pending_preventive_tasks": 22
   }
 }

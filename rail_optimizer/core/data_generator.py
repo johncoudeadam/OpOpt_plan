@@ -158,6 +158,9 @@ def _generate_vehicles(
     # Get corrective maintenance types
     corrective_types = [m for m in maintenance_types if m["type"] == "corrective"]
     
+    # Get preventive maintenance types
+    preventive_types = [m for m in maintenance_types if m["type"] == "preventive"]
+    
     for i in range(num_vehicles):
         # Random initial location (only from depots)
         initial_location = random.choice(depot_ids)
@@ -166,17 +169,37 @@ def _generate_vehicles(
         initial_km = random.randint(0, 25000)
         
         # Generate pending corrective tasks (0-2 per vehicle)
-        pending_tasks = []
-        num_pending_tasks = random.randint(0, 2)
+        pending_corrective_tasks = []
+        num_pending_corrective_tasks = random.randint(0, 2)
         
-        for _ in range(num_pending_tasks):
+        for _ in range(num_pending_corrective_tasks):
             corrective_type = random.choice(corrective_types)
             
             # Calculate remaining km window
             remaining_km = random.randint(50, corrective_type["max_km_window"])
             
-            pending_tasks.append({
+            pending_corrective_tasks.append({
                 "maintenance_type_id": corrective_type["id"],
+                "remaining_km": remaining_km
+            })
+        
+        # Generate pending preventive tasks (around 2 per vehicle)
+        pending_preventive_tasks = []
+        num_pending_preventive_tasks = random.randint(1, 3)  # 1-3 tasks, average of 2
+        
+        for _ in range(num_pending_preventive_tasks):
+            preventive_type = random.choice(preventive_types)
+            
+            # Calculate remaining km until optimal maintenance
+            # This is the distance from current km to optimal_km
+            remaining_km = max(0, preventive_type["optimal_km"] - initial_km)
+            
+            # If already past optimal_km, set a small remaining km to force maintenance soon
+            if remaining_km == 0:
+                remaining_km = random.randint(50, 500)
+            
+            pending_preventive_tasks.append({
+                "maintenance_type_id": preventive_type["id"],
                 "remaining_km": remaining_km
             })
         
@@ -184,7 +207,8 @@ def _generate_vehicles(
             "id": f"vehicle_{i+1}",
             "initial_location": initial_location,
             "initial_km": initial_km,
-            "pending_corrective_tasks": pending_tasks
+            "pending_corrective_tasks": pending_corrective_tasks,
+            "pending_preventive_tasks": pending_preventive_tasks
         }
         
         vehicles.append(vehicle)
@@ -307,7 +331,8 @@ def generate_data_summary(data: Dict[str, Any], output_dir: str = "output") -> N
             "total_maintenance_types": len(maintenance_types),
             "preventive_maintenance_types": sum(1 for mt in maintenance_types if mt["type"] == "preventive"),
             "corrective_maintenance_types": sum(1 for mt in maintenance_types if mt["type"] == "corrective"),
-            "total_pending_corrective_tasks": sum(len(v.get("pending_corrective_tasks", [])) for v in vehicles)
+            "total_pending_corrective_tasks": sum(len(v.get("pending_corrective_tasks", [])) for v in vehicles),
+            "total_pending_preventive_tasks": sum(len(v.get("pending_preventive_tasks", [])) for v in vehicles)
         }
     }
     
@@ -319,7 +344,8 @@ def generate_data_summary(data: Dict[str, Any], output_dir: str = "output") -> N
                 "location": vehicle["initial_location"],
                 "km": vehicle["initial_km"]
             },
-            "pending_corrective_tasks": vehicle.get("pending_corrective_tasks", [])
+            "pending_corrective_tasks": vehicle.get("pending_corrective_tasks", []),
+            "pending_preventive_tasks": vehicle.get("pending_preventive_tasks", [])
         }
     
     # Add location summaries
