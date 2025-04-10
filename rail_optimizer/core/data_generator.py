@@ -5,6 +5,7 @@ This module provides functions to generate dummy test data for the optimization 
 """
 import random
 import json
+import os
 from typing import Dict, List, Any, Tuple, Optional
 
 def generate_dummy_data(
@@ -278,3 +279,92 @@ def load_dummy_data(filepath: str) -> Dict[str, Any]:
     """Load dummy data from a JSON file."""
     with open(filepath, 'r') as f:
         return json.load(f)
+
+def generate_data_summary(data: Dict[str, Any], output_dir: str = "output") -> None:
+    """
+    Generate a summary of the input data and save it to a JSON file.
+    
+    Args:
+        data: Dictionary containing the generated data
+        output_dir: Directory to save the summary JSON file
+    """
+    vehicles = data["vehicles"]
+    locations = data["locations"]
+    maintenance_types = data["maintenance_types"]
+    routes = data["routes"]
+    
+    # Create a summary structure
+    summary = {
+        "vehicles": {},
+        "locations": {},
+        "maintenance_types": {},
+        "routes": {},
+        "statistics": {
+            "total_vehicles": len(vehicles),
+            "total_depots": sum(1 for loc in locations.values() if loc["type"] == "depot"),
+            "total_parkings": sum(1 for loc in locations.values() if loc["type"] == "parking"),
+            "total_routes": len(routes),
+            "total_maintenance_types": len(maintenance_types),
+            "preventive_maintenance_types": sum(1 for mt in maintenance_types if mt["type"] == "preventive"),
+            "corrective_maintenance_types": sum(1 for mt in maintenance_types if mt["type"] == "corrective"),
+            "total_pending_corrective_tasks": sum(len(v.get("pending_corrective_tasks", [])) for v in vehicles)
+        }
+    }
+    
+    # Add vehicle summaries
+    for vehicle in vehicles:
+        vehicle_id = vehicle["id"]
+        summary["vehicles"][vehicle_id] = {
+            "initial_state": {
+                "location": vehicle["initial_location"],
+                "km": vehicle["initial_km"]
+            },
+            "pending_corrective_tasks": vehicle.get("pending_corrective_tasks", [])
+        }
+    
+    # Add location summaries
+    for loc_id, loc_data in locations.items():
+        summary["locations"][loc_id] = {
+            "type": loc_data["type"],
+            "capacity": loc_data["capacity"]
+        }
+        if loc_data["type"] == "depot":
+            summary["locations"][loc_id]["manhours_per_shift"] = loc_data["manhours_per_shift"]
+            summary["locations"][loc_id]["specialized_maintenance"] = loc_data.get("specialized_maintenance", [])
+    
+    # Add maintenance type summaries
+    for maint_type in maintenance_types:
+        maint_id = maint_type["id"]
+        summary["maintenance_types"][maint_id] = {
+            "type": maint_type["type"],
+            "manhours": maint_type["manhours"]
+        }
+        if maint_type["type"] == "preventive":
+            summary["maintenance_types"][maint_id]["optimal_km"] = maint_type["optimal_km"]
+            summary["maintenance_types"][maint_id]["max_km"] = maint_type["max_km"]
+        elif maint_type["type"] == "corrective":
+            summary["maintenance_types"][maint_id]["max_km_window"] = maint_type["max_km_window"]
+        
+        if "specialization" in maint_type and maint_type["specialization"] is not None:
+            summary["maintenance_types"][maint_id]["specialization"] = maint_type["specialization"]
+    
+    # Add route summaries
+    for route in routes:
+        route_id = route["id"]
+        summary["routes"][route_id] = {
+            "day": route["day"],
+            "shift": route["shift"],
+            "start_location": route["start_location"],
+            "end_location": route["end_location"],
+            "distance_km": route["distance_km"]
+        }
+    
+    # Create output directory if it doesn't exist
+    os.makedirs(output_dir, exist_ok=True)
+    
+    # Save the summary to a JSON file
+    summary_filepath = os.path.join(output_dir, "data_summary.json")
+    with open(summary_filepath, 'w') as f:
+        json.dump(summary, f, indent=2)
+    
+    print(f"Data summary saved to: {summary_filepath}")

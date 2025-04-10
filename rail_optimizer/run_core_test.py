@@ -4,7 +4,7 @@ Test script for the rail optimization model.
 This script generates dummy data and runs the optimization model.
 """
 import time
-from rail_optimizer.core.data_generator import generate_dummy_data
+from rail_optimizer.core.data_generator import generate_dummy_data, generate_data_summary
 from rail_optimizer.core.optimizer import solve_rail_optimization, print_optimization_results
 
 def main():
@@ -22,6 +22,9 @@ def main():
         planning_days=14,
         seed=seed
     )
+    
+    # Generate and save a summary of the input data
+    generate_data_summary(data)
     
     # Print summary of generated data
     print("\nData Summary:")
