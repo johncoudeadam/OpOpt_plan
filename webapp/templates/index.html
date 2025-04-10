@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rail Operations & Maintenance Optimizer</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="/">Rail Operations & Maintenance Optimizer</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="/">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/optimization">Optimization</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/data">Data</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container mt-4">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="card">
+                    <div class="card-header">
+                        <h2>Welcome to the Rail Operations & Maintenance Optimizer</h2>
+                    </div>
+                    <div class="card-body">
+                        <p class="lead">
+                            This application helps optimize the operational planning of rail vehicle traffic and maintenance
+                            over a 14-day horizon. It considers shift-level granularity, assigns vehicles to predefined routes,
+                            and schedules maintenance activities.
+                        </p>
+                        <p>
+                            The optimizer handles both preventive maintenance (optimizing scheduling around optimal km)
+                            and corrective maintenance (ensuring completion before a max km deadline), considering depot
+                            capabilities and vehicle routing needs.
+                        </p>
+                        <div class="d-grid gap-2 d-md-flex justify-content-md-start mt-4">
+                            <button id="run-optimization" class="btn btn-primary me-md-2">Load Saved Results</button>
+                            <button id="run-fresh-optimization" class="btn btn-outline-primary me-md-2">Run Fresh Optimization</button>
+                            <button id="regenerate-data" class="btn btn-outline-secondary me-md-2">Regenerate Data & Optimize</button>
+                            <a href="/data" class="btn btn-secondary" id="view-data">View Data</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Loading Spinner -->
+        <div id="loading-spinner" class="text-center mt-4">
+            <div class="spinner-border text-primary" role="status">
+                <span class="visually-hidden">Loading...</span>
+            </div>
+            <p class="mt-2">Running optimization... This may take a minute.</p>
+        </div>
+
+        <!-- Optimization Results Container -->
+        <div id="optimization-results" class="mt-4"></div>
+    </div>
+
+    <footer class="footer mt-5 py-3 bg-light">
+        <div class="container text-center">
+            <span class="text-muted">Rail Operations & Maintenance Optimizer &copy; 2023</span>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="{{ url_for('static', filename='js/visualization.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/main.js') }}"></script>
+</body>
+</html> 
