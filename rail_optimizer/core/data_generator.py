@@ -151,12 +151,15 @@ def _generate_vehicles(
     # Get all location IDs
     location_ids = list(locations.keys())
     
+    # Get depot IDs only
+    depot_ids = [loc_id for loc_id, loc_data in locations.items() if loc_data["type"] == "depot"]
+    
     # Get corrective maintenance types
     corrective_types = [m for m in maintenance_types if m["type"] == "corrective"]
     
     for i in range(num_vehicles):
-        # Random initial location
-        initial_location = random.choice(location_ids)
+        # Random initial location (only from depots)
+        initial_location = random.choice(depot_ids)
         
         # Random initial km (between 0 and 25000)
         initial_km = random.randint(0, 25000)
@@ -198,11 +201,20 @@ def _generate_routes(
     # Get all location IDs
     location_ids = list(locations.keys())
     
+    # Get depot IDs only
+    depot_ids = [loc_id for loc_id, loc_data in locations.items() if loc_data["type"] == "depot"]
+    
+    # Ensure we have at least 2 depots for routes
+    if len(depot_ids) < 2:
+        raise ValueError("Need at least 2 depots to generate routes")
+    
     for day in range(planning_days):
         for route_num in range(num_routes_per_day):
-            # Random start and end locations
-            start_location = random.choice(location_ids)
-            end_location = random.choice(location_ids)
+            # Random start and end locations (only from depots)
+            start_location = random.choice(depot_ids)
+            
+            # Ensure end location is different from start location
+            end_location = random.choice([d for d in depot_ids if d != start_location])
             
             # Random route distance (50-300 km)
             distance_km = random.randint(50, 300)

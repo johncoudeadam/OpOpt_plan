@@ -2,69 +2,1429 @@
   "vehicles": {
     "vehicle_1": {
       "initial_state": {
-        "location": "parking_1",
+        "location": "depot_2",
         "km": 18918
       },
       "route_assignments": {
         "1_day": {
-          "route_id": "route_day1_8",
-          "start_location": "depot_1",
+          "route_id": "route_day1_7",
+          "start_location": "depot_2",
           "end_location": "depot_1",
-          "distance_km": 224
+          "distance_km": 298
         },
         "1_night": null,
         "2_day": {
-          "route_id": "route_day2_7",
-          "start_location": "depot_2",
-          "end_location": "depot_1",
-          "distance_km": 203
+          "route_id": "route_day2_5",
+          "start_location": "depot_1",
+          "end_location": "depot_2",
+          "distance_km": 265
         },
         "2_night": null,
         "3_day": {
-          "route_id": "route_day3_6",
-          "start_location": "parking_2",
-          "end_location": "depot_2",
-          "distance_km": 117
+          "route_id": "route_day3_2",
+          "start_location": "depot_2",
+          "end_location": "depot_1",
+          "distance_km": 64
         },
         "3_night": null,
         "4_day": {
-          "route_id": "route_day4_1",
-          "start_location": "parking_1",
-          "end_location": "parking_2",
-          "distance_km": 280
+          "route_id": "route_day4_6",
+          "start_location": "depot_1",
+          "end_location": "depot_2",
+          "distance_km": 67
         },
         "4_night": null,
         "5_day": {
-          "route_id": "route_day5_6",
-          "start_location": "parking_2",
-          "end_location": "parking_2",
-          "distance_km": 271
+          "route_id": "route_day5_8",
+          "start_location": "depot_2",
+          "end_location": "depot_1",
+          "distance_km": 254
+        },
+        "5_night": null,
+        "6_day": {
+          "route_id": "route_day6_8",
+          "start_location": "depot_1",
+          "end_location": "depot_2",
+          "distance_km": 154
+        },
+        "6_night": null,
+        "7_day": {
+          "route_id": "route_day7_4",
+          "start_location": "depot_2",
+          "end_location": "depot_1",
+          "distance_km": 123
+        },
+        "7_night": null,
+        "8_day": {
+          "route_id": "route_day8_3",
+          "start_location": "depot_1",
+          "end_location": "depot_2",
+          "distance_km": 153
+        },
+        "8_night": null,
+        "9_day": {
+          "route_id": "route_day9_8",
+          "start_location": "depot_2",
+          "end_location": "depot_1",
+          "distance_km": 220
+        },
+        "9_night": null,
+        "10_day": null,
+        "10_night": null,
+        "11_day": {
+          "route_id": "route_day11_4",
+          "start_location": "depot_1",
+          "end_location": "depot_2",
+          "distance_km": 69
+        },
+        "11_night": null,
+        "12_day": {
+          "route_id": "route_day12_1",
+          "start_location": "depot_2",
+          "end_location": "depot_1",
+          "distance_km": 224
+        },
+        "12_night": null,
+        "13_day": {
+          "route_id": "route_day13_6",
+          "start_location": "depot_1",
+          "end_location": "depot_2",
+          "distance_km": 139
+        },
+        "13_night": null,
+        "14_day": {
+          "route_id": "route_day14_4",
+          "start_location": "depot_2",
+          "end_location": "depot_1",
+          "distance_km": 205
+        },
+        "14_night": null
+      },
+      "maintenance_activities": [
+        {
+          "maintenance_id": "corrective_1",
+          "maintenance_type": "corrective",
+          "start_day": 2,
+          "start_shift": "day",
+          "end_day": 2,
+          "end_shift": "night",
+          "depot": "depot_1",
+          "km_at_start": 298,
+          "required_manhours": 7
+        },
+        {
+          "maintenance_id": "corrective_1",
+          "maintenance_type": "corrective",
+          "start_day": 4,
+          "start_shift": "day",
+          "end_day": 4,
+          "end_shift": "night",
+          "depot": "depot_1",
+          "km_at_start": 627,
+          "required_manhours": 7
+        },
+        {
+          "maintenance_id": "corrective_1",
+          "maintenance_type": "corrective",
+          "start_day": 6,
+          "start_shift": "day",
+          "end_day": 6,
+          "end_shift": "night",
+          "depot": "depot_1",
+          "km_at_start": 948,
+          "required_manhours": 7
+        },
+        {
+          "maintenance_id": "corrective_1",
+          "maintenance_type": "corrective",
+          "start_day": 8,
+          "start_shift": "day",
+          "end_day": 8,
+          "end_shift": "night",
+          "depot": "depot_1",
+          "km_at_start": 1225,
+          "required_manhours": 7
+        },
+        {
+          "maintenance_id": "corrective_1",
+          "maintenance_type": "corrective",
+          "start_day": 10,
+          "start_shift": "day",
+          "end_day": 10,
+          "end_shift": "night",
+          "depot": "depot_1",
+          "km_at_start": 1598,
+          "required_manhours": 7
+        },
+        {
+          "maintenance_id": "corrective_1",
+          "maintenance_type": "corrective",
+          "start_day": 11,
+          "start_shift": "day",
+          "end_day": 11,
+          "end_shift": "night",
+          "depot": "depot_1",
+          "km_at_start": 1598,
+          "required_manhours": 7
+        },
+        {
+          "maintenance_id": "corrective_1",
+          "maintenance_type": "corrective",
+          "start_day": 13,
+          "start_shift": "day",
+          "end_day": 13,
+          "end_shift": "night",
+          "depot": "depot_1",
+          "km_at_start": 1891,
+          "required_manhours": 7
+        },
+        {
+          "maintenance_id": "corrective_2",
+          "maintenance_type": "corrective",
+          "start_day": 2,
+          "start_shift": "day",
+          "end_day": 2,
+          "end_shift": "night",
+          "depot": "depot_1",
+          "km_at_start": 298,
+          "required_manhours": 3
+        },
+        {
+          "maintenance_id": "corrective_2",
+          "maintenance_type": "corrective",
+          "start_day": 4,
+          "start_shift": "day",
+          "end_day": 4,
+          "end_shift": "night",
+          "depot": "depot_1",
+          "km_at_start": 627,
+          "required_manhours": 3
+        },
+        {
+          "maintenance_id": "corrective_2",
+          "maintenance_type": "corrective",
+          "start_day": 6,
+          "start_shift": "day",
+          "end_day": 6,
+          "end_shift": "night",
+          "depot": "depot_1",
+          "km_at_start": 948,
+          "required_manhours": 3
+        },
+        {
+          "maintenance_id": "corrective_2",
+          "maintenance_type": "corrective",
+          "start_day": 8,
+          "start_shift": "day",
+          "end_day": 8,
+          "end_shift": "night",
+          "depot": "depot_1",
+          "km_at_start": 1225,
+          "required_manhours": 3
+        },
+        {
+          "maintenance_id": "corrective_2",
+          "maintenance_type": "corrective",
+          "start_day": 10,
+          "start_shift": "day",
+          "end_day": 10,
+          "end_shift": "night",
+          "depot": "depot_1",
+          "km_at_start": 1598,
+          "required_manhours": 3
+        },
+        {
+          "maintenance_id": "corrective_2",
+          "maintenance_type": "corrective",
+          "start_day": 11,
+          "start_shift": "day",
+          "end_day": 11,
+          "end_shift": "night",
+          "depot": "depot_1",
+          "km_at_start": 1598,
+          "required_manhours": 3
+        },
+        {
+          "maintenance_id": "corrective_2",
+          "maintenance_type": "corrective",
+          "start_day": 13,
+          "start_shift": "day",
+          "end_day": 13,
+          "end_shift": "night",
+          "depot": "depot_1",
+          "km_at_start": 1891,
+          "required_manhours": 3
+        },
+        {
+          "maintenance_id": "corrective_3",
+          "maintenance_type": "corrective",
+          "start_day": 2,
+          "start_shift": "day",
+          "end_day": 2,
+          "end_shift": "night",
+          "depot": "depot_1",
+          "km_at_start": 298,
+          "required_manhours": 11
+        },
+        {
+          "maintenance_id": "corrective_3",
+          "maintenance_type": "corrective",
+          "start_day": 4,
+          "start_shift": "day",
+          "end_day": 4,
+          "end_shift": "night",
+          "depot": "depot_1",
+          "km_at_start": 627,
+          "required_manhours": 11
+        },
+        {
+          "maintenance_id": "corrective_3",
+          "maintenance_type": "corrective",
+          "start_day": 6,
+          "start_shift": "day",
+          "end_day": 6,
+          "end_shift": "night",
+          "depot": "depot_1",
+          "km_at_start": 948,
+          "required_manhours": 11
+        },
+        {
+          "maintenance_id": "corrective_3",
+          "maintenance_type": "corrective",
+          "start_day": 8,
+          "start_shift": "day",
+          "end_day": 8,
+          "end_shift": "night",
+          "depot": "depot_1",
+          "km_at_start": 1225,
+          "required_manhours": 11
+        },
+        {
+          "maintenance_id": "corrective_3",
+          "maintenance_type": "corrective",
+          "start_day": 10,
+          "start_shift": "day",
+          "end_day": 10,
+          "end_shift": "night",
+          "depot": "depot_1",
+          "km_at_start": 1598,
+          "required_manhours": 11
+        },
+        {
+          "maintenance_id": "corrective_3",
+          "maintenance_type": "corrective",
+          "start_day": 11,
+          "start_shift": "day",
+          "end_day": 11,
+          "end_shift": "night",
+          "depot": "depot_1",
+          "km_at_start": 1598,
+          "required_manhours": 11
+        },
+        {
+          "maintenance_id": "corrective_3",
+          "maintenance_type": "corrective",
+          "start_day": 13,
+          "start_shift": "day",
+          "end_day": 13,
+          "end_shift": "night",
+          "depot": "depot_1",
+          "km_at_start": 1891,
+          "required_manhours": 11
+        }
+      ],
+      "states": {
+        "1_day": {
+          "location": "depot_2",
+          "km": 0,
+          "is_idle": false,
+          "is_under_maintenance": false
+        },
+        "1_night": {
+          "location": "depot_1",
+          "km": 298,
+          "is_idle": true,
+          "is_under_maintenance": false
+        },
+        "2_day": {
+          "location": "depot_1",
+          "km": 298,
+          "is_idle": false,
+          "is_under_maintenance": true
+        },
+        "2_night": {
+          "location": "depot_2",
+          "km": 563,
+          "is_idle": false,
+          "is_under_maintenance": true
+        },
+        "3_day": {
+          "location": "depot_2",
+          "km": 563,
+          "is_idle": false,
+          "is_under_maintenance": false
+        },
+        "3_night": {
+          "location": "depot_1",
+          "km": 627,
+          "is_idle": true,
+          "is_under_maintenance": false
+        },
+        "4_day": {
+          "location": "depot_1",
+          "km": 627,
+          "is_idle": false,
+          "is_under_maintenance": true
+        },
+        "4_night": {
+          "location": "depot_2",
+          "km": 694,
+          "is_idle": false,
+          "is_under_maintenance": true
+        },
+        "5_day": {
+          "location": "depot_2",
+          "km": 694,
+          "is_idle": false,
+          "is_under_maintenance": false
+        },
+        "5_night": {
+          "location": "depot_1",
+          "km": 948,
+          "is_idle": true,
+          "is_under_maintenance": false
+        },
+        "6_day": {
+          "location": "depot_1",
+          "km": 948,
+          "is_idle": false,
+          "is_under_maintenance": true
+        },
+        "6_night": {
+          "location": "depot_2",
+          "km": 1102,
+          "is_idle": false,
+          "is_under_maintenance": true
+        },
+        "7_day": {
+          "location": "depot_2",
+          "km": 1102,
+          "is_idle": false,
+          "is_under_maintenance": false
+        },
+        "7_night": {
+          "location": "depot_1",
+          "km": 1225,
+          "is_idle": true,
+          "is_under_maintenance": false
+        },
+        "8_day": {
+          "location": "depot_1",
+          "km": 1225,
+          "is_idle": false,
+          "is_under_maintenance": true
+        },
+        "8_night": {
+          "location": "depot_2",
+          "km": 1378,
+          "is_idle": false,
+          "is_under_maintenance": true
+        },
+        "9_day": {
+          "location": "depot_2",
+          "km": 1378,
+          "is_idle": false,
+          "is_under_maintenance": false
+        },
+        "9_night": {
+          "location": "depot_1",
+          "km": 1598,
+          "is_idle": true,
+          "is_under_maintenance": false
+        },
+        "10_day": {
+          "location": "depot_1",
+          "km": 1598,
+          "is_idle": false,
+          "is_under_maintenance": true
+        },
+        "10_night": {
+          "location": "depot_1",
+          "km": 1598,
+          "is_idle": false,
+          "is_under_maintenance": true
+        },
+        "11_day": {
+          "location": "depot_1",
+          "km": 1598,
+          "is_idle": false,
+          "is_under_maintenance": true
+        },
+        "11_night": {
+          "location": "depot_2",
+          "km": 1667,
+          "is_idle": false,
+          "is_under_maintenance": true
+        },
+        "12_day": {
+          "location": "depot_2",
+          "km": 1667,
+          "is_idle": false,
+          "is_under_maintenance": false
+        },
+        "12_night": {
+          "location": "depot_1",
+          "km": 1891,
+          "is_idle": true,
+          "is_under_maintenance": false
+        },
+        "13_day": {
+          "location": "depot_1",
+          "km": 1891,
+          "is_idle": false,
+          "is_under_maintenance": true
+        },
+        "13_night": {
+          "location": "depot_2",
+          "km": 2030,
+          "is_idle": false,
+          "is_under_maintenance": true
+        },
+        "14_day": {
+          "location": "depot_2",
+          "km": 2030,
+          "is_idle": false,
+          "is_under_maintenance": false
+        },
+        "14_night": {
+          "location": "depot_1",
+          "km": 2235,
+          "is_idle": true,
+          "is_under_maintenance": false
+        }
+      }
+    },
+    "vehicle_2": {
+      "initial_state": {
+        "location": "depot_1",
+        "km": 1501
+      },
+      "route_assignments": {
+        "1_day": {
+          "route_id": "route_day1_6",
+          "start_location": "depot_1",
+          "end_location": "depot_2",
+          "distance_km": 147
+        },
+        "1_night": null,
+        "2_day": null,
+        "2_night": null,
+        "3_day": {
+          "route_id": "route_day3_4",
+          "start_location": "depot_2",
+          "end_location": "depot_1",
+          "distance_km": 300
+        },
+        "3_night": null,
+        "4_day": {
+          "route_id": "route_day4_5",
+          "start_location": "depot_1",
+          "end_location": "depot_2",
+          "distance_km": 68
+        },
+        "4_night": null,
+        "5_day": {
+          "route_id": "route_day5_1",
+          "start_location": "depot_2",
+          "end_location": "depot_1",
+          "distance_km": 188
         },
         "5_night": null,
         "6_day": {
           "route_id": "route_day6_5",
           "start_location": "depot_1",
-          "end_location": "parking_2",
+          "end_location": "depot_2",
           "distance_km": 256
         },
         "6_night": null,
-        "7_day": {
-          "route_id": "route_day7_6",
+        "7_day": null,
+        "7_night": null,
+        "8_day": {
+          "route_id": "route_day8_1",
           "start_location": "depot_2",
-          "end_location": "parking_1",
-          "distance_km": 105
+          "end_location": "depot_1",
+          "distance_km": 64
+        },
+        "8_night": null,
+        "9_day": {
+          "route_id": "route_day9_7",
+          "start_location": "depot_1",
+          "end_location": "depot_2",
+          "distance_km": 263
+        },
+        "9_night": null,
+        "10_day": {
+          "route_id": "route_day10_8",
+          "start_location": "depot_2",
+          "end_location": "depot_1",
+          "distance_km": 61
+        },
+        "10_night": null,
+        "11_day": {
+          "route_id": "route_day11_7",
+          "start_location": "depot_1",
+          "end_location": "depot_2",
+          "distance_km": 128
+        },
+        "11_night": null,
+        "12_day": null,
+        "12_night": null,
+        "13_day": {
+          "route_id": "route_day13_8",
+          "start_location": "depot_1",
+          "end_location": "depot_2",
+          "distance_km": 274
+        },
+        "13_night": null,
+        "14_day": {
+          "route_id": "route_day14_3",
+          "start_location": "depot_2",
+          "end_location": "depot_1",
+          "distance_km": 236
+        },
+        "14_night": null
+      },
+      "maintenance_activities": [
+        {
+          "maintenance_id": "corrective_1",
+          "maintenance_type": "corrective",
+          "start_day": 12,
+          "start_shift": "night",
+          "end_day": 13,
+          "end_shift": "day",
+          "depot": "depot_1",
+          "km_at_start": 1475,
+          "required_manhours": 7
+        },
+        {
+          "maintenance_id": "corrective_2",
+          "maintenance_type": "corrective",
+          "start_day": 12,
+          "start_shift": "night",
+          "end_day": 13,
+          "end_shift": "day",
+          "depot": "depot_1",
+          "km_at_start": 1475,
+          "required_manhours": 3
+        },
+        {
+          "maintenance_id": "corrective_3",
+          "maintenance_type": "corrective",
+          "start_day": 1,
+          "start_shift": "day",
+          "end_day": 1,
+          "end_shift": "night",
+          "depot": "depot_1",
+          "km_at_start": 0,
+          "required_manhours": 11
+        },
+        {
+          "maintenance_id": "corrective_3",
+          "maintenance_type": "corrective",
+          "start_day": 4,
+          "start_shift": "day",
+          "end_day": 4,
+          "end_shift": "night",
+          "depot": "depot_1",
+          "km_at_start": 447,
+          "required_manhours": 11
+        },
+        {
+          "maintenance_id": "corrective_3",
+          "maintenance_type": "corrective",
+          "start_day": 6,
+          "start_shift": "day",
+          "end_day": 6,
+          "end_shift": "night",
+          "depot": "depot_1",
+          "km_at_start": 703,
+          "required_manhours": 11
+        },
+        {
+          "maintenance_id": "corrective_3",
+          "maintenance_type": "corrective",
+          "start_day": 9,
+          "start_shift": "day",
+          "end_day": 9,
+          "end_shift": "night",
+          "depot": "depot_1",
+          "km_at_start": 1023,
+          "required_manhours": 11
+        },
+        {
+          "maintenance_id": "corrective_3",
+          "maintenance_type": "corrective",
+          "start_day": 11,
+          "start_shift": "day",
+          "end_day": 11,
+          "end_shift": "night",
+          "depot": "depot_1",
+          "km_at_start": 1347,
+          "required_manhours": 11
+        },
+        {
+          "maintenance_id": "corrective_3",
+          "maintenance_type": "corrective",
+          "start_day": 13,
+          "start_shift": "day",
+          "end_day": 13,
+          "end_shift": "night",
+          "depot": "depot_1",
+          "km_at_start": 1475,
+          "required_manhours": 11
+        }
+      ],
+      "states": {
+        "1_day": {
+          "location": "depot_1",
+          "km": 0,
+          "is_idle": false,
+          "is_under_maintenance": true
+        },
+        "1_night": {
+          "location": "depot_2",
+          "km": 147,
+          "is_idle": false,
+          "is_under_maintenance": true
+        },
+        "2_day": {
+          "location": "depot_2",
+          "km": 147,
+          "is_idle": true,
+          "is_under_maintenance": false
+        },
+        "2_night": {
+          "location": "depot_2",
+          "km": 147,
+          "is_idle": true,
+          "is_under_maintenance": false
+        },
+        "3_day": {
+          "location": "depot_2",
+          "km": 147,
+          "is_idle": false,
+          "is_under_maintenance": false
+        },
+        "3_night": {
+          "location": "depot_1",
+          "km": 447,
+          "is_idle": true,
+          "is_under_maintenance": false
+        },
+        "4_day": {
+          "location": "depot_1",
+          "km": 447,
+          "is_idle": false,
+          "is_under_maintenance": true
+        },
+        "4_night": {
+          "location": "depot_2",
+          "km": 515,
+          "is_idle": false,
+          "is_under_maintenance": true
+        },
+        "5_day": {
+          "location": "depot_2",
+          "km": 515,
+          "is_idle": false,
+          "is_under_maintenance": false
+        },
+        "5_night": {
+          "location": "depot_1",
+          "km": 703,
+          "is_idle": true,
+          "is_under_maintenance": false
+        },
+        "6_day": {
+          "location": "depot_1",
+          "km": 703,
+          "is_idle": false,
+          "is_under_maintenance": true
+        },
+        "6_night": {
+          "location": "depot_2",
+          "km": 959,
+          "is_idle": false,
+          "is_under_maintenance": true
+        },
+        "7_day": {
+          "location": "depot_2",
+          "km": 959,
+          "is_idle": true,
+          "is_under_maintenance": false
+        },
+        "7_night": {
+          "location": "depot_2",
+          "km": 959,
+          "is_idle": true,
+          "is_under_maintenance": false
+        },
+        "8_day": {
+          "location": "depot_2",
+          "km": 959,
+          "is_idle": false,
+          "is_under_maintenance": false
+        },
+        "8_night": {
+          "location": "depot_1",
+          "km": 1023,
+          "is_idle": true,
+          "is_under_maintenance": false
+        },
+        "9_day": {
+          "location": "depot_1",
+          "km": 1023,
+          "is_idle": false,
+          "is_under_maintenance": true
+        },
+        "9_night": {
+          "location": "depot_2",
+          "km": 1286,
+          "is_idle": false,
+          "is_under_maintenance": true
+        },
+        "10_day": {
+          "location": "depot_2",
+          "km": 1286,
+          "is_idle": false,
+          "is_under_maintenance": false
+        },
+        "10_night": {
+          "location": "depot_1",
+          "km": 1347,
+          "is_idle": true,
+          "is_under_maintenance": false
+        },
+        "11_day": {
+          "location": "depot_1",
+          "km": 1347,
+          "is_idle": false,
+          "is_under_maintenance": true
+        },
+        "11_night": {
+          "location": "depot_2",
+          "km": 1475,
+          "is_idle": false,
+          "is_under_maintenance": true
+        },
+        "12_day": {
+          "location": "depot_2",
+          "km": 1475,
+          "is_idle": true,
+          "is_under_maintenance": false
+        },
+        "12_night": {
+          "location": "depot_1",
+          "km": 1475,
+          "is_idle": false,
+          "is_under_maintenance": true
+        },
+        "13_day": {
+          "location": "depot_1",
+          "km": 1475,
+          "is_idle": false,
+          "is_under_maintenance": true
+        },
+        "13_night": {
+          "location": "depot_2",
+          "km": 1749,
+          "is_idle": false,
+          "is_under_maintenance": true
+        },
+        "14_day": {
+          "location": "depot_2",
+          "km": 1749,
+          "is_idle": false,
+          "is_under_maintenance": false
+        },
+        "14_night": {
+          "location": "depot_1",
+          "km": 1985,
+          "is_idle": true,
+          "is_under_maintenance": false
+        }
+      }
+    },
+    "vehicle_3": {
+      "initial_state": {
+        "location": "depot_1",
+        "km": 12455
+      },
+      "route_assignments": {
+        "1_day": {
+          "route_id": "route_day1_4",
+          "start_location": "depot_1",
+          "end_location": "depot_2",
+          "distance_km": 89
+        },
+        "1_night": null,
+        "2_day": {
+          "route_id": "route_day2_8",
+          "start_location": "depot_2",
+          "end_location": "depot_1",
+          "distance_km": 54
+        },
+        "2_night": null,
+        "3_day": {
+          "route_id": "route_day3_8",
+          "start_location": "depot_1",
+          "end_location": "depot_2",
+          "distance_km": 152
+        },
+        "3_night": null,
+        "4_day": null,
+        "4_night": null,
+        "5_day": {
+          "route_id": "route_day5_5",
+          "start_location": "depot_2",
+          "end_location": "depot_1",
+          "distance_km": 158
+        },
+        "5_night": null,
+        "6_day": {
+          "route_id": "route_day6_2",
+          "start_location": "depot_1",
+          "end_location": "depot_2",
+          "distance_km": 85
+        },
+        "6_night": null,
+        "7_day": {
+          "route_id": "route_day7_8",
+          "start_location": "depot_2",
+          "end_location": "depot_1",
+          "distance_km": 62
+        },
+        "7_night": null,
+        "8_day": null,
+        "8_night": null,
+        "9_day": {
+          "route_id": "route_day9_4",
+          "start_location": "depot_1",
+          "end_location": "depot_2",
+          "distance_km": 83
+        },
+        "9_night": null,
+        "10_day": {
+          "route_id": "route_day10_4",
+          "start_location": "depot_2",
+          "end_location": "depot_1",
+          "distance_km": 233
+        },
+        "10_night": null,
+        "11_day": {
+          "route_id": "route_day11_2",
+          "start_location": "depot_1",
+          "end_location": "depot_2",
+          "distance_km": 91
+        },
+        "11_night": null,
+        "12_day": {
+          "route_id": "route_day12_3",
+          "start_location": "depot_2",
+          "end_location": "depot_1",
+          "distance_km": 286
+        },
+        "12_night": null,
+        "13_day": {
+          "route_id": "route_day13_4",
+          "start_location": "depot_1",
+          "end_location": "depot_2",
+          "distance_km": 152
+        },
+        "13_night": null,
+        "14_day": {
+          "route_id": "route_day14_1",
+          "start_location": "depot_2",
+          "end_location": "depot_1",
+          "distance_km": 198
+        },
+        "14_night": null
+      },
+      "maintenance_activities": [
+        {
+          "maintenance_id": "corrective_1",
+          "maintenance_type": "corrective",
+          "start_day": 1,
+          "start_shift": "day",
+          "end_day": 1,
+          "end_shift": "night",
+          "depot": "depot_1",
+          "km_at_start": 0,
+          "required_manhours": 7
+        },
+        {
+          "maintenance_id": "corrective_1",
+          "maintenance_type": "corrective",
+          "start_day": 3,
+          "start_shift": "day",
+          "end_day": 3,
+          "end_shift": "night",
+          "depot": "depot_1",
+          "km_at_start": 143,
+          "required_manhours": 7
+        },
+        {
+          "maintenance_id": "corrective_1",
+          "maintenance_type": "corrective",
+          "start_day": 6,
+          "start_shift": "day",
+          "end_day": 6,
+          "end_shift": "night",
+          "depot": "depot_1",
+          "km_at_start": 453,
+          "required_manhours": 7
+        },
+        {
+          "maintenance_id": "corrective_1",
+          "maintenance_type": "corrective",
+          "start_day": 8,
+          "start_shift": "day",
+          "end_day": 8,
+          "end_shift": "night",
+          "depot": "depot_1",
+          "km_at_start": 600,
+          "required_manhours": 7
+        },
+        {
+          "maintenance_id": "corrective_1",
+          "maintenance_type": "corrective",
+          "start_day": 9,
+          "start_shift": "day",
+          "end_day": 9,
+          "end_shift": "night",
+          "depot": "depot_1",
+          "km_at_start": 600,
+          "required_manhours": 7
+        },
+        {
+          "maintenance_id": "corrective_1",
+          "maintenance_type": "corrective",
+          "start_day": 11,
+          "start_shift": "day",
+          "end_day": 11,
+          "end_shift": "night",
+          "depot": "depot_1",
+          "km_at_start": 916,
+          "required_manhours": 7
+        },
+        {
+          "maintenance_id": "corrective_1",
+          "maintenance_type": "corrective",
+          "start_day": 13,
+          "start_shift": "day",
+          "end_day": 13,
+          "end_shift": "night",
+          "depot": "depot_1",
+          "km_at_start": 1293,
+          "required_manhours": 7
+        },
+        {
+          "maintenance_id": "corrective_2",
+          "maintenance_type": "corrective",
+          "start_day": 1,
+          "start_shift": "day",
+          "end_day": 1,
+          "end_shift": "night",
+          "depot": "depot_1",
+          "km_at_start": 0,
+          "required_manhours": 3
+        },
+        {
+          "maintenance_id": "corrective_2",
+          "maintenance_type": "corrective",
+          "start_day": 3,
+          "start_shift": "day",
+          "end_day": 3,
+          "end_shift": "night",
+          "depot": "depot_1",
+          "km_at_start": 143,
+          "required_manhours": 3
+        },
+        {
+          "maintenance_id": "corrective_2",
+          "maintenance_type": "corrective",
+          "start_day": 6,
+          "start_shift": "day",
+          "end_day": 6,
+          "end_shift": "night",
+          "depot": "depot_1",
+          "km_at_start": 453,
+          "required_manhours": 3
+        },
+        {
+          "maintenance_id": "corrective_2",
+          "maintenance_type": "corrective",
+          "start_day": 8,
+          "start_shift": "day",
+          "end_day": 8,
+          "end_shift": "night",
+          "depot": "depot_1",
+          "km_at_start": 600,
+          "required_manhours": 3
+        },
+        {
+          "maintenance_id": "corrective_2",
+          "maintenance_type": "corrective",
+          "start_day": 9,
+          "start_shift": "day",
+          "end_day": 9,
+          "end_shift": "night",
+          "depot": "depot_1",
+          "km_at_start": 600,
+          "required_manhours": 3
+        },
+        {
+          "maintenance_id": "corrective_2",
+          "maintenance_type": "corrective",
+          "start_day": 11,
+          "start_shift": "day",
+          "end_day": 11,
+          "end_shift": "night",
+          "depot": "depot_1",
+          "km_at_start": 916,
+          "required_manhours": 3
+        },
+        {
+          "maintenance_id": "corrective_2",
+          "maintenance_type": "corrective",
+          "start_day": 13,
+          "start_shift": "day",
+          "end_day": 13,
+          "end_shift": "night",
+          "depot": "depot_1",
+          "km_at_start": 1293,
+          "required_manhours": 3
+        },
+        {
+          "maintenance_id": "corrective_3",
+          "maintenance_type": "corrective",
+          "start_day": 1,
+          "start_shift": "day",
+          "end_day": 1,
+          "end_shift": "night",
+          "depot": "depot_1",
+          "km_at_start": 0,
+          "required_manhours": 11
+        },
+        {
+          "maintenance_id": "corrective_3",
+          "maintenance_type": "corrective",
+          "start_day": 3,
+          "start_shift": "day",
+          "end_day": 3,
+          "end_shift": "night",
+          "depot": "depot_1",
+          "km_at_start": 143,
+          "required_manhours": 11
+        },
+        {
+          "maintenance_id": "corrective_3",
+          "maintenance_type": "corrective",
+          "start_day": 6,
+          "start_shift": "day",
+          "end_day": 6,
+          "end_shift": "night",
+          "depot": "depot_1",
+          "km_at_start": 453,
+          "required_manhours": 11
+        },
+        {
+          "maintenance_id": "corrective_3",
+          "maintenance_type": "corrective",
+          "start_day": 8,
+          "start_shift": "day",
+          "end_day": 8,
+          "end_shift": "night",
+          "depot": "depot_1",
+          "km_at_start": 600,
+          "required_manhours": 11
+        },
+        {
+          "maintenance_id": "corrective_3",
+          "maintenance_type": "corrective",
+          "start_day": 9,
+          "start_shift": "day",
+          "end_day": 9,
+          "end_shift": "night",
+          "depot": "depot_1",
+          "km_at_start": 600,
+          "required_manhours": 11
+        },
+        {
+          "maintenance_id": "corrective_3",
+          "maintenance_type": "corrective",
+          "start_day": 11,
+          "start_shift": "day",
+          "end_day": 11,
+          "end_shift": "night",
+          "depot": "depot_1",
+          "km_at_start": 916,
+          "required_manhours": 11
+        },
+        {
+          "maintenance_id": "corrective_3",
+          "maintenance_type": "corrective",
+          "start_day": 13,
+          "start_shift": "day",
+          "end_day": 13,
+          "end_shift": "night",
+          "depot": "depot_1",
+          "km_at_start": 1293,
+          "required_manhours": 11
+        },
+        {
+          "maintenance_id": "corrective_4",
+          "maintenance_type": "corrective",
+          "start_day": 1,
+          "start_shift": "day",
+          "end_day": 1,
+          "end_shift": "night",
+          "depot": "depot_1",
+          "km_at_start": 0,
+          "required_manhours": 3
+        }
+      ],
+      "states": {
+        "1_day": {
+          "location": "depot_1",
+          "km": 0,
+          "is_idle": false,
+          "is_under_maintenance": true
+        },
+        "1_night": {
+          "location": "depot_2",
+          "km": 89,
+          "is_idle": false,
+          "is_under_maintenance": true
+        },
+        "2_day": {
+          "location": "depot_2",
+          "km": 89,
+          "is_idle": false,
+          "is_under_maintenance": false
+        },
+        "2_night": {
+          "location": "depot_1",
+          "km": 143,
+          "is_idle": true,
+          "is_under_maintenance": false
+        },
+        "3_day": {
+          "location": "depot_1",
+          "km": 143,
+          "is_idle": false,
+          "is_under_maintenance": true
+        },
+        "3_night": {
+          "location": "depot_2",
+          "km": 295,
+          "is_idle": false,
+          "is_under_maintenance": true
+        },
+        "4_day": {
+          "location": "depot_2",
+          "km": 295,
+          "is_idle": true,
+          "is_under_maintenance": false
+        },
+        "4_night": {
+          "location": "depot_2",
+          "km": 295,
+          "is_idle": true,
+          "is_under_maintenance": false
+        },
+        "5_day": {
+          "location": "depot_2",
+          "km": 295,
+          "is_idle": false,
+          "is_under_maintenance": false
+        },
+        "5_night": {
+          "location": "depot_1",
+          "km": 453,
+          "is_idle": true,
+          "is_under_maintenance": false
+        },
+        "6_day": {
+          "location": "depot_1",
+          "km": 453,
+          "is_idle": false,
+          "is_under_maintenance": true
+        },
+        "6_night": {
+          "location": "depot_2",
+          "km": 538,
+          "is_idle": false,
+          "is_under_maintenance": true
+        },
+        "7_day": {
+          "location": "depot_2",
+          "km": 538,
+          "is_idle": false,
+          "is_under_maintenance": false
+        },
+        "7_night": {
+          "location": "depot_1",
+          "km": 600,
+          "is_idle": true,
+          "is_under_maintenance": false
+        },
+        "8_day": {
+          "location": "depot_1",
+          "km": 600,
+          "is_idle": false,
+          "is_under_maintenance": true
+        },
+        "8_night": {
+          "location": "depot_1",
+          "km": 600,
+          "is_idle": false,
+          "is_under_maintenance": true
+        },
+        "9_day": {
+          "location": "depot_1",
+          "km": 600,
+          "is_idle": false,
+          "is_under_maintenance": true
+        },
+        "9_night": {
+          "location": "depot_2",
+          "km": 683,
+          "is_idle": false,
+          "is_under_maintenance": true
+        },
+        "10_day": {
+          "location": "depot_2",
+          "km": 683,
+          "is_idle": false,
+          "is_under_maintenance": false
+        },
+        "10_night": {
+          "location": "depot_1",
+          "km": 916,
+          "is_idle": true,
+          "is_under_maintenance": false
+        },
+        "11_day": {
+          "location": "depot_1",
+          "km": 916,
+          "is_idle": false,
+          "is_under_maintenance": true
+        },
+        "11_night": {
+          "location": "depot_2",
+          "km": 1007,
+          "is_idle": false,
+          "is_under_maintenance": true
+        },
+        "12_day": {
+          "location": "depot_2",
+          "km": 1007,
+          "is_idle": false,
+          "is_under_maintenance": false
+        },
+        "12_night": {
+          "location": "depot_1",
+          "km": 1293,
+          "is_idle": true,
+          "is_under_maintenance": false
+        },
+        "13_day": {
+          "location": "depot_1",
+          "km": 1293,
+          "is_idle": false,
+          "is_under_maintenance": true
+        },
+        "13_night": {
+          "location": "depot_2",
+          "km": 1445,
+          "is_idle": false,
+          "is_under_maintenance": true
+        },
+        "14_day": {
+          "location": "depot_2",
+          "km": 1445,
+          "is_idle": false,
+          "is_under_maintenance": false
+        },
+        "14_night": {
+          "location": "depot_1",
+          "km": 1643,
+          "is_idle": true,
+          "is_under_maintenance": false
+        }
+      }
+    },
+    "vehicle_4": {
+      "initial_state": {
+        "location": "depot_2",
+        "km": 5329
+      },
+      "route_assignments": {
+        "1_day": {
+          "route_id": "route_day1_8",
+          "start_location": "depot_1",
+          "end_location": "depot_2",
+          "distance_km": 224
+        },
+        "1_night": null,
+        "2_day": {
+          "route_id": "route_day2_3",
+          "start_location": "depot_2",
+          "end_location": "depot_1",
+          "distance_km": 294
+        },
+        "2_night": null,
+        "3_day": null,
+        "3_night": null,
+        "4_day": {
+          "route_id": "route_day4_4",
+          "start_location": "depot_1",
+          "end_location": "depot_2",
+          "distance_km": 200
+        },
+        "4_night": null,
+        "5_day": {
+          "route_id": "route_day5_3",
+          "start_location": "depot_2",
+          "end_location": "depot_1",
+          "distance_km": 98
+        },
+        "5_night": null,
+        "6_day": {
+          "route_id": "route_day6_1",
+          "start_location": "depot_1",
+          "end_location": "depot_2",
+          "distance_km": 99
+        },
+        "6_night": null,
+        "7_day": {
+          "route_id": "route_day7_2",
+          "start_location": "depot_2",
+          "end_location": "depot_1",
+          "distance_km": 92
         },
         "7_night": null,
         "8_day": {
-          "route_id": "route_day8_8",
-          "start_location": "parking_2",
+          "route_id": "route_day8_5",
+          "start_location": "depot_1",
           "end_location": "depot_2",
-          "distance_km": 221
+          "distance_km": 157
         },
         "8_night": null,
         "9_day": {
           "route_id": "route_day9_5",
-          "start_location": "parking_1",
+          "start_location": "depot_2",
           "end_location": "depot_1",
           "distance_km": 275
         },
@@ -78,619 +1438,29 @@
         "10_night": null,
         "11_day": {
           "route_id": "route_day11_8",
-          "start_location": "parking_1",
+          "start_location": "depot_2",
           "end_location": "depot_1",
           "distance_km": 280
         },
         "11_night": null,
         "12_day": {
-          "route_id": "route_day12_1",
-          "start_location": "parking_1",
-          "end_location": "depot_2",
-          "distance_km": 224
-        },
-        "12_night": null,
-        "13_day": null,
-        "13_night": null,
-        "14_day": {
-          "route_id": "route_day14_2",
-          "start_location": "parking_1",
-          "end_location": "depot_1",
-          "distance_km": 77
-        },
-        "14_night": null
-      },
-      "maintenance_activities": [
-        {
-          "maintenance_id": "corrective_1",
-          "maintenance_type": "corrective",
-          "start_day": 2,
-          "start_shift": "day",
-          "end_day": 2,
-          "end_shift": "night",
-          "depot": "depot_2",
-          "km_at_start": 224,
-          "required_manhours": 7
-        },
-        {
-          "maintenance_id": "corrective_1",
-          "maintenance_type": "corrective",
-          "start_day": 7,
-          "start_shift": "day",
-          "end_day": 7,
-          "end_shift": "night",
-          "depot": "depot_2",
-          "km_at_start": 1351,
-          "required_manhours": 7
-        },
-        {
-          "maintenance_id": "corrective_2",
-          "maintenance_type": "corrective",
-          "start_day": 2,
-          "start_shift": "day",
-          "end_day": 2,
-          "end_shift": "night",
-          "depot": "depot_2",
-          "km_at_start": 224,
-          "required_manhours": 3
-        },
-        {
-          "maintenance_id": "corrective_2",
-          "maintenance_type": "corrective",
-          "start_day": 7,
-          "start_shift": "day",
-          "end_day": 7,
-          "end_shift": "night",
-          "depot": "depot_2",
-          "km_at_start": 1351,
-          "required_manhours": 3
-        },
-        {
-          "maintenance_id": "corrective_3",
-          "maintenance_type": "corrective",
-          "start_day": 2,
-          "start_shift": "day",
-          "end_day": 2,
-          "end_shift": "night",
-          "depot": "depot_2",
-          "km_at_start": 224,
-          "required_manhours": 11
-        },
-        {
-          "maintenance_id": "corrective_3",
-          "maintenance_type": "corrective",
-          "start_day": 7,
-          "start_shift": "day",
-          "end_day": 7,
-          "end_shift": "night",
-          "depot": "depot_2",
-          "km_at_start": 1351,
-          "required_manhours": 11
-        }
-      ],
-      "states": {
-        "1_day": {
-          "location": "depot_1",
-          "km": 0,
-          "is_idle": false,
-          "is_under_maintenance": false
-        },
-        "1_night": {
-          "location": "depot_1",
-          "km": 224,
-          "is_idle": true,
-          "is_under_maintenance": false
-        },
-        "2_day": {
-          "location": "depot_2",
-          "km": 224,
-          "is_idle": false,
-          "is_under_maintenance": true
-        },
-        "2_night": {
-          "location": "depot_1",
-          "km": 427,
-          "is_idle": false,
-          "is_under_maintenance": true
-        },
-        "3_day": {
-          "location": "parking_2",
-          "km": 427,
-          "is_idle": false,
-          "is_under_maintenance": false
-        },
-        "3_night": {
-          "location": "depot_2",
-          "km": 544,
-          "is_idle": true,
-          "is_under_maintenance": false
-        },
-        "4_day": {
-          "location": "parking_1",
-          "km": 544,
-          "is_idle": false,
-          "is_under_maintenance": false
-        },
-        "4_night": {
-          "location": "parking_2",
-          "km": 824,
-          "is_idle": true,
-          "is_under_maintenance": false
-        },
-        "5_day": {
-          "location": "parking_2",
-          "km": 824,
-          "is_idle": false,
-          "is_under_maintenance": false
-        },
-        "5_night": {
-          "location": "parking_2",
-          "km": 1095,
-          "is_idle": true,
-          "is_under_maintenance": false
-        },
-        "6_day": {
-          "location": "depot_1",
-          "km": 1095,
-          "is_idle": false,
-          "is_under_maintenance": false
-        },
-        "6_night": {
-          "location": "parking_2",
-          "km": 1351,
-          "is_idle": true,
-          "is_under_maintenance": false
-        },
-        "7_day": {
-          "location": "depot_2",
-          "km": 1351,
-          "is_idle": false,
-          "is_under_maintenance": true
-        },
-        "7_night": {
-          "location": "parking_1",
-          "km": 1456,
-          "is_idle": false,
-          "is_under_maintenance": true
-        },
-        "8_day": {
-          "location": "parking_2",
-          "km": 1456,
-          "is_idle": false,
-          "is_under_maintenance": false
-        },
-        "8_night": {
-          "location": "depot_2",
-          "km": 1677,
-          "is_idle": true,
-          "is_under_maintenance": false
-        },
-        "9_day": {
-          "location": "parking_1",
-          "km": 1677,
-          "is_idle": false,
-          "is_under_maintenance": false
-        },
-        "9_night": {
-          "location": "depot_1",
-          "km": 1952,
-          "is_idle": true,
-          "is_under_maintenance": false
-        },
-        "10_day": {
-          "location": "depot_1",
-          "km": 1952,
-          "is_idle": false,
-          "is_under_maintenance": false
-        },
-        "10_night": {
-          "location": "depot_2",
-          "km": 2071,
-          "is_idle": true,
-          "is_under_maintenance": false
-        },
-        "11_day": {
-          "location": "parking_1",
-          "km": 2071,
-          "is_idle": false,
-          "is_under_maintenance": false
-        },
-        "11_night": {
-          "location": "depot_1",
-          "km": 2351,
-          "is_idle": true,
-          "is_under_maintenance": false
-        },
-        "12_day": {
-          "location": "parking_1",
-          "km": 2351,
-          "is_idle": false,
-          "is_under_maintenance": false
-        },
-        "12_night": {
-          "location": "depot_2",
-          "km": 2575,
-          "is_idle": true,
-          "is_under_maintenance": false
-        },
-        "13_day": {
-          "location": "depot_1",
-          "km": 2575,
-          "is_idle": true,
-          "is_under_maintenance": false
-        },
-        "13_night": {
-          "location": "depot_1",
-          "km": 2575,
-          "is_idle": true,
-          "is_under_maintenance": false
-        },
-        "14_day": {
-          "location": "parking_1",
-          "km": 2575,
-          "is_idle": false,
-          "is_under_maintenance": false
-        },
-        "14_night": {
-          "location": "depot_1",
-          "km": 2652,
-          "is_idle": true,
-          "is_under_maintenance": false
-        }
-      }
-    },
-    "vehicle_2": {
-      "initial_state": {
-        "location": "depot_1",
-        "km": 1501
-      },
-      "route_assignments": {
-        "1_day": null,
-        "1_night": null,
-        "2_day": {
-          "route_id": "route_day2_3",
-          "start_location": "parking_2",
-          "end_location": "depot_1",
-          "distance_km": 294
-        },
-        "2_night": null,
-        "3_day": {
-          "route_id": "route_day3_7",
-          "start_location": "parking_2",
-          "end_location": "depot_2",
-          "distance_km": 287
-        },
-        "3_night": null,
-        "4_day": null,
-        "4_night": null,
-        "5_day": null,
-        "5_night": null,
-        "6_day": null,
-        "6_night": null,
-        "7_day": null,
-        "7_night": null,
-        "8_day": null,
-        "8_night": null,
-        "9_day": null,
-        "9_night": null,
-        "10_day": null,
-        "10_night": null,
-        "11_day": null,
-        "11_night": null,
-        "12_day": null,
-        "12_night": null,
-        "13_day": {
-          "route_id": "route_day13_4",
+          "route_id": "route_day12_6",
           "start_location": "depot_1",
           "end_location": "depot_2",
-          "distance_km": 152
-        },
-        "13_night": null,
-        "14_day": {
-          "route_id": "route_day14_8",
-          "start_location": "depot_2",
-          "end_location": "parking_1",
-          "distance_km": 160
-        },
-        "14_night": null
-      },
-      "maintenance_activities": [
-        {
-          "maintenance_id": "corrective_1",
-          "maintenance_type": "corrective",
-          "start_day": 8,
-          "start_shift": "night",
-          "end_day": 9,
-          "end_shift": "day",
-          "depot": "depot_2",
-          "km_at_start": 581,
-          "required_manhours": 7
-        },
-        {
-          "maintenance_id": "corrective_2",
-          "maintenance_type": "corrective",
-          "start_day": 13,
-          "start_shift": "night",
-          "end_day": 14,
-          "end_shift": "day",
-          "depot": "depot_2",
-          "km_at_start": 733,
-          "required_manhours": 3
-        },
-        {
-          "maintenance_id": "corrective_3",
-          "maintenance_type": "corrective",
-          "start_day": 14,
-          "start_shift": "day",
-          "end_day": 14,
-          "end_shift": "night",
-          "depot": "depot_2",
-          "km_at_start": 733,
-          "required_manhours": 11
-        }
-      ],
-      "states": {
-        "1_day": {
-          "location": "parking_2",
-          "km": 0,
-          "is_idle": true,
-          "is_under_maintenance": false
-        },
-        "1_night": {
-          "location": "parking_1",
-          "km": 0,
-          "is_idle": true,
-          "is_under_maintenance": false
-        },
-        "2_day": {
-          "location": "parking_2",
-          "km": 0,
-          "is_idle": false,
-          "is_under_maintenance": false
-        },
-        "2_night": {
-          "location": "depot_1",
-          "km": 294,
-          "is_idle": true,
-          "is_under_maintenance": false
-        },
-        "3_day": {
-          "location": "parking_2",
-          "km": 294,
-          "is_idle": false,
-          "is_under_maintenance": false
-        },
-        "3_night": {
-          "location": "depot_2",
-          "km": 581,
-          "is_idle": true,
-          "is_under_maintenance": false
-        },
-        "4_day": {
-          "location": "depot_1",
-          "km": 581,
-          "is_idle": true,
-          "is_under_maintenance": false
-        },
-        "4_night": {
-          "location": "depot_1",
-          "km": 581,
-          "is_idle": true,
-          "is_under_maintenance": false
-        },
-        "5_day": {
-          "location": "depot_1",
-          "km": 581,
-          "is_idle": true,
-          "is_under_maintenance": false
-        },
-        "5_night": {
-          "location": "depot_1",
-          "km": 581,
-          "is_idle": true,
-          "is_under_maintenance": false
-        },
-        "6_day": {
-          "location": "depot_1",
-          "km": 581,
-          "is_idle": true,
-          "is_under_maintenance": false
-        },
-        "6_night": {
-          "location": "parking_2",
-          "km": 581,
-          "is_idle": true,
-          "is_under_maintenance": false
-        },
-        "7_day": {
-          "location": "depot_1",
-          "km": 581,
-          "is_idle": true,
-          "is_under_maintenance": false
-        },
-        "7_night": {
-          "location": "depot_1",
-          "km": 581,
-          "is_idle": true,
-          "is_under_maintenance": false
-        },
-        "8_day": {
-          "location": "depot_1",
-          "km": 581,
-          "is_idle": true,
-          "is_under_maintenance": false
-        },
-        "8_night": {
-          "location": "depot_2",
-          "km": 581,
-          "is_idle": false,
-          "is_under_maintenance": true
-        },
-        "9_day": {
-          "location": "depot_1",
-          "km": 581,
-          "is_idle": false,
-          "is_under_maintenance": true
-        },
-        "9_night": {
-          "location": "depot_1",
-          "km": 581,
-          "is_idle": true,
-          "is_under_maintenance": false
-        },
-        "10_day": {
-          "location": "depot_1",
-          "km": 581,
-          "is_idle": true,
-          "is_under_maintenance": false
-        },
-        "10_night": {
-          "location": "depot_1",
-          "km": 581,
-          "is_idle": true,
-          "is_under_maintenance": false
-        },
-        "11_day": {
-          "location": "depot_1",
-          "km": 581,
-          "is_idle": true,
-          "is_under_maintenance": false
-        },
-        "11_night": {
-          "location": "depot_1",
-          "km": 581,
-          "is_idle": true,
-          "is_under_maintenance": false
-        },
-        "12_day": {
-          "location": "depot_1",
-          "km": 581,
-          "is_idle": true,
-          "is_under_maintenance": false
-        },
-        "12_night": {
-          "location": "depot_1",
-          "km": 581,
-          "is_idle": true,
-          "is_under_maintenance": false
-        },
-        "13_day": {
-          "location": "depot_1",
-          "km": 581,
-          "is_idle": false,
-          "is_under_maintenance": false
-        },
-        "13_night": {
-          "location": "depot_2",
-          "km": 733,
-          "is_idle": false,
-          "is_under_maintenance": true
-        },
-        "14_day": {
-          "location": "depot_2",
-          "km": 733,
-          "is_idle": false,
-          "is_under_maintenance": true
-        },
-        "14_night": {
-          "location": "parking_1",
-          "km": 893,
-          "is_idle": false,
-          "is_under_maintenance": true
-        }
-      }
-    },
-    "vehicle_3": {
-      "initial_state": {
-        "location": "depot_1",
-        "km": 12455
-      },
-      "route_assignments": {
-        "1_day": null,
-        "1_night": null,
-        "2_day": {
-          "route_id": "route_day2_2",
-          "start_location": "parking_1",
-          "end_location": "parking_2",
-          "distance_km": 90
-        },
-        "2_night": null,
-        "3_day": {
-          "route_id": "route_day3_3",
-          "start_location": "depot_2",
-          "end_location": "depot_1",
-          "distance_km": 71
-        },
-        "3_night": null,
-        "4_day": null,
-        "4_night": null,
-        "5_day": {
-          "route_id": "route_day5_7",
-          "start_location": "depot_1",
-          "end_location": "depot_1",
-          "distance_km": 65
-        },
-        "5_night": null,
-        "6_day": {
-          "route_id": "route_day6_6",
-          "start_location": "depot_1",
-          "end_location": "depot_1",
-          "distance_km": 216
-        },
-        "6_night": null,
-        "7_day": {
-          "route_id": "route_day7_1",
-          "start_location": "parking_2",
-          "end_location": "parking_2",
-          "distance_km": 104
-        },
-        "7_night": null,
-        "8_day": {
-          "route_id": "route_day8_5",
-          "start_location": "depot_1",
-          "end_location": "depot_1",
-          "distance_km": 157
-        },
-        "8_night": null,
-        "9_day": {
-          "route_id": "route_day9_2",
-          "start_location": "depot_1",
-          "end_location": "depot_1",
-          "distance_km": 167
-        },
-        "9_night": null,
-        "10_day": {
-          "route_id": "route_day10_4",
-          "start_location": "parking_1",
-          "end_location": "depot_2",
-          "distance_km": 233
-        },
-        "10_night": null,
-        "11_day": {
-          "route_id": "route_day11_5",
-          "start_location": "depot_2",
-          "end_location": "depot_1",
-          "distance_km": 263
-        },
-        "11_night": null,
-        "12_day": {
-          "route_id": "route_day12_2",
-          "start_location": "depot_2",
-          "end_location": "depot_1",
-          "distance_km": 140
+          "distance_km": 250
         },
         "12_night": null,
         "13_day": {
           "route_id": "route_day13_7",
-          "start_location": "parking_2",
-          "end_location": "parking_1",
+          "start_location": "depot_2",
+          "end_location": "depot_1",
           "distance_km": 290
         },
         "13_night": null,
         "14_day": {
           "route_id": "route_day14_6",
-          "start_location": "depot_2",
-          "end_location": "parking_1",
+          "start_location": "depot_1",
+          "end_location": "depot_2",
           "distance_km": 61
         },
         "14_night": null
@@ -699,371 +1469,405 @@
         {
           "maintenance_id": "corrective_1",
           "maintenance_type": "corrective",
-          "start_day": 3,
+          "start_day": 1,
           "start_shift": "day",
-          "end_day": 3,
+          "end_day": 1,
           "end_shift": "night",
-          "depot": "depot_2",
-          "km_at_start": 90,
+          "depot": "depot_1",
+          "km_at_start": 0,
           "required_manhours": 7
         },
         {
           "maintenance_id": "corrective_1",
           "maintenance_type": "corrective",
-          "start_day": 11,
+          "start_day": 3,
           "start_shift": "day",
-          "end_day": 11,
+          "end_day": 3,
           "end_shift": "night",
-          "depot": "depot_2",
-          "km_at_start": 1103,
+          "depot": "depot_1",
+          "km_at_start": 518,
           "required_manhours": 7
         },
         {
           "maintenance_id": "corrective_1",
           "maintenance_type": "corrective",
-          "start_day": 12,
+          "start_day": 4,
           "start_shift": "day",
-          "end_day": 12,
+          "end_day": 4,
           "end_shift": "night",
-          "depot": "depot_2",
-          "km_at_start": 1366,
+          "depot": "depot_1",
+          "km_at_start": 518,
           "required_manhours": 7
         },
         {
           "maintenance_id": "corrective_1",
-          "maintenance_type": "corrective",
-          "start_day": 14,
-          "start_shift": "day",
-          "end_day": 14,
-          "end_shift": "night",
-          "depot": "depot_2",
-          "km_at_start": 1796,
-          "required_manhours": 7
-        },
-        {
-          "maintenance_id": "corrective_2",
-          "maintenance_type": "corrective",
-          "start_day": 3,
-          "start_shift": "day",
-          "end_day": 3,
-          "end_shift": "night",
-          "depot": "depot_2",
-          "km_at_start": 90,
-          "required_manhours": 3
-        },
-        {
-          "maintenance_id": "corrective_2",
-          "maintenance_type": "corrective",
-          "start_day": 11,
-          "start_shift": "day",
-          "end_day": 11,
-          "end_shift": "night",
-          "depot": "depot_2",
-          "km_at_start": 1103,
-          "required_manhours": 3
-        },
-        {
-          "maintenance_id": "corrective_2",
-          "maintenance_type": "corrective",
-          "start_day": 12,
-          "start_shift": "day",
-          "end_day": 12,
-          "end_shift": "night",
-          "depot": "depot_2",
-          "km_at_start": 1366,
-          "required_manhours": 3
-        },
-        {
-          "maintenance_id": "corrective_2",
-          "maintenance_type": "corrective",
-          "start_day": 14,
-          "start_shift": "day",
-          "end_day": 14,
-          "end_shift": "night",
-          "depot": "depot_2",
-          "km_at_start": 1796,
-          "required_manhours": 3
-        },
-        {
-          "maintenance_id": "corrective_3",
-          "maintenance_type": "corrective",
-          "start_day": 3,
-          "start_shift": "day",
-          "end_day": 3,
-          "end_shift": "night",
-          "depot": "depot_2",
-          "km_at_start": 90,
-          "required_manhours": 11
-        },
-        {
-          "maintenance_id": "corrective_3",
-          "maintenance_type": "corrective",
-          "start_day": 11,
-          "start_shift": "day",
-          "end_day": 11,
-          "end_shift": "night",
-          "depot": "depot_2",
-          "km_at_start": 1103,
-          "required_manhours": 11
-        },
-        {
-          "maintenance_id": "corrective_3",
-          "maintenance_type": "corrective",
-          "start_day": 12,
-          "start_shift": "day",
-          "end_day": 12,
-          "end_shift": "night",
-          "depot": "depot_2",
-          "km_at_start": 1366,
-          "required_manhours": 11
-        },
-        {
-          "maintenance_id": "corrective_3",
-          "maintenance_type": "corrective",
-          "start_day": 14,
-          "start_shift": "day",
-          "end_day": 14,
-          "end_shift": "night",
-          "depot": "depot_2",
-          "km_at_start": 1796,
-          "required_manhours": 11
-        },
-        {
-          "maintenance_id": "corrective_4",
           "maintenance_type": "corrective",
           "start_day": 6,
-          "start_shift": "night",
-          "end_day": 7,
-          "end_shift": "day",
+          "start_shift": "day",
+          "end_day": 6,
+          "end_shift": "night",
           "depot": "depot_1",
-          "km_at_start": 442,
+          "km_at_start": 816,
+          "required_manhours": 7
+        },
+        {
+          "maintenance_id": "corrective_1",
+          "maintenance_type": "corrective",
+          "start_day": 8,
+          "start_shift": "day",
+          "end_day": 8,
+          "end_shift": "night",
+          "depot": "depot_1",
+          "km_at_start": 1007,
+          "required_manhours": 7
+        },
+        {
+          "maintenance_id": "corrective_1",
+          "maintenance_type": "corrective",
+          "start_day": 10,
+          "start_shift": "day",
+          "end_day": 10,
+          "end_shift": "night",
+          "depot": "depot_1",
+          "km_at_start": 1439,
+          "required_manhours": 7
+        },
+        {
+          "maintenance_id": "corrective_1",
+          "maintenance_type": "corrective",
+          "start_day": 12,
+          "start_shift": "day",
+          "end_day": 12,
+          "end_shift": "night",
+          "depot": "depot_1",
+          "km_at_start": 1838,
+          "required_manhours": 7
+        },
+        {
+          "maintenance_id": "corrective_1",
+          "maintenance_type": "corrective",
+          "start_day": 14,
+          "start_shift": "day",
+          "end_day": 14,
+          "end_shift": "night",
+          "depot": "depot_1",
+          "km_at_start": 2378,
+          "required_manhours": 7
+        },
+        {
+          "maintenance_id": "corrective_2",
+          "maintenance_type": "corrective",
+          "start_day": 1,
+          "start_shift": "day",
+          "end_day": 1,
+          "end_shift": "night",
+          "depot": "depot_1",
+          "km_at_start": 0,
           "required_manhours": 3
+        },
+        {
+          "maintenance_id": "corrective_2",
+          "maintenance_type": "corrective",
+          "start_day": 3,
+          "start_shift": "day",
+          "end_day": 3,
+          "end_shift": "night",
+          "depot": "depot_1",
+          "km_at_start": 518,
+          "required_manhours": 3
+        },
+        {
+          "maintenance_id": "corrective_2",
+          "maintenance_type": "corrective",
+          "start_day": 4,
+          "start_shift": "day",
+          "end_day": 4,
+          "end_shift": "night",
+          "depot": "depot_1",
+          "km_at_start": 518,
+          "required_manhours": 3
+        },
+        {
+          "maintenance_id": "corrective_2",
+          "maintenance_type": "corrective",
+          "start_day": 6,
+          "start_shift": "day",
+          "end_day": 6,
+          "end_shift": "night",
+          "depot": "depot_1",
+          "km_at_start": 816,
+          "required_manhours": 3
+        },
+        {
+          "maintenance_id": "corrective_2",
+          "maintenance_type": "corrective",
+          "start_day": 8,
+          "start_shift": "day",
+          "end_day": 8,
+          "end_shift": "night",
+          "depot": "depot_1",
+          "km_at_start": 1007,
+          "required_manhours": 3
+        },
+        {
+          "maintenance_id": "corrective_2",
+          "maintenance_type": "corrective",
+          "start_day": 10,
+          "start_shift": "day",
+          "end_day": 10,
+          "end_shift": "night",
+          "depot": "depot_1",
+          "km_at_start": 1439,
+          "required_manhours": 3
+        },
+        {
+          "maintenance_id": "corrective_2",
+          "maintenance_type": "corrective",
+          "start_day": 12,
+          "start_shift": "day",
+          "end_day": 12,
+          "end_shift": "night",
+          "depot": "depot_1",
+          "km_at_start": 1838,
+          "required_manhours": 3
+        },
+        {
+          "maintenance_id": "corrective_2",
+          "maintenance_type": "corrective",
+          "start_day": 14,
+          "start_shift": "day",
+          "end_day": 14,
+          "end_shift": "night",
+          "depot": "depot_1",
+          "km_at_start": 2378,
+          "required_manhours": 3
+        },
+        {
+          "maintenance_id": "corrective_3",
+          "maintenance_type": "corrective",
+          "start_day": 1,
+          "start_shift": "day",
+          "end_day": 1,
+          "end_shift": "night",
+          "depot": "depot_1",
+          "km_at_start": 0,
+          "required_manhours": 11
         }
       ],
       "states": {
         "1_day": {
           "location": "depot_1",
           "km": 0,
-          "is_idle": true,
-          "is_under_maintenance": false
+          "is_idle": false,
+          "is_under_maintenance": true
         },
         "1_night": {
-          "location": "depot_1",
-          "km": 0,
-          "is_idle": true,
-          "is_under_maintenance": false
+          "location": "depot_2",
+          "km": 224,
+          "is_idle": false,
+          "is_under_maintenance": true
         },
         "2_day": {
-          "location": "parking_1",
-          "km": 0,
+          "location": "depot_2",
+          "km": 224,
           "is_idle": false,
           "is_under_maintenance": false
         },
         "2_night": {
-          "location": "parking_2",
-          "km": 90,
+          "location": "depot_1",
+          "km": 518,
           "is_idle": true,
           "is_under_maintenance": false
         },
         "3_day": {
-          "location": "depot_2",
-          "km": 90,
+          "location": "depot_1",
+          "km": 518,
           "is_idle": false,
           "is_under_maintenance": true
         },
         "3_night": {
           "location": "depot_1",
-          "km": 161,
+          "km": 518,
           "is_idle": false,
           "is_under_maintenance": true
         },
         "4_day": {
           "location": "depot_1",
-          "km": 161,
-          "is_idle": true,
-          "is_under_maintenance": false
+          "km": 518,
+          "is_idle": false,
+          "is_under_maintenance": true
         },
         "4_night": {
           "location": "depot_2",
-          "km": 161,
-          "is_idle": true,
-          "is_under_maintenance": false
+          "km": 718,
+          "is_idle": false,
+          "is_under_maintenance": true
         },
         "5_day": {
-          "location": "depot_1",
-          "km": 161,
+          "location": "depot_2",
+          "km": 718,
           "is_idle": false,
           "is_under_maintenance": false
         },
         "5_night": {
           "location": "depot_1",
-          "km": 226,
+          "km": 816,
           "is_idle": true,
           "is_under_maintenance": false
         },
         "6_day": {
           "location": "depot_1",
-          "km": 226,
+          "km": 816,
           "is_idle": false,
-          "is_under_maintenance": false
+          "is_under_maintenance": true
         },
         "6_night": {
-          "location": "depot_1",
-          "km": 442,
+          "location": "depot_2",
+          "km": 915,
           "is_idle": false,
           "is_under_maintenance": true
         },
         "7_day": {
-          "location": "parking_2",
-          "km": 442,
+          "location": "depot_2",
+          "km": 915,
           "is_idle": false,
-          "is_under_maintenance": true
+          "is_under_maintenance": false
         },
         "7_night": {
-          "location": "parking_2",
-          "km": 546,
+          "location": "depot_1",
+          "km": 1007,
           "is_idle": true,
           "is_under_maintenance": false
         },
         "8_day": {
           "location": "depot_1",
-          "km": 546,
+          "km": 1007,
           "is_idle": false,
-          "is_under_maintenance": false
+          "is_under_maintenance": true
         },
         "8_night": {
-          "location": "depot_1",
-          "km": 703,
-          "is_idle": true,
-          "is_under_maintenance": false
+          "location": "depot_2",
+          "km": 1164,
+          "is_idle": false,
+          "is_under_maintenance": true
         },
         "9_day": {
-          "location": "depot_1",
-          "km": 703,
+          "location": "depot_2",
+          "km": 1164,
           "is_idle": false,
           "is_under_maintenance": false
         },
         "9_night": {
           "location": "depot_1",
-          "km": 870,
+          "km": 1439,
           "is_idle": true,
           "is_under_maintenance": false
         },
         "10_day": {
-          "location": "parking_1",
-          "km": 870,
+          "location": "depot_1",
+          "km": 1439,
           "is_idle": false,
-          "is_under_maintenance": false
+          "is_under_maintenance": true
         },
         "10_night": {
           "location": "depot_2",
-          "km": 1103,
-          "is_idle": true,
-          "is_under_maintenance": false
+          "km": 1558,
+          "is_idle": false,
+          "is_under_maintenance": true
         },
         "11_day": {
           "location": "depot_2",
-          "km": 1103,
+          "km": 1558,
           "is_idle": false,
-          "is_under_maintenance": true
+          "is_under_maintenance": false
         },
         "11_night": {
           "location": "depot_1",
-          "km": 1366,
-          "is_idle": false,
-          "is_under_maintenance": true
+          "km": 1838,
+          "is_idle": true,
+          "is_under_maintenance": false
         },
         "12_day": {
-          "location": "depot_2",
-          "km": 1366,
+          "location": "depot_1",
+          "km": 1838,
           "is_idle": false,
           "is_under_maintenance": true
         },
         "12_night": {
-          "location": "depot_1",
-          "km": 1506,
+          "location": "depot_2",
+          "km": 2088,
           "is_idle": false,
           "is_under_maintenance": true
         },
         "13_day": {
-          "location": "parking_2",
-          "km": 1506,
+          "location": "depot_2",
+          "km": 2088,
           "is_idle": false,
           "is_under_maintenance": false
         },
         "13_night": {
-          "location": "parking_1",
-          "km": 1796,
+          "location": "depot_1",
+          "km": 2378,
           "is_idle": true,
           "is_under_maintenance": false
         },
         "14_day": {
-          "location": "depot_2",
-          "km": 1796,
+          "location": "depot_1",
+          "km": 2378,
           "is_idle": false,
           "is_under_maintenance": true
         },
         "14_night": {
-          "location": "parking_1",
-          "km": 1857,
+          "location": "depot_2",
+          "km": 2439,
           "is_idle": false,
           "is_under_maintenance": true
         }
       }
     },
-    "vehicle_4": {
+    "vehicle_5": {
       "initial_state": {
-        "location": "parking_1",
-        "km": 5329
+        "location": "depot_2",
+        "km": 22997
       },
       "route_assignments": {
         "1_day": {
-          "route_id": "route_day1_1",
-          "start_location": "parking_1",
-          "end_location": "parking_2",
-          "distance_km": 279
+          "route_id": "route_day1_5",
+          "start_location": "depot_1",
+          "end_location": "depot_2",
+          "distance_km": 202
         },
         "1_night": null,
         "2_day": {
-          "route_id": "route_day2_6",
+          "route_id": "route_day2_2",
           "start_location": "depot_2",
-          "end_location": "depot_2",
-          "distance_km": 145
+          "end_location": "depot_1",
+          "distance_km": 90
         },
         "2_night": null,
         "3_day": {
-          "route_id": "route_day3_4",
-          "start_location": "parking_2",
-          "end_location": "depot_1",
-          "distance_km": 300
-        },
-        "3_night": null,
-        "4_day": {
-          "route_id": "route_day4_6",
+          "route_id": "route_day3_1",
           "start_location": "depot_1",
           "end_location": "depot_2",
-          "distance_km": 67
+          "distance_km": 274
         },
+        "3_night": null,
+        "4_day": null,
         "4_night": null,
         "5_day": {
           "route_id": "route_day5_2",
-          "start_location": "depot_2",
-          "end_location": "parking_2",
+          "start_location": "depot_1",
+          "end_location": "depot_2",
           "distance_km": 112
         },
         "5_night": null,
-        "6_day": {
-          "route_id": "route_day6_4",
-          "start_location": "parking_2",
-          "end_location": "depot_2",
-          "distance_km": 273
-        },
+        "6_day": null,
         "6_night": null,
         "7_day": {
-          "route_id": "route_day7_4",
-          "start_location": "parking_1",
-          "end_location": "parking_2",
-          "distance_km": 123
+          "route_id": "route_day7_3",
+          "start_location": "depot_2",
+          "end_location": "depot_1",
+          "distance_km": 149
         },
         "7_night": null,
         "8_day": {
@@ -1074,39 +1878,391 @@
         },
         "8_night": null,
         "9_day": {
-          "route_id": "route_day9_8",
-          "start_location": "parking_1",
+          "route_id": "route_day9_1",
+          "start_location": "depot_2",
           "end_location": "depot_1",
-          "distance_km": 220
+          "distance_km": 130
         },
         "9_night": null,
         "10_day": {
-          "route_id": "route_day10_5",
-          "start_location": "parking_1",
+          "route_id": "route_day10_7",
+          "start_location": "depot_1",
           "end_location": "depot_2",
-          "distance_km": 225
+          "distance_km": 212
         },
         "10_night": null,
         "11_day": {
-          "route_id": "route_day11_6",
-          "start_location": "parking_1",
-          "end_location": "depot_2",
-          "distance_km": 160
+          "route_id": "route_day11_3",
+          "start_location": "depot_2",
+          "end_location": "depot_1",
+          "distance_km": 193
         },
         "11_night": null,
         "12_day": {
-          "route_id": "route_day12_7",
-          "start_location": "parking_2",
+          "route_id": "route_day12_2",
+          "start_location": "depot_1",
           "end_location": "depot_2",
-          "distance_km": 118
+          "distance_km": 140
         },
         "12_night": null,
         "13_day": {
-          "route_id": "route_day13_3",
-          "start_location": "parking_1",
-          "end_location": "depot_2",
-          "distance_km": 107
+          "route_id": "route_day13_5",
+          "start_location": "depot_2",
+          "end_location": "depot_1",
+          "distance_km": 271
         },
+        "13_night": null,
+        "14_day": {
+          "route_id": "route_day14_5",
+          "start_location": "depot_1",
+          "end_location": "depot_2",
+          "distance_km": 280
+        },
+        "14_night": null
+      },
+      "maintenance_activities": [
+        {
+          "maintenance_id": "corrective_1",
+          "maintenance_type": "corrective",
+          "start_day": 1,
+          "start_shift": "day",
+          "end_day": 1,
+          "end_shift": "night",
+          "depot": "depot_1",
+          "km_at_start": 0,
+          "required_manhours": 7
+        },
+        {
+          "maintenance_id": "corrective_2",
+          "maintenance_type": "corrective",
+          "start_day": 1,
+          "start_shift": "day",
+          "end_day": 1,
+          "end_shift": "night",
+          "depot": "depot_1",
+          "km_at_start": 0,
+          "required_manhours": 3
+        },
+        {
+          "maintenance_id": "corrective_3",
+          "maintenance_type": "corrective",
+          "start_day": 1,
+          "start_shift": "day",
+          "end_day": 1,
+          "end_shift": "night",
+          "depot": "depot_1",
+          "km_at_start": 0,
+          "required_manhours": 11
+        },
+        {
+          "maintenance_id": "corrective_3",
+          "maintenance_type": "corrective",
+          "start_day": 3,
+          "start_shift": "day",
+          "end_day": 3,
+          "end_shift": "night",
+          "depot": "depot_1",
+          "km_at_start": 292,
+          "required_manhours": 11
+        },
+        {
+          "maintenance_id": "corrective_3",
+          "maintenance_type": "corrective",
+          "start_day": 5,
+          "start_shift": "day",
+          "end_day": 5,
+          "end_shift": "night",
+          "depot": "depot_1",
+          "km_at_start": 566,
+          "required_manhours": 11
+        },
+        {
+          "maintenance_id": "corrective_3",
+          "maintenance_type": "corrective",
+          "start_day": 8,
+          "start_shift": "day",
+          "end_day": 8,
+          "end_shift": "night",
+          "depot": "depot_1",
+          "km_at_start": 827,
+          "required_manhours": 11
+        },
+        {
+          "maintenance_id": "corrective_3",
+          "maintenance_type": "corrective",
+          "start_day": 10,
+          "start_shift": "day",
+          "end_day": 10,
+          "end_shift": "night",
+          "depot": "depot_1",
+          "km_at_start": 1155,
+          "required_manhours": 11
+        },
+        {
+          "maintenance_id": "corrective_3",
+          "maintenance_type": "corrective",
+          "start_day": 12,
+          "start_shift": "day",
+          "end_day": 12,
+          "end_shift": "night",
+          "depot": "depot_1",
+          "km_at_start": 1560,
+          "required_manhours": 11
+        },
+        {
+          "maintenance_id": "corrective_3",
+          "maintenance_type": "corrective",
+          "start_day": 14,
+          "start_shift": "day",
+          "end_day": 14,
+          "end_shift": "night",
+          "depot": "depot_1",
+          "km_at_start": 1971,
+          "required_manhours": 11
+        }
+      ],
+      "states": {
+        "1_day": {
+          "location": "depot_1",
+          "km": 0,
+          "is_idle": false,
+          "is_under_maintenance": true
+        },
+        "1_night": {
+          "location": "depot_2",
+          "km": 202,
+          "is_idle": false,
+          "is_under_maintenance": true
+        },
+        "2_day": {
+          "location": "depot_2",
+          "km": 202,
+          "is_idle": false,
+          "is_under_maintenance": false
+        },
+        "2_night": {
+          "location": "depot_1",
+          "km": 292,
+          "is_idle": true,
+          "is_under_maintenance": false
+        },
+        "3_day": {
+          "location": "depot_1",
+          "km": 292,
+          "is_idle": false,
+          "is_under_maintenance": true
+        },
+        "3_night": {
+          "location": "depot_2",
+          "km": 566,
+          "is_idle": false,
+          "is_under_maintenance": true
+        },
+        "4_day": {
+          "location": "depot_2",
+          "km": 566,
+          "is_idle": true,
+          "is_under_maintenance": false
+        },
+        "4_night": {
+          "location": "depot_1",
+          "km": 566,
+          "is_idle": true,
+          "is_under_maintenance": false
+        },
+        "5_day": {
+          "location": "depot_1",
+          "km": 566,
+          "is_idle": false,
+          "is_under_maintenance": true
+        },
+        "5_night": {
+          "location": "depot_2",
+          "km": 678,
+          "is_idle": false,
+          "is_under_maintenance": true
+        },
+        "6_day": {
+          "location": "depot_2",
+          "km": 678,
+          "is_idle": true,
+          "is_under_maintenance": false
+        },
+        "6_night": {
+          "location": "depot_2",
+          "km": 678,
+          "is_idle": true,
+          "is_under_maintenance": false
+        },
+        "7_day": {
+          "location": "depot_2",
+          "km": 678,
+          "is_idle": false,
+          "is_under_maintenance": false
+        },
+        "7_night": {
+          "location": "depot_1",
+          "km": 827,
+          "is_idle": true,
+          "is_under_maintenance": false
+        },
+        "8_day": {
+          "location": "depot_1",
+          "km": 827,
+          "is_idle": false,
+          "is_under_maintenance": true
+        },
+        "8_night": {
+          "location": "depot_2",
+          "km": 1025,
+          "is_idle": false,
+          "is_under_maintenance": true
+        },
+        "9_day": {
+          "location": "depot_2",
+          "km": 1025,
+          "is_idle": false,
+          "is_under_maintenance": false
+        },
+        "9_night": {
+          "location": "depot_1",
+          "km": 1155,
+          "is_idle": true,
+          "is_under_maintenance": false
+        },
+        "10_day": {
+          "location": "depot_1",
+          "km": 1155,
+          "is_idle": false,
+          "is_under_maintenance": true
+        },
+        "10_night": {
+          "location": "depot_2",
+          "km": 1367,
+          "is_idle": false,
+          "is_under_maintenance": true
+        },
+        "11_day": {
+          "location": "depot_2",
+          "km": 1367,
+          "is_idle": false,
+          "is_under_maintenance": false
+        },
+        "11_night": {
+          "location": "depot_1",
+          "km": 1560,
+          "is_idle": true,
+          "is_under_maintenance": false
+        },
+        "12_day": {
+          "location": "depot_1",
+          "km": 1560,
+          "is_idle": false,
+          "is_under_maintenance": true
+        },
+        "12_night": {
+          "location": "depot_2",
+          "km": 1700,
+          "is_idle": false,
+          "is_under_maintenance": true
+        },
+        "13_day": {
+          "location": "depot_2",
+          "km": 1700,
+          "is_idle": false,
+          "is_under_maintenance": false
+        },
+        "13_night": {
+          "location": "depot_1",
+          "km": 1971,
+          "is_idle": true,
+          "is_under_maintenance": false
+        },
+        "14_day": {
+          "location": "depot_1",
+          "km": 1971,
+          "is_idle": false,
+          "is_under_maintenance": true
+        },
+        "14_night": {
+          "location": "depot_2",
+          "km": 2251,
+          "is_idle": false,
+          "is_under_maintenance": true
+        }
+      }
+    },
+    "vehicle_6": {
+      "initial_state": {
+        "location": "depot_1",
+        "km": 5354
+      },
+      "route_assignments": {
+        "1_day": {
+          "route_id": "route_day1_1",
+          "start_location": "depot_2",
+          "end_location": "depot_1",
+          "distance_km": 279
+        },
+        "1_night": null,
+        "2_day": null,
+        "2_night": null,
+        "3_day": {
+          "route_id": "route_day3_3",
+          "start_location": "depot_1",
+          "end_location": "depot_2",
+          "distance_km": 71
+        },
+        "3_night": null,
+        "4_day": {
+          "route_id": "route_day4_2",
+          "start_location": "depot_2",
+          "end_location": "depot_1",
+          "distance_km": 113
+        },
+        "4_night": null,
+        "5_day": {
+          "route_id": "route_day5_7",
+          "start_location": "depot_1",
+          "end_location": "depot_2",
+          "distance_km": 65
+        },
+        "5_night": null,
+        "6_day": null,
+        "6_night": null,
+        "7_day": {
+          "route_id": "route_day7_5",
+          "start_location": "depot_2",
+          "end_location": "depot_1",
+          "distance_km": 89
+        },
+        "7_night": null,
+        "8_day": {
+          "route_id": "route_day8_2",
+          "start_location": "depot_1",
+          "end_location": "depot_2",
+          "distance_km": 67
+        },
+        "8_night": null,
+        "9_day": null,
+        "9_night": null,
+        "10_day": {
+          "route_id": "route_day10_5",
+          "start_location": "depot_2",
+          "end_location": "depot_1",
+          "distance_km": 225
+        },
+        "10_night": null,
+        "11_day": null,
+        "11_night": null,
+        "12_day": {
+          "route_id": "route_day12_8",
+          "start_location": "depot_1",
+          "end_location": "depot_2",
+          "distance_km": 147
+        },
+        "12_night": null,
+        "13_day": null,
         "13_night": null,
         "14_day": null,
         "14_night": null
@@ -1119,7 +2275,18 @@
           "start_shift": "day",
           "end_day": 2,
           "end_shift": "night",
-          "depot": "depot_2",
+          "depot": "depot_1",
+          "km_at_start": 279,
+          "required_manhours": 7
+        },
+        {
+          "maintenance_id": "corrective_1",
+          "maintenance_type": "corrective",
+          "start_day": 3,
+          "start_shift": "day",
+          "end_day": 3,
+          "end_shift": "night",
+          "depot": "depot_1",
           "km_at_start": 279,
           "required_manhours": 7
         },
@@ -1130,8 +2297,41 @@
           "start_shift": "day",
           "end_day": 5,
           "end_shift": "night",
-          "depot": "depot_2",
-          "km_at_start": 791,
+          "depot": "depot_1",
+          "km_at_start": 463,
+          "required_manhours": 7
+        },
+        {
+          "maintenance_id": "corrective_1",
+          "maintenance_type": "corrective",
+          "start_day": 8,
+          "start_shift": "day",
+          "end_day": 8,
+          "end_shift": "night",
+          "depot": "depot_1",
+          "km_at_start": 617,
+          "required_manhours": 7
+        },
+        {
+          "maintenance_id": "corrective_1",
+          "maintenance_type": "corrective",
+          "start_day": 11,
+          "start_shift": "day",
+          "end_day": 11,
+          "end_shift": "night",
+          "depot": "depot_1",
+          "km_at_start": 909,
+          "required_manhours": 7
+        },
+        {
+          "maintenance_id": "corrective_1",
+          "maintenance_type": "corrective",
+          "start_day": 12,
+          "start_shift": "day",
+          "end_day": 12,
+          "end_shift": "night",
+          "depot": "depot_1",
+          "km_at_start": 909,
           "required_manhours": 7
         },
         {
@@ -1141,7 +2341,18 @@
           "start_shift": "day",
           "end_day": 2,
           "end_shift": "night",
-          "depot": "depot_2",
+          "depot": "depot_1",
+          "km_at_start": 279,
+          "required_manhours": 3
+        },
+        {
+          "maintenance_id": "corrective_2",
+          "maintenance_type": "corrective",
+          "start_day": 3,
+          "start_shift": "day",
+          "end_day": 3,
+          "end_shift": "night",
+          "depot": "depot_1",
           "km_at_start": 279,
           "required_manhours": 3
         },
@@ -1152,8 +2363,41 @@
           "start_shift": "day",
           "end_day": 5,
           "end_shift": "night",
-          "depot": "depot_2",
-          "km_at_start": 791,
+          "depot": "depot_1",
+          "km_at_start": 463,
+          "required_manhours": 3
+        },
+        {
+          "maintenance_id": "corrective_2",
+          "maintenance_type": "corrective",
+          "start_day": 8,
+          "start_shift": "day",
+          "end_day": 8,
+          "end_shift": "night",
+          "depot": "depot_1",
+          "km_at_start": 617,
+          "required_manhours": 3
+        },
+        {
+          "maintenance_id": "corrective_2",
+          "maintenance_type": "corrective",
+          "start_day": 11,
+          "start_shift": "day",
+          "end_day": 11,
+          "end_shift": "night",
+          "depot": "depot_1",
+          "km_at_start": 909,
+          "required_manhours": 3
+        },
+        {
+          "maintenance_id": "corrective_2",
+          "maintenance_type": "corrective",
+          "start_day": 12,
+          "start_shift": "day",
+          "end_day": 12,
+          "end_shift": "night",
+          "depot": "depot_1",
+          "km_at_start": 909,
           "required_manhours": 3
         },
         {
@@ -1163,295 +2407,30 @@
           "start_shift": "day",
           "end_day": 2,
           "end_shift": "night",
-          "depot": "depot_2",
+          "depot": "depot_1",
           "km_at_start": 279,
           "required_manhours": 11
-        }
-      ],
-      "states": {
-        "1_day": {
-          "location": "parking_1",
-          "km": 0,
-          "is_idle": false,
-          "is_under_maintenance": false
-        },
-        "1_night": {
-          "location": "parking_2",
-          "km": 279,
-          "is_idle": true,
-          "is_under_maintenance": false
-        },
-        "2_day": {
-          "location": "depot_2",
-          "km": 279,
-          "is_idle": false,
-          "is_under_maintenance": true
-        },
-        "2_night": {
-          "location": "depot_2",
-          "km": 424,
-          "is_idle": false,
-          "is_under_maintenance": true
-        },
-        "3_day": {
-          "location": "parking_2",
-          "km": 424,
-          "is_idle": false,
-          "is_under_maintenance": false
-        },
-        "3_night": {
-          "location": "depot_1",
-          "km": 724,
-          "is_idle": true,
-          "is_under_maintenance": false
-        },
-        "4_day": {
-          "location": "depot_1",
-          "km": 724,
-          "is_idle": false,
-          "is_under_maintenance": false
-        },
-        "4_night": {
-          "location": "depot_2",
-          "km": 791,
-          "is_idle": true,
-          "is_under_maintenance": false
-        },
-        "5_day": {
-          "location": "depot_2",
-          "km": 791,
-          "is_idle": false,
-          "is_under_maintenance": true
-        },
-        "5_night": {
-          "location": "parking_2",
-          "km": 903,
-          "is_idle": false,
-          "is_under_maintenance": true
-        },
-        "6_day": {
-          "location": "parking_2",
-          "km": 903,
-          "is_idle": false,
-          "is_under_maintenance": false
-        },
-        "6_night": {
-          "location": "depot_2",
-          "km": 1176,
-          "is_idle": true,
-          "is_under_maintenance": false
-        },
-        "7_day": {
-          "location": "parking_1",
-          "km": 1176,
-          "is_idle": false,
-          "is_under_maintenance": false
-        },
-        "7_night": {
-          "location": "parking_2",
-          "km": 1299,
-          "is_idle": true,
-          "is_under_maintenance": false
-        },
-        "8_day": {
-          "location": "depot_1",
-          "km": 1299,
-          "is_idle": false,
-          "is_under_maintenance": false
-        },
-        "8_night": {
-          "location": "depot_2",
-          "km": 1497,
-          "is_idle": true,
-          "is_under_maintenance": false
-        },
-        "9_day": {
-          "location": "parking_1",
-          "km": 1497,
-          "is_idle": false,
-          "is_under_maintenance": false
-        },
-        "9_night": {
-          "location": "depot_1",
-          "km": 1717,
-          "is_idle": true,
-          "is_under_maintenance": false
-        },
-        "10_day": {
-          "location": "parking_1",
-          "km": 1717,
-          "is_idle": false,
-          "is_under_maintenance": false
-        },
-        "10_night": {
-          "location": "depot_2",
-          "km": 1942,
-          "is_idle": true,
-          "is_under_maintenance": false
-        },
-        "11_day": {
-          "location": "parking_1",
-          "km": 1942,
-          "is_idle": false,
-          "is_under_maintenance": false
-        },
-        "11_night": {
-          "location": "depot_2",
-          "km": 2102,
-          "is_idle": true,
-          "is_under_maintenance": false
-        },
-        "12_day": {
-          "location": "parking_2",
-          "km": 2102,
-          "is_idle": false,
-          "is_under_maintenance": false
-        },
-        "12_night": {
-          "location": "depot_2",
-          "km": 2220,
-          "is_idle": true,
-          "is_under_maintenance": false
-        },
-        "13_day": {
-          "location": "parking_1",
-          "km": 2220,
-          "is_idle": false,
-          "is_under_maintenance": false
-        },
-        "13_night": {
-          "location": "depot_2",
-          "km": 2327,
-          "is_idle": true,
-          "is_under_maintenance": false
-        },
-        "14_day": {
-          "location": "depot_1",
-          "km": 2327,
-          "is_idle": true,
-          "is_under_maintenance": false
-        },
-        "14_night": {
-          "location": "depot_1",
-          "km": 2327,
-          "is_idle": true,
-          "is_under_maintenance": false
-        }
-      }
-    },
-    "vehicle_5": {
-      "initial_state": {
-        "location": "parking_1",
-        "km": 22997
-      },
-      "route_assignments": {
-        "1_day": {
-          "route_id": "route_day1_3",
-          "start_location": "depot_2",
-          "end_location": "parking_2",
-          "distance_km": 73
-        },
-        "1_night": null,
-        "2_day": null,
-        "2_night": null,
-        "3_day": null,
-        "3_night": null,
-        "4_day": {
-          "route_id": "route_day4_2",
-          "start_location": "parking_2",
-          "end_location": "depot_1",
-          "distance_km": 113
-        },
-        "4_night": null,
-        "5_day": {
-          "route_id": "route_day5_1",
-          "start_location": "parking_2",
-          "end_location": "depot_2",
-          "distance_km": 188
-        },
-        "5_night": null,
-        "6_day": {
-          "route_id": "route_day6_8",
-          "start_location": "depot_2",
-          "end_location": "depot_2",
-          "distance_km": 154
-        },
-        "6_night": null,
-        "7_day": {
-          "route_id": "route_day7_2",
-          "start_location": "parking_2",
-          "end_location": "depot_1",
-          "distance_km": 92
-        },
-        "7_night": null,
-        "8_day": null,
-        "8_night": null,
-        "9_day": null,
-        "9_night": null,
-        "10_day": {
-          "route_id": "route_day10_8",
-          "start_location": "parking_2",
-          "end_location": "parking_1",
-          "distance_km": 61
-        },
-        "10_night": null,
-        "11_day": null,
-        "11_night": null,
-        "12_day": null,
-        "12_night": null,
-        "13_day": null,
-        "13_night": null,
-        "14_day": {
-          "route_id": "route_day14_7",
-          "start_location": "parking_2",
-          "end_location": "depot_1",
-          "distance_km": 183
-        },
-        "14_night": null
-      },
-      "maintenance_activities": [
-        {
-          "maintenance_id": "corrective_1",
-          "maintenance_type": "corrective",
-          "start_day": 3,
-          "start_shift": "night",
-          "end_day": 4,
-          "end_shift": "day",
-          "depot": "depot_2",
-          "km_at_start": 78,
-          "required_manhours": 7
-        },
-        {
-          "maintenance_id": "corrective_2",
-          "maintenance_type": "corrective",
-          "start_day": 3,
-          "start_shift": "night",
-          "end_day": 4,
-          "end_shift": "day",
-          "depot": "depot_2",
-          "km_at_start": 78,
-          "required_manhours": 3
         },
         {
           "maintenance_id": "corrective_3",
           "maintenance_type": "corrective",
-          "start_day": 1,
+          "start_day": 3,
           "start_shift": "day",
-          "end_day": 1,
+          "end_day": 3,
           "end_shift": "night",
-          "depot": "depot_2",
-          "km_at_start": 5,
+          "depot": "depot_1",
+          "km_at_start": 279,
           "required_manhours": 11
         },
         {
           "maintenance_id": "corrective_3",
           "maintenance_type": "corrective",
-          "start_day": 6,
+          "start_day": 5,
           "start_shift": "day",
-          "end_day": 6,
+          "end_day": 5,
           "end_shift": "night",
-          "depot": "depot_2",
-          "km_at_start": 379,
+          "depot": "depot_1",
+          "km_at_start": 463,
           "required_manhours": 11
         },
         {
@@ -1461,8 +2440,19 @@
           "start_shift": "day",
           "end_day": 8,
           "end_shift": "night",
-          "depot": "depot_2",
-          "km_at_start": 625,
+          "depot": "depot_1",
+          "km_at_start": 617,
+          "required_manhours": 11
+        },
+        {
+          "maintenance_id": "corrective_3",
+          "maintenance_type": "corrective",
+          "start_day": 11,
+          "start_shift": "day",
+          "end_day": 11,
+          "end_shift": "night",
+          "depot": "depot_1",
+          "km_at_start": 909,
           "required_manhours": 11
         },
         {
@@ -1472,555 +2462,188 @@
           "start_shift": "day",
           "end_day": 12,
           "end_shift": "night",
-          "depot": "depot_2",
-          "km_at_start": 686,
-          "required_manhours": 11
-        }
-      ],
-      "states": {
-        "1_day": {
-          "location": "depot_2",
-          "km": 5,
-          "is_idle": false,
-          "is_under_maintenance": true
-        },
-        "1_night": {
-          "location": "parking_2",
-          "km": 78,
-          "is_idle": false,
-          "is_under_maintenance": true
-        },
-        "2_day": {
-          "location": "parking_1",
-          "km": 78,
-          "is_idle": true,
-          "is_under_maintenance": false
-        },
-        "2_night": {
-          "location": "parking_1",
-          "km": 78,
-          "is_idle": true,
-          "is_under_maintenance": false
-        },
-        "3_day": {
-          "location": "depot_1",
-          "km": 78,
-          "is_idle": true,
-          "is_under_maintenance": false
-        },
-        "3_night": {
-          "location": "depot_2",
-          "km": 78,
-          "is_idle": false,
-          "is_under_maintenance": true
-        },
-        "4_day": {
-          "location": "parking_2",
-          "km": 78,
-          "is_idle": false,
-          "is_under_maintenance": true
-        },
-        "4_night": {
-          "location": "depot_1",
-          "km": 191,
-          "is_idle": true,
-          "is_under_maintenance": false
-        },
-        "5_day": {
-          "location": "parking_2",
-          "km": 191,
-          "is_idle": false,
-          "is_under_maintenance": false
-        },
-        "5_night": {
-          "location": "depot_2",
-          "km": 379,
-          "is_idle": true,
-          "is_under_maintenance": false
-        },
-        "6_day": {
-          "location": "depot_2",
-          "km": 379,
-          "is_idle": false,
-          "is_under_maintenance": true
-        },
-        "6_night": {
-          "location": "depot_2",
-          "km": 533,
-          "is_idle": false,
-          "is_under_maintenance": true
-        },
-        "7_day": {
-          "location": "parking_2",
-          "km": 533,
-          "is_idle": false,
-          "is_under_maintenance": false
-        },
-        "7_night": {
-          "location": "depot_1",
-          "km": 625,
-          "is_idle": true,
-          "is_under_maintenance": false
-        },
-        "8_day": {
-          "location": "depot_2",
-          "km": 625,
-          "is_idle": false,
-          "is_under_maintenance": true
-        },
-        "8_night": {
-          "location": "depot_1",
-          "km": 625,
-          "is_idle": false,
-          "is_under_maintenance": true
-        },
-        "9_day": {
-          "location": "depot_1",
-          "km": 625,
-          "is_idle": true,
-          "is_under_maintenance": false
-        },
-        "9_night": {
-          "location": "depot_1",
-          "km": 625,
-          "is_idle": true,
-          "is_under_maintenance": false
-        },
-        "10_day": {
-          "location": "parking_2",
-          "km": 625,
-          "is_idle": false,
-          "is_under_maintenance": false
-        },
-        "10_night": {
-          "location": "parking_1",
-          "km": 686,
-          "is_idle": true,
-          "is_under_maintenance": false
-        },
-        "11_day": {
-          "location": "depot_1",
-          "km": 686,
-          "is_idle": true,
-          "is_under_maintenance": false
-        },
-        "11_night": {
-          "location": "depot_1",
-          "km": 686,
-          "is_idle": true,
-          "is_under_maintenance": false
-        },
-        "12_day": {
-          "location": "depot_2",
-          "km": 686,
-          "is_idle": false,
-          "is_under_maintenance": true
-        },
-        "12_night": {
-          "location": "parking_2",
-          "km": 686,
-          "is_idle": false,
-          "is_under_maintenance": true
-        },
-        "13_day": {
-          "location": "depot_1",
-          "km": 686,
-          "is_idle": true,
-          "is_under_maintenance": false
-        },
-        "13_night": {
-          "location": "depot_2",
-          "km": 686,
-          "is_idle": true,
-          "is_under_maintenance": false
-        },
-        "14_day": {
-          "location": "parking_2",
-          "km": 686,
-          "is_idle": false,
-          "is_under_maintenance": false
-        },
-        "14_night": {
-          "location": "depot_1",
-          "km": 869,
-          "is_idle": true,
-          "is_under_maintenance": false
-        }
-      }
-    },
-    "vehicle_6": {
-      "initial_state": {
-        "location": "depot_2",
-        "km": 5354
-      },
-      "route_assignments": {
-        "1_day": {
-          "route_id": "route_day1_4",
-          "start_location": "depot_1",
-          "end_location": "depot_1",
-          "distance_km": 89
-        },
-        "1_night": null,
-        "2_day": null,
-        "2_night": null,
-        "3_day": {
-          "route_id": "route_day3_1",
-          "start_location": "depot_1",
-          "end_location": "parking_1",
-          "distance_km": 274
-        },
-        "3_night": null,
-        "4_day": {
-          "route_id": "route_day4_8",
-          "start_location": "depot_2",
-          "end_location": "parking_1",
-          "distance_km": 221
-        },
-        "4_night": null,
-        "5_day": null,
-        "5_night": null,
-        "6_day": {
-          "route_id": "route_day6_2",
-          "start_location": "depot_2",
-          "end_location": "parking_2",
-          "distance_km": 85
-        },
-        "6_night": null,
-        "7_day": {
-          "route_id": "route_day7_8",
-          "start_location": "parking_1",
-          "end_location": "depot_1",
-          "distance_km": 62
-        },
-        "7_night": null,
-        "8_day": {
-          "route_id": "route_day8_6",
-          "start_location": "parking_1",
-          "end_location": "parking_1",
-          "distance_km": 102
-        },
-        "8_night": null,
-        "9_day": {
-          "route_id": "route_day9_3",
-          "start_location": "depot_1",
-          "end_location": "depot_1",
-          "distance_km": 187
-        },
-        "9_night": null,
-        "10_day": {
-          "route_id": "route_day10_1",
-          "start_location": "parking_1",
-          "end_location": "depot_1",
-          "distance_km": 290
-        },
-        "10_night": null,
-        "11_day": {
-          "route_id": "route_day11_1",
-          "start_location": "depot_1",
-          "end_location": "parking_1",
-          "distance_km": 247
-        },
-        "11_night": null,
-        "12_day": {
-          "route_id": "route_day12_6",
-          "start_location": "depot_2",
-          "end_location": "parking_1",
-          "distance_km": 250
-        },
-        "12_night": null,
-        "13_day": {
-          "route_id": "route_day13_6",
-          "start_location": "depot_1",
-          "end_location": "parking_1",
-          "distance_km": 139
-        },
-        "13_night": null,
-        "14_day": {
-          "route_id": "route_day14_1",
-          "start_location": "parking_1",
-          "end_location": "depot_2",
-          "distance_km": 198
-        },
-        "14_night": null
-      },
-      "maintenance_activities": [
-        {
-          "maintenance_id": "corrective_1",
-          "maintenance_type": "corrective",
-          "start_day": 4,
-          "start_shift": "day",
-          "end_day": 4,
-          "end_shift": "night",
-          "depot": "depot_2",
-          "km_at_start": 363,
-          "required_manhours": 7
-        },
-        {
-          "maintenance_id": "corrective_1",
-          "maintenance_type": "corrective",
-          "start_day": 6,
-          "start_shift": "day",
-          "end_day": 6,
-          "end_shift": "night",
-          "depot": "depot_2",
-          "km_at_start": 584,
-          "required_manhours": 7
-        },
-        {
-          "maintenance_id": "corrective_1",
-          "maintenance_type": "corrective",
-          "start_day": 12,
-          "start_shift": "day",
-          "end_day": 12,
-          "end_shift": "night",
-          "depot": "depot_2",
-          "km_at_start": 1557,
-          "required_manhours": 7
-        },
-        {
-          "maintenance_id": "corrective_2",
-          "maintenance_type": "corrective",
-          "start_day": 4,
-          "start_shift": "day",
-          "end_day": 4,
-          "end_shift": "night",
-          "depot": "depot_2",
-          "km_at_start": 363,
-          "required_manhours": 3
-        },
-        {
-          "maintenance_id": "corrective_2",
-          "maintenance_type": "corrective",
-          "start_day": 6,
-          "start_shift": "day",
-          "end_day": 6,
-          "end_shift": "night",
-          "depot": "depot_2",
-          "km_at_start": 584,
-          "required_manhours": 3
-        },
-        {
-          "maintenance_id": "corrective_2",
-          "maintenance_type": "corrective",
-          "start_day": 12,
-          "start_shift": "day",
-          "end_day": 12,
-          "end_shift": "night",
-          "depot": "depot_2",
-          "km_at_start": 1557,
-          "required_manhours": 3
-        },
-        {
-          "maintenance_id": "corrective_3",
-          "maintenance_type": "corrective",
-          "start_day": 4,
-          "start_shift": "day",
-          "end_day": 4,
-          "end_shift": "night",
-          "depot": "depot_2",
-          "km_at_start": 363,
-          "required_manhours": 11
-        },
-        {
-          "maintenance_id": "corrective_3",
-          "maintenance_type": "corrective",
-          "start_day": 6,
-          "start_shift": "day",
-          "end_day": 6,
-          "end_shift": "night",
-          "depot": "depot_2",
-          "km_at_start": 584,
-          "required_manhours": 11
-        },
-        {
-          "maintenance_id": "corrective_3",
-          "maintenance_type": "corrective",
-          "start_day": 12,
-          "start_shift": "day",
-          "end_day": 12,
-          "end_shift": "night",
-          "depot": "depot_2",
-          "km_at_start": 1557,
+          "depot": "depot_1",
+          "km_at_start": 909,
           "required_manhours": 11
         },
         {
           "maintenance_id": "corrective_4",
           "maintenance_type": "corrective",
-          "start_day": 3,
+          "start_day": 1,
           "start_shift": "day",
-          "end_day": 3,
+          "end_day": 1,
           "end_shift": "night",
-          "depot": "depot_1",
-          "km_at_start": 89,
+          "depot": "depot_2",
+          "km_at_start": 0,
           "required_manhours": 3
         }
       ],
       "states": {
         "1_day": {
-          "location": "depot_1",
+          "location": "depot_2",
           "km": 0,
           "is_idle": false,
-          "is_under_maintenance": false
+          "is_under_maintenance": true
         },
         "1_night": {
           "location": "depot_1",
-          "km": 89,
-          "is_idle": true,
-          "is_under_maintenance": false
+          "km": 279,
+          "is_idle": false,
+          "is_under_maintenance": true
         },
         "2_day": {
-          "location": "parking_1",
-          "km": 89,
-          "is_idle": true,
-          "is_under_maintenance": false
+          "location": "depot_1",
+          "km": 279,
+          "is_idle": false,
+          "is_under_maintenance": true
         },
         "2_night": {
           "location": "depot_1",
-          "km": 89,
-          "is_idle": true,
-          "is_under_maintenance": false
+          "km": 279,
+          "is_idle": false,
+          "is_under_maintenance": true
         },
         "3_day": {
           "location": "depot_1",
-          "km": 89,
+          "km": 279,
           "is_idle": false,
           "is_under_maintenance": true
         },
         "3_night": {
-          "location": "parking_1",
-          "km": 363,
+          "location": "depot_2",
+          "km": 350,
           "is_idle": false,
           "is_under_maintenance": true
         },
         "4_day": {
           "location": "depot_2",
-          "km": 363,
+          "km": 350,
           "is_idle": false,
-          "is_under_maintenance": true
+          "is_under_maintenance": false
         },
         "4_night": {
-          "location": "parking_1",
-          "km": 584,
-          "is_idle": false,
-          "is_under_maintenance": true
+          "location": "depot_1",
+          "km": 463,
+          "is_idle": true,
+          "is_under_maintenance": false
         },
         "5_day": {
           "location": "depot_1",
-          "km": 584,
-          "is_idle": true,
-          "is_under_maintenance": false
+          "km": 463,
+          "is_idle": false,
+          "is_under_maintenance": true
         },
         "5_night": {
-          "location": "depot_1",
-          "km": 584,
-          "is_idle": true,
-          "is_under_maintenance": false
+          "location": "depot_2",
+          "km": 528,
+          "is_idle": false,
+          "is_under_maintenance": true
         },
         "6_day": {
           "location": "depot_2",
-          "km": 584,
-          "is_idle": false,
-          "is_under_maintenance": true
+          "km": 528,
+          "is_idle": true,
+          "is_under_maintenance": false
         },
         "6_night": {
-          "location": "parking_2",
-          "km": 669,
-          "is_idle": false,
-          "is_under_maintenance": true
+          "location": "depot_2",
+          "km": 528,
+          "is_idle": true,
+          "is_under_maintenance": false
         },
         "7_day": {
-          "location": "parking_1",
-          "km": 669,
+          "location": "depot_2",
+          "km": 528,
           "is_idle": false,
           "is_under_maintenance": false
         },
         "7_night": {
           "location": "depot_1",
-          "km": 731,
+          "km": 617,
           "is_idle": true,
           "is_under_maintenance": false
         },
         "8_day": {
-          "location": "parking_1",
-          "km": 731,
+          "location": "depot_1",
+          "km": 617,
           "is_idle": false,
-          "is_under_maintenance": false
+          "is_under_maintenance": true
         },
         "8_night": {
-          "location": "parking_1",
-          "km": 833,
+          "location": "depot_2",
+          "km": 684,
+          "is_idle": false,
+          "is_under_maintenance": true
+        },
+        "9_day": {
+          "location": "depot_2",
+          "km": 684,
           "is_idle": true,
           "is_under_maintenance": false
         },
-        "9_day": {
-          "location": "depot_1",
-          "km": 833,
-          "is_idle": false,
-          "is_under_maintenance": false
-        },
         "9_night": {
-          "location": "depot_1",
-          "km": 1020,
+          "location": "depot_2",
+          "km": 684,
           "is_idle": true,
           "is_under_maintenance": false
         },
         "10_day": {
-          "location": "parking_1",
-          "km": 1020,
+          "location": "depot_2",
+          "km": 684,
           "is_idle": false,
           "is_under_maintenance": false
         },
         "10_night": {
           "location": "depot_1",
-          "km": 1310,
+          "km": 909,
           "is_idle": true,
           "is_under_maintenance": false
         },
         "11_day": {
           "location": "depot_1",
-          "km": 1310,
+          "km": 909,
           "is_idle": false,
-          "is_under_maintenance": false
+          "is_under_maintenance": true
         },
         "11_night": {
-          "location": "parking_1",
-          "km": 1557,
-          "is_idle": true,
-          "is_under_maintenance": false
+          "location": "depot_1",
+          "km": 909,
+          "is_idle": false,
+          "is_under_maintenance": true
         },
         "12_day": {
-          "location": "depot_2",
-          "km": 1557,
+          "location": "depot_1",
+          "km": 909,
           "is_idle": false,
           "is_under_maintenance": true
         },
         "12_night": {
-          "location": "parking_1",
-          "km": 1807,
+          "location": "depot_2",
+          "km": 1056,
           "is_idle": false,
           "is_under_maintenance": true
         },
         "13_day": {
-          "location": "depot_1",
-          "km": 1807,
-          "is_idle": false,
+          "location": "depot_2",
+          "km": 1056,
+          "is_idle": true,
           "is_under_maintenance": false
         },
         "13_night": {
-          "location": "parking_1",
-          "km": 1946,
+          "location": "depot_2",
+          "km": 1056,
           "is_idle": true,
           "is_under_maintenance": false
         },
         "14_day": {
-          "location": "parking_1",
-          "km": 1946,
-          "is_idle": false,
+          "location": "depot_2",
+          "km": 1056,
+          "is_idle": true,
           "is_under_maintenance": false
         },
         "14_night": {
-          "location": "depot_2",
-          "km": 2144,
+          "location": "parking_1",
+          "km": 1056,
           "is_idle": true,
           "is_under_maintenance": false
         }
@@ -2028,106 +2651,86 @@
     },
     "vehicle_7": {
       "initial_state": {
-        "location": "depot_2",
+        "location": "depot_1",
         "km": 22433
       },
       "route_assignments": {
         "1_day": {
-          "route_id": "route_day1_6",
-          "start_location": "depot_1",
-          "end_location": "parking_2",
-          "distance_km": 147
+          "route_id": "route_day1_2",
+          "start_location": "depot_2",
+          "end_location": "depot_1",
+          "distance_km": 106
         },
         "1_night": null,
         "2_day": {
-          "route_id": "route_day2_5",
+          "route_id": "route_day2_7",
           "start_location": "depot_1",
-          "end_location": "parking_1",
-          "distance_km": 265
+          "end_location": "depot_2",
+          "distance_km": 203
         },
         "2_night": null,
         "3_day": {
-          "route_id": "route_day3_8",
+          "route_id": "route_day3_7",
           "start_location": "depot_2",
-          "end_location": "parking_1",
-          "distance_km": 152
+          "end_location": "depot_1",
+          "distance_km": 287
         },
         "3_night": null,
         "4_day": {
-          "route_id": "route_day4_3",
-          "start_location": "depot_2",
-          "end_location": "depot_1",
-          "distance_km": 136
+          "route_id": "route_day4_8",
+          "start_location": "depot_1",
+          "end_location": "depot_2",
+          "distance_km": 221
         },
         "4_night": null,
-        "5_day": {
-          "route_id": "route_day5_8",
-          "start_location": "parking_2",
-          "end_location": "parking_1",
-          "distance_km": 254
-        },
+        "5_day": null,
         "5_night": null,
         "6_day": {
-          "route_id": "route_day6_7",
-          "start_location": "depot_1",
+          "route_id": "route_day6_3",
+          "start_location": "depot_2",
           "end_location": "depot_1",
-          "distance_km": 287
+          "distance_km": 121
         },
         "6_night": null,
         "7_day": {
           "route_id": "route_day7_7",
           "start_location": "depot_1",
-          "end_location": "depot_1",
+          "end_location": "depot_2",
           "distance_km": 241
         },
         "7_night": null,
         "8_day": {
-          "route_id": "route_day8_1",
-          "start_location": "parking_2",
-          "end_location": "depot_2",
-          "distance_km": 64
+          "route_id": "route_day8_7",
+          "start_location": "depot_2",
+          "end_location": "depot_1",
+          "distance_km": 117
         },
         "8_night": null,
         "9_day": {
-          "route_id": "route_day9_6",
-          "start_location": "depot_2",
-          "end_location": "parking_1",
-          "distance_km": 122
+          "route_id": "route_day9_2",
+          "start_location": "depot_1",
+          "end_location": "depot_2",
+          "distance_km": 167
         },
         "9_night": null,
-        "10_day": {
-          "route_id": "route_day10_7",
-          "start_location": "depot_1",
-          "end_location": "depot_1",
-          "distance_km": 212
-        },
+        "10_day": null,
         "10_night": null,
-        "11_day": {
-          "route_id": "route_day11_7",
-          "start_location": "depot_2",
-          "end_location": "depot_1",
-          "distance_km": 128
-        },
+        "11_day": null,
         "11_night": null,
         "12_day": {
-          "route_id": "route_day12_3",
-          "start_location": "parking_2",
+          "route_id": "route_day12_4",
+          "start_location": "depot_1",
           "end_location": "depot_2",
-          "distance_km": 286
+          "distance_km": 299
         },
         "12_night": null,
-        "13_day": {
-          "route_id": "route_day13_5",
-          "start_location": "parking_1",
-          "end_location": "parking_1",
-          "distance_km": 271
-        },
+        "13_day": null,
         "13_night": null,
         "14_day": {
-          "route_id": "route_day14_4",
-          "start_location": "parking_1",
-          "end_location": "parking_2",
-          "distance_km": 205
+          "route_id": "route_day14_2",
+          "start_location": "depot_2",
+          "end_location": "depot_1",
+          "distance_km": 77
         },
         "14_night": null
       },
@@ -2135,23 +2738,23 @@
         {
           "maintenance_id": "corrective_1",
           "maintenance_type": "corrective",
-          "start_day": 3,
+          "start_day": 9,
           "start_shift": "day",
-          "end_day": 3,
+          "end_day": 9,
           "end_shift": "night",
-          "depot": "depot_2",
-          "km_at_start": 412,
+          "depot": "depot_1",
+          "km_at_start": 1296,
           "required_manhours": 7
         },
         {
           "maintenance_id": "corrective_2",
           "maintenance_type": "corrective",
-          "start_day": 3,
+          "start_day": 2,
           "start_shift": "day",
-          "end_day": 3,
+          "end_day": 2,
           "end_shift": "night",
-          "depot": "depot_2",
-          "km_at_start": 412,
+          "depot": "depot_1",
+          "km_at_start": 106,
           "required_manhours": 3
         },
         {
@@ -2161,8 +2764,19 @@
           "start_shift": "day",
           "end_day": 4,
           "end_shift": "night",
-          "depot": "depot_2",
-          "km_at_start": 564,
+          "depot": "depot_1",
+          "km_at_start": 596,
+          "required_manhours": 3
+        },
+        {
+          "maintenance_id": "corrective_2",
+          "maintenance_type": "corrective",
+          "start_day": 7,
+          "start_shift": "day",
+          "end_day": 7,
+          "end_shift": "night",
+          "depot": "depot_1",
+          "km_at_start": 938,
           "required_manhours": 3
         },
         {
@@ -2172,30 +2786,30 @@
           "start_shift": "day",
           "end_day": 9,
           "end_shift": "night",
-          "depot": "depot_2",
-          "km_at_start": 1546,
+          "depot": "depot_1",
+          "km_at_start": 1296,
           "required_manhours": 3
         },
         {
           "maintenance_id": "corrective_2",
           "maintenance_type": "corrective",
-          "start_day": 11,
+          "start_day": 12,
           "start_shift": "day",
-          "end_day": 11,
+          "end_day": 12,
           "end_shift": "night",
-          "depot": "depot_2",
-          "km_at_start": 1880,
+          "depot": "depot_1",
+          "km_at_start": 1463,
           "required_manhours": 3
         },
         {
           "maintenance_id": "corrective_3",
           "maintenance_type": "corrective",
-          "start_day": 3,
+          "start_day": 2,
           "start_shift": "day",
-          "end_day": 3,
+          "end_day": 2,
           "end_shift": "night",
-          "depot": "depot_2",
-          "km_at_start": 412,
+          "depot": "depot_1",
+          "km_at_start": 106,
           "required_manhours": 11
         },
         {
@@ -2205,8 +2819,19 @@
           "start_shift": "day",
           "end_day": 4,
           "end_shift": "night",
-          "depot": "depot_2",
-          "km_at_start": 564,
+          "depot": "depot_1",
+          "km_at_start": 596,
+          "required_manhours": 11
+        },
+        {
+          "maintenance_id": "corrective_3",
+          "maintenance_type": "corrective",
+          "start_day": 7,
+          "start_shift": "day",
+          "end_day": 7,
+          "end_shift": "night",
+          "depot": "depot_1",
+          "km_at_start": 938,
           "required_manhours": 11
         },
         {
@@ -2216,188 +2841,188 @@
           "start_shift": "day",
           "end_day": 9,
           "end_shift": "night",
-          "depot": "depot_2",
-          "km_at_start": 1546,
+          "depot": "depot_1",
+          "km_at_start": 1296,
           "required_manhours": 11
         },
         {
           "maintenance_id": "corrective_3",
           "maintenance_type": "corrective",
-          "start_day": 11,
+          "start_day": 12,
           "start_shift": "day",
-          "end_day": 11,
+          "end_day": 12,
           "end_shift": "night",
-          "depot": "depot_2",
-          "km_at_start": 1880,
+          "depot": "depot_1",
+          "km_at_start": 1463,
           "required_manhours": 11
         }
       ],
       "states": {
         "1_day": {
-          "location": "depot_1",
+          "location": "depot_2",
           "km": 0,
           "is_idle": false,
           "is_under_maintenance": false
         },
         "1_night": {
-          "location": "parking_2",
-          "km": 147,
+          "location": "depot_1",
+          "km": 106,
           "is_idle": true,
           "is_under_maintenance": false
         },
         "2_day": {
           "location": "depot_1",
-          "km": 147,
+          "km": 106,
           "is_idle": false,
-          "is_under_maintenance": false
+          "is_under_maintenance": true
         },
         "2_night": {
-          "location": "parking_1",
-          "km": 412,
-          "is_idle": true,
-          "is_under_maintenance": false
+          "location": "depot_2",
+          "km": 309,
+          "is_idle": false,
+          "is_under_maintenance": true
         },
         "3_day": {
           "location": "depot_2",
-          "km": 412,
+          "km": 309,
           "is_idle": false,
-          "is_under_maintenance": true
+          "is_under_maintenance": false
         },
         "3_night": {
-          "location": "parking_1",
-          "km": 564,
-          "is_idle": false,
-          "is_under_maintenance": true
+          "location": "depot_1",
+          "km": 596,
+          "is_idle": true,
+          "is_under_maintenance": false
         },
         "4_day": {
-          "location": "depot_2",
-          "km": 564,
+          "location": "depot_1",
+          "km": 596,
           "is_idle": false,
           "is_under_maintenance": true
         },
         "4_night": {
-          "location": "depot_1",
-          "km": 700,
+          "location": "depot_2",
+          "km": 817,
           "is_idle": false,
           "is_under_maintenance": true
         },
         "5_day": {
-          "location": "parking_2",
-          "km": 700,
-          "is_idle": false,
+          "location": "depot_2",
+          "km": 817,
+          "is_idle": true,
           "is_under_maintenance": false
         },
         "5_night": {
-          "location": "parking_1",
-          "km": 954,
+          "location": "depot_2",
+          "km": 817,
           "is_idle": true,
           "is_under_maintenance": false
         },
         "6_day": {
-          "location": "depot_1",
-          "km": 954,
+          "location": "depot_2",
+          "km": 817,
           "is_idle": false,
           "is_under_maintenance": false
         },
         "6_night": {
           "location": "depot_1",
-          "km": 1241,
+          "km": 938,
           "is_idle": true,
           "is_under_maintenance": false
         },
         "7_day": {
           "location": "depot_1",
-          "km": 1241,
+          "km": 938,
           "is_idle": false,
-          "is_under_maintenance": false
+          "is_under_maintenance": true
         },
         "7_night": {
-          "location": "depot_1",
-          "km": 1482,
-          "is_idle": true,
-          "is_under_maintenance": false
+          "location": "depot_2",
+          "km": 1179,
+          "is_idle": false,
+          "is_under_maintenance": true
         },
         "8_day": {
-          "location": "parking_2",
-          "km": 1482,
+          "location": "depot_2",
+          "km": 1179,
           "is_idle": false,
           "is_under_maintenance": false
         },
         "8_night": {
-          "location": "depot_2",
-          "km": 1546,
+          "location": "depot_1",
+          "km": 1296,
           "is_idle": true,
           "is_under_maintenance": false
         },
         "9_day": {
-          "location": "depot_2",
-          "km": 1546,
+          "location": "depot_1",
+          "km": 1296,
           "is_idle": false,
           "is_under_maintenance": true
         },
         "9_night": {
-          "location": "parking_1",
-          "km": 1668,
+          "location": "depot_2",
+          "km": 1463,
           "is_idle": false,
           "is_under_maintenance": true
         },
         "10_day": {
-          "location": "depot_1",
-          "km": 1668,
-          "is_idle": false,
+          "location": "depot_2",
+          "km": 1463,
+          "is_idle": true,
           "is_under_maintenance": false
         },
         "10_night": {
-          "location": "depot_1",
-          "km": 1880,
+          "location": "parking_1",
+          "km": 1463,
           "is_idle": true,
           "is_under_maintenance": false
         },
         "11_day": {
-          "location": "depot_2",
-          "km": 1880,
-          "is_idle": false,
-          "is_under_maintenance": true
-        },
-        "11_night": {
-          "location": "depot_1",
-          "km": 2008,
-          "is_idle": false,
-          "is_under_maintenance": true
-        },
-        "12_day": {
-          "location": "parking_2",
-          "km": 2008,
-          "is_idle": false,
-          "is_under_maintenance": false
-        },
-        "12_night": {
-          "location": "depot_2",
-          "km": 2294,
+          "location": "parking_1",
+          "km": 1463,
           "is_idle": true,
           "is_under_maintenance": false
         },
-        "13_day": {
-          "location": "parking_1",
-          "km": 2294,
+        "11_night": {
+          "location": "depot_1",
+          "km": 1463,
+          "is_idle": true,
+          "is_under_maintenance": false
+        },
+        "12_day": {
+          "location": "depot_1",
+          "km": 1463,
           "is_idle": false,
+          "is_under_maintenance": true
+        },
+        "12_night": {
+          "location": "depot_2",
+          "km": 1762,
+          "is_idle": false,
+          "is_under_maintenance": true
+        },
+        "13_day": {
+          "location": "depot_2",
+          "km": 1762,
+          "is_idle": true,
           "is_under_maintenance": false
         },
         "13_night": {
-          "location": "parking_1",
-          "km": 2565,
+          "location": "depot_2",
+          "km": 1762,
           "is_idle": true,
           "is_under_maintenance": false
         },
         "14_day": {
-          "location": "parking_1",
-          "km": 2565,
+          "location": "depot_2",
+          "km": 1762,
           "is_idle": false,
           "is_under_maintenance": false
         },
         "14_night": {
-          "location": "parking_2",
-          "km": 2770,
+          "location": "depot_1",
+          "km": 1839,
           "is_idle": true,
           "is_under_maintenance": false
         }
@@ -2410,86 +3035,86 @@
       },
       "route_assignments": {
         "1_day": {
-          "route_id": "route_day1_5",
-          "start_location": "depot_2",
-          "end_location": "parking_2",
-          "distance_km": 202
+          "route_id": "route_day1_3",
+          "start_location": "depot_1",
+          "end_location": "depot_2",
+          "distance_km": 73
         },
         "1_night": null,
         "2_day": {
-          "route_id": "route_day2_8",
-          "start_location": "parking_1",
-          "end_location": "parking_2",
-          "distance_km": 54
+          "route_id": "route_day2_1",
+          "start_location": "depot_2",
+          "end_location": "depot_1",
+          "distance_km": 78
         },
         "2_night": null,
         "3_day": null,
         "3_night": null,
         "4_day": {
-          "route_id": "route_day4_4",
+          "route_id": "route_day4_7",
           "start_location": "depot_1",
           "end_location": "depot_2",
-          "distance_km": 200
+          "distance_km": 68
         },
         "4_night": null,
         "5_day": {
-          "route_id": "route_day5_4",
-          "start_location": "depot_1",
+          "route_id": "route_day5_6",
+          "start_location": "depot_2",
           "end_location": "depot_1",
-          "distance_km": 218
+          "distance_km": 271
         },
         "5_night": null,
-        "6_day": null,
-        "6_night": null,
-        "7_day": {
-          "route_id": "route_day7_5",
-          "start_location": "parking_2",
-          "end_location": "parking_2",
-          "distance_km": 89
-        },
-        "7_night": null,
-        "8_day": {
-          "route_id": "route_day8_2",
+        "6_day": {
+          "route_id": "route_day6_7",
           "start_location": "depot_1",
           "end_location": "depot_2",
-          "distance_km": 67
+          "distance_km": 287
+        },
+        "6_night": null,
+        "7_day": null,
+        "7_night": null,
+        "8_day": {
+          "route_id": "route_day8_8",
+          "start_location": "depot_2",
+          "end_location": "depot_1",
+          "distance_km": 221
         },
         "8_night": null,
         "9_day": {
-          "route_id": "route_day9_4",
-          "start_location": "depot_2",
-          "end_location": "parking_1",
-          "distance_km": 83
+          "route_id": "route_day9_3",
+          "start_location": "depot_1",
+          "end_location": "depot_2",
+          "distance_km": 187
         },
         "9_night": null,
-        "10_day": null,
+        "10_day": {
+          "route_id": "route_day10_6",
+          "start_location": "depot_2",
+          "end_location": "depot_1",
+          "distance_km": 114
+        },
         "10_night": null,
         "11_day": {
-          "route_id": "route_day11_4",
+          "route_id": "route_day11_5",
           "start_location": "depot_1",
-          "end_location": "depot_1",
-          "distance_km": 69
+          "end_location": "depot_2",
+          "distance_km": 263
         },
         "11_night": null,
-        "12_day": {
-          "route_id": "route_day12_5",
-          "start_location": "depot_2",
-          "end_location": "parking_2",
-          "distance_km": 56
-        },
+        "12_day": null,
         "12_night": null,
         "13_day": {
           "route_id": "route_day13_2",
-          "start_location": "depot_2",
-          "end_location": "parking_2",
+          "start_location": "depot_1",
+          "end_location": "depot_2",
           "distance_km": 139
         },
         "13_night": null,
         "14_day": {
-          "route_id": "route_day14_3",
-          "start_location": "parking_2",
-          "end_location": "parking_1",
-          "distance_km": 236
+          "route_id": "route_day14_7",
+          "start_location": "depot_2",
+          "end_location": "depot_1",
+          "distance_km": 183
         },
         "14_night": null
       },
@@ -2501,8 +3126,41 @@
           "start_shift": "day",
           "end_day": 1,
           "end_shift": "night",
-          "depot": "depot_2",
+          "depot": "depot_1",
           "km_at_start": 0,
+          "required_manhours": 7
+        },
+        {
+          "maintenance_id": "corrective_1",
+          "maintenance_type": "corrective",
+          "start_day": 3,
+          "start_shift": "day",
+          "end_day": 3,
+          "end_shift": "night",
+          "depot": "depot_1",
+          "km_at_start": 151,
+          "required_manhours": 7
+        },
+        {
+          "maintenance_id": "corrective_1",
+          "maintenance_type": "corrective",
+          "start_day": 4,
+          "start_shift": "day",
+          "end_day": 4,
+          "end_shift": "night",
+          "depot": "depot_1",
+          "km_at_start": 151,
+          "required_manhours": 7
+        },
+        {
+          "maintenance_id": "corrective_1",
+          "maintenance_type": "corrective",
+          "start_day": 6,
+          "start_shift": "day",
+          "end_day": 6,
+          "end_shift": "night",
+          "depot": "depot_1",
+          "km_at_start": 490,
           "required_manhours": 7
         },
         {
@@ -2512,19 +3170,19 @@
           "start_shift": "day",
           "end_day": 9,
           "end_shift": "night",
-          "depot": "depot_2",
-          "km_at_start": 830,
+          "depot": "depot_1",
+          "km_at_start": 998,
           "required_manhours": 7
         },
         {
           "maintenance_id": "corrective_1",
           "maintenance_type": "corrective",
-          "start_day": 12,
+          "start_day": 11,
           "start_shift": "day",
-          "end_day": 12,
+          "end_day": 11,
           "end_shift": "night",
-          "depot": "depot_2",
-          "km_at_start": 982,
+          "depot": "depot_1",
+          "km_at_start": 1299,
           "required_manhours": 7
         },
         {
@@ -2534,8 +3192,8 @@
           "start_shift": "day",
           "end_day": 13,
           "end_shift": "night",
-          "depot": "depot_2",
-          "km_at_start": 1038,
+          "depot": "depot_1",
+          "km_at_start": 1562,
           "required_manhours": 7
         },
         {
@@ -2545,8 +3203,41 @@
           "start_shift": "day",
           "end_day": 1,
           "end_shift": "night",
-          "depot": "depot_2",
+          "depot": "depot_1",
           "km_at_start": 0,
+          "required_manhours": 3
+        },
+        {
+          "maintenance_id": "corrective_2",
+          "maintenance_type": "corrective",
+          "start_day": 3,
+          "start_shift": "day",
+          "end_day": 3,
+          "end_shift": "night",
+          "depot": "depot_1",
+          "km_at_start": 151,
+          "required_manhours": 3
+        },
+        {
+          "maintenance_id": "corrective_2",
+          "maintenance_type": "corrective",
+          "start_day": 4,
+          "start_shift": "day",
+          "end_day": 4,
+          "end_shift": "night",
+          "depot": "depot_1",
+          "km_at_start": 151,
+          "required_manhours": 3
+        },
+        {
+          "maintenance_id": "corrective_2",
+          "maintenance_type": "corrective",
+          "start_day": 6,
+          "start_shift": "day",
+          "end_day": 6,
+          "end_shift": "night",
+          "depot": "depot_1",
+          "km_at_start": 490,
           "required_manhours": 3
         },
         {
@@ -2556,19 +3247,19 @@
           "start_shift": "day",
           "end_day": 9,
           "end_shift": "night",
-          "depot": "depot_2",
-          "km_at_start": 830,
+          "depot": "depot_1",
+          "km_at_start": 998,
           "required_manhours": 3
         },
         {
           "maintenance_id": "corrective_2",
           "maintenance_type": "corrective",
-          "start_day": 12,
+          "start_day": 11,
           "start_shift": "day",
-          "end_day": 12,
+          "end_day": 11,
           "end_shift": "night",
-          "depot": "depot_2",
-          "km_at_start": 982,
+          "depot": "depot_1",
+          "km_at_start": 1299,
           "required_manhours": 3
         },
         {
@@ -2578,8 +3269,8 @@
           "start_shift": "day",
           "end_day": 13,
           "end_shift": "night",
-          "depot": "depot_2",
-          "km_at_start": 1038,
+          "depot": "depot_1",
+          "km_at_start": 1562,
           "required_manhours": 3
         },
         {
@@ -2589,9 +3280,453 @@
           "start_shift": "day",
           "end_day": 1,
           "end_shift": "night",
-          "depot": "depot_2",
+          "depot": "depot_1",
           "km_at_start": 0,
           "required_manhours": 11
+        }
+      ],
+      "states": {
+        "1_day": {
+          "location": "depot_1",
+          "km": 0,
+          "is_idle": false,
+          "is_under_maintenance": true
+        },
+        "1_night": {
+          "location": "depot_2",
+          "km": 73,
+          "is_idle": false,
+          "is_under_maintenance": true
+        },
+        "2_day": {
+          "location": "depot_2",
+          "km": 73,
+          "is_idle": false,
+          "is_under_maintenance": false
+        },
+        "2_night": {
+          "location": "depot_1",
+          "km": 151,
+          "is_idle": true,
+          "is_under_maintenance": false
+        },
+        "3_day": {
+          "location": "depot_1",
+          "km": 151,
+          "is_idle": false,
+          "is_under_maintenance": true
+        },
+        "3_night": {
+          "location": "depot_1",
+          "km": 151,
+          "is_idle": false,
+          "is_under_maintenance": true
+        },
+        "4_day": {
+          "location": "depot_1",
+          "km": 151,
+          "is_idle": false,
+          "is_under_maintenance": true
+        },
+        "4_night": {
+          "location": "depot_2",
+          "km": 219,
+          "is_idle": false,
+          "is_under_maintenance": true
+        },
+        "5_day": {
+          "location": "depot_2",
+          "km": 219,
+          "is_idle": false,
+          "is_under_maintenance": false
+        },
+        "5_night": {
+          "location": "depot_1",
+          "km": 490,
+          "is_idle": true,
+          "is_under_maintenance": false
+        },
+        "6_day": {
+          "location": "depot_1",
+          "km": 490,
+          "is_idle": false,
+          "is_under_maintenance": true
+        },
+        "6_night": {
+          "location": "depot_2",
+          "km": 777,
+          "is_idle": false,
+          "is_under_maintenance": true
+        },
+        "7_day": {
+          "location": "depot_2",
+          "km": 777,
+          "is_idle": true,
+          "is_under_maintenance": false
+        },
+        "7_night": {
+          "location": "depot_2",
+          "km": 777,
+          "is_idle": true,
+          "is_under_maintenance": false
+        },
+        "8_day": {
+          "location": "depot_2",
+          "km": 777,
+          "is_idle": false,
+          "is_under_maintenance": false
+        },
+        "8_night": {
+          "location": "depot_1",
+          "km": 998,
+          "is_idle": true,
+          "is_under_maintenance": false
+        },
+        "9_day": {
+          "location": "depot_1",
+          "km": 998,
+          "is_idle": false,
+          "is_under_maintenance": true
+        },
+        "9_night": {
+          "location": "depot_2",
+          "km": 1185,
+          "is_idle": false,
+          "is_under_maintenance": true
+        },
+        "10_day": {
+          "location": "depot_2",
+          "km": 1185,
+          "is_idle": false,
+          "is_under_maintenance": false
+        },
+        "10_night": {
+          "location": "depot_1",
+          "km": 1299,
+          "is_idle": true,
+          "is_under_maintenance": false
+        },
+        "11_day": {
+          "location": "depot_1",
+          "km": 1299,
+          "is_idle": false,
+          "is_under_maintenance": true
+        },
+        "11_night": {
+          "location": "depot_2",
+          "km": 1562,
+          "is_idle": false,
+          "is_under_maintenance": true
+        },
+        "12_day": {
+          "location": "depot_2",
+          "km": 1562,
+          "is_idle": true,
+          "is_under_maintenance": false
+        },
+        "12_night": {
+          "location": "depot_1",
+          "km": 1562,
+          "is_idle": true,
+          "is_under_maintenance": false
+        },
+        "13_day": {
+          "location": "depot_1",
+          "km": 1562,
+          "is_idle": false,
+          "is_under_maintenance": true
+        },
+        "13_night": {
+          "location": "depot_2",
+          "km": 1701,
+          "is_idle": false,
+          "is_under_maintenance": true
+        },
+        "14_day": {
+          "location": "depot_2",
+          "km": 1701,
+          "is_idle": false,
+          "is_under_maintenance": false
+        },
+        "14_night": {
+          "location": "depot_1",
+          "km": 1884,
+          "is_idle": true,
+          "is_under_maintenance": false
+        }
+      }
+    },
+    "vehicle_9": {
+      "initial_state": {
+        "location": "depot_1",
+        "km": 18585
+      },
+      "route_assignments": {
+        "1_day": null,
+        "1_night": null,
+        "2_day": {
+          "route_id": "route_day2_4",
+          "start_location": "depot_2",
+          "end_location": "depot_1",
+          "distance_km": 179
+        },
+        "2_night": null,
+        "3_day": {
+          "route_id": "route_day3_5",
+          "start_location": "depot_1",
+          "end_location": "depot_2",
+          "distance_km": 218
+        },
+        "3_night": null,
+        "4_day": {
+          "route_id": "route_day4_1",
+          "start_location": "depot_2",
+          "end_location": "depot_1",
+          "distance_km": 280
+        },
+        "4_night": null,
+        "5_day": {
+          "route_id": "route_day5_4",
+          "start_location": "depot_1",
+          "end_location": "depot_2",
+          "distance_km": 218
+        },
+        "5_night": null,
+        "6_day": {
+          "route_id": "route_day6_4",
+          "start_location": "depot_2",
+          "end_location": "depot_1",
+          "distance_km": 273
+        },
+        "6_night": null,
+        "7_day": {
+          "route_id": "route_day7_6",
+          "start_location": "depot_1",
+          "end_location": "depot_2",
+          "distance_km": 105
+        },
+        "7_night": null,
+        "8_day": {
+          "route_id": "route_day8_6",
+          "start_location": "depot_2",
+          "end_location": "depot_1",
+          "distance_km": 102
+        },
+        "8_night": null,
+        "9_day": null,
+        "9_night": null,
+        "10_day": {
+          "route_id": "route_day10_2",
+          "start_location": "depot_1",
+          "end_location": "depot_2",
+          "distance_km": 79
+        },
+        "10_night": null,
+        "11_day": {
+          "route_id": "route_day11_6",
+          "start_location": "depot_2",
+          "end_location": "depot_1",
+          "distance_km": 160
+        },
+        "11_night": null,
+        "12_day": {
+          "route_id": "route_day12_5",
+          "start_location": "depot_1",
+          "end_location": "depot_2",
+          "distance_km": 56
+        },
+        "12_night": null,
+        "13_day": {
+          "route_id": "route_day13_3",
+          "start_location": "depot_2",
+          "end_location": "depot_1",
+          "distance_km": 107
+        },
+        "13_night": null,
+        "14_day": {
+          "route_id": "route_day14_8",
+          "start_location": "depot_1",
+          "end_location": "depot_2",
+          "distance_km": 160
+        },
+        "14_night": null
+      },
+      "maintenance_activities": [
+        {
+          "maintenance_id": "corrective_1",
+          "maintenance_type": "corrective",
+          "start_day": 3,
+          "start_shift": "day",
+          "end_day": 3,
+          "end_shift": "night",
+          "depot": "depot_1",
+          "km_at_start": 179,
+          "required_manhours": 7
+        },
+        {
+          "maintenance_id": "corrective_1",
+          "maintenance_type": "corrective",
+          "start_day": 5,
+          "start_shift": "day",
+          "end_day": 5,
+          "end_shift": "night",
+          "depot": "depot_1",
+          "km_at_start": 677,
+          "required_manhours": 7
+        },
+        {
+          "maintenance_id": "corrective_1",
+          "maintenance_type": "corrective",
+          "start_day": 7,
+          "start_shift": "day",
+          "end_day": 7,
+          "end_shift": "night",
+          "depot": "depot_1",
+          "km_at_start": 1168,
+          "required_manhours": 7
+        },
+        {
+          "maintenance_id": "corrective_1",
+          "maintenance_type": "corrective",
+          "start_day": 9,
+          "start_shift": "day",
+          "end_day": 9,
+          "end_shift": "night",
+          "depot": "depot_1",
+          "km_at_start": 1375,
+          "required_manhours": 7
+        },
+        {
+          "maintenance_id": "corrective_1",
+          "maintenance_type": "corrective",
+          "start_day": 10,
+          "start_shift": "day",
+          "end_day": 10,
+          "end_shift": "night",
+          "depot": "depot_1",
+          "km_at_start": 1375,
+          "required_manhours": 7
+        },
+        {
+          "maintenance_id": "corrective_1",
+          "maintenance_type": "corrective",
+          "start_day": 12,
+          "start_shift": "day",
+          "end_day": 12,
+          "end_shift": "night",
+          "depot": "depot_1",
+          "km_at_start": 1614,
+          "required_manhours": 7
+        },
+        {
+          "maintenance_id": "corrective_1",
+          "maintenance_type": "corrective",
+          "start_day": 14,
+          "start_shift": "day",
+          "end_day": 14,
+          "end_shift": "night",
+          "depot": "depot_1",
+          "km_at_start": 1777,
+          "required_manhours": 7
+        },
+        {
+          "maintenance_id": "corrective_2",
+          "maintenance_type": "corrective",
+          "start_day": 3,
+          "start_shift": "day",
+          "end_day": 3,
+          "end_shift": "night",
+          "depot": "depot_1",
+          "km_at_start": 179,
+          "required_manhours": 3
+        },
+        {
+          "maintenance_id": "corrective_2",
+          "maintenance_type": "corrective",
+          "start_day": 5,
+          "start_shift": "day",
+          "end_day": 5,
+          "end_shift": "night",
+          "depot": "depot_1",
+          "km_at_start": 677,
+          "required_manhours": 3
+        },
+        {
+          "maintenance_id": "corrective_2",
+          "maintenance_type": "corrective",
+          "start_day": 7,
+          "start_shift": "day",
+          "end_day": 7,
+          "end_shift": "night",
+          "depot": "depot_1",
+          "km_at_start": 1168,
+          "required_manhours": 3
+        },
+        {
+          "maintenance_id": "corrective_2",
+          "maintenance_type": "corrective",
+          "start_day": 9,
+          "start_shift": "day",
+          "end_day": 9,
+          "end_shift": "night",
+          "depot": "depot_1",
+          "km_at_start": 1375,
+          "required_manhours": 3
+        },
+        {
+          "maintenance_id": "corrective_2",
+          "maintenance_type": "corrective",
+          "start_day": 10,
+          "start_shift": "day",
+          "end_day": 10,
+          "end_shift": "night",
+          "depot": "depot_1",
+          "km_at_start": 1375,
+          "required_manhours": 3
+        },
+        {
+          "maintenance_id": "corrective_2",
+          "maintenance_type": "corrective",
+          "start_day": 12,
+          "start_shift": "day",
+          "end_day": 12,
+          "end_shift": "night",
+          "depot": "depot_1",
+          "km_at_start": 1614,
+          "required_manhours": 3
+        },
+        {
+          "maintenance_id": "corrective_2",
+          "maintenance_type": "corrective",
+          "start_day": 14,
+          "start_shift": "day",
+          "end_day": 14,
+          "end_shift": "night",
+          "depot": "depot_1",
+          "km_at_start": 1777,
+          "required_manhours": 3
+        },
+        {
+          "maintenance_id": "corrective_3",
+          "maintenance_type": "corrective",
+          "start_day": 10,
+          "start_shift": "day",
+          "end_day": 10,
+          "end_shift": "night",
+          "depot": "depot_1",
+          "km_at_start": 1375,
+          "required_manhours": 11
+        },
+        {
+          "maintenance_id": "corrective_4",
+          "maintenance_type": "corrective",
+          "start_day": 1,
+          "start_shift": "day",
+          "end_day": 1,
+          "end_shift": "night",
+          "depot": "depot_2",
+          "km_at_start": 0,
+          "required_manhours": 3
         }
       ],
       "states": {
@@ -2602,258 +3737,248 @@
           "is_under_maintenance": true
         },
         "1_night": {
-          "location": "parking_2",
-          "km": 202,
+          "location": "depot_2",
+          "km": 0,
           "is_idle": false,
           "is_under_maintenance": true
         },
         "2_day": {
-          "location": "parking_1",
-          "km": 202,
+          "location": "depot_2",
+          "km": 0,
           "is_idle": false,
           "is_under_maintenance": false
         },
         "2_night": {
-          "location": "parking_2",
-          "km": 256,
+          "location": "depot_1",
+          "km": 179,
           "is_idle": true,
           "is_under_maintenance": false
         },
         "3_day": {
           "location": "depot_1",
-          "km": 256,
-          "is_idle": true,
-          "is_under_maintenance": false
+          "km": 179,
+          "is_idle": false,
+          "is_under_maintenance": true
         },
         "3_night": {
           "location": "depot_2",
-          "km": 256,
-          "is_idle": true,
-          "is_under_maintenance": false
+          "km": 397,
+          "is_idle": false,
+          "is_under_maintenance": true
         },
         "4_day": {
-          "location": "depot_1",
-          "km": 256,
+          "location": "depot_2",
+          "km": 397,
           "is_idle": false,
           "is_under_maintenance": false
         },
         "4_night": {
-          "location": "depot_2",
-          "km": 456,
+          "location": "depot_1",
+          "km": 677,
           "is_idle": true,
           "is_under_maintenance": false
         },
         "5_day": {
           "location": "depot_1",
-          "km": 456,
+          "km": 677,
           "is_idle": false,
-          "is_under_maintenance": false
+          "is_under_maintenance": true
         },
         "5_night": {
-          "location": "depot_1",
-          "km": 674,
-          "is_idle": true,
-          "is_under_maintenance": false
+          "location": "depot_2",
+          "km": 895,
+          "is_idle": false,
+          "is_under_maintenance": true
         },
         "6_day": {
-          "location": "depot_1",
-          "km": 674,
-          "is_idle": true,
+          "location": "depot_2",
+          "km": 895,
+          "is_idle": false,
           "is_under_maintenance": false
         },
         "6_night": {
           "location": "depot_1",
-          "km": 674,
+          "km": 1168,
           "is_idle": true,
           "is_under_maintenance": false
         },
         "7_day": {
-          "location": "parking_2",
-          "km": 674,
+          "location": "depot_1",
+          "km": 1168,
           "is_idle": false,
-          "is_under_maintenance": false
+          "is_under_maintenance": true
         },
         "7_night": {
-          "location": "parking_2",
-          "km": 763,
-          "is_idle": true,
-          "is_under_maintenance": false
+          "location": "depot_2",
+          "km": 1273,
+          "is_idle": false,
+          "is_under_maintenance": true
         },
         "8_day": {
-          "location": "depot_1",
-          "km": 763,
+          "location": "depot_2",
+          "km": 1273,
           "is_idle": false,
           "is_under_maintenance": false
         },
         "8_night": {
-          "location": "depot_2",
-          "km": 830,
+          "location": "depot_1",
+          "km": 1375,
           "is_idle": true,
           "is_under_maintenance": false
         },
         "9_day": {
-          "location": "depot_2",
-          "km": 830,
+          "location": "depot_1",
+          "km": 1375,
           "is_idle": false,
           "is_under_maintenance": true
         },
         "9_night": {
-          "location": "parking_1",
-          "km": 913,
+          "location": "depot_1",
+          "km": 1375,
           "is_idle": false,
           "is_under_maintenance": true
         },
         "10_day": {
           "location": "depot_1",
-          "km": 913,
-          "is_idle": true,
-          "is_under_maintenance": false
+          "km": 1375,
+          "is_idle": false,
+          "is_under_maintenance": true
         },
         "10_night": {
-          "location": "depot_1",
-          "km": 913,
-          "is_idle": true,
-          "is_under_maintenance": false
+          "location": "depot_2",
+          "km": 1454,
+          "is_idle": false,
+          "is_under_maintenance": true
         },
         "11_day": {
-          "location": "depot_1",
-          "km": 913,
+          "location": "depot_2",
+          "km": 1454,
           "is_idle": false,
           "is_under_maintenance": false
         },
         "11_night": {
           "location": "depot_1",
-          "km": 982,
+          "km": 1614,
           "is_idle": true,
           "is_under_maintenance": false
         },
         "12_day": {
-          "location": "depot_2",
-          "km": 982,
+          "location": "depot_1",
+          "km": 1614,
           "is_idle": false,
           "is_under_maintenance": true
         },
         "12_night": {
-          "location": "parking_2",
-          "km": 1038,
+          "location": "depot_2",
+          "km": 1670,
           "is_idle": false,
           "is_under_maintenance": true
         },
         "13_day": {
           "location": "depot_2",
-          "km": 1038,
+          "km": 1670,
           "is_idle": false,
-          "is_under_maintenance": true
+          "is_under_maintenance": false
         },
         "13_night": {
-          "location": "parking_2",
-          "km": 1177,
+          "location": "depot_1",
+          "km": 1777,
+          "is_idle": true,
+          "is_under_maintenance": false
+        },
+        "14_day": {
+          "location": "depot_1",
+          "km": 1777,
           "is_idle": false,
           "is_under_maintenance": true
         },
-        "14_day": {
-          "location": "parking_2",
-          "km": 1177,
-          "is_idle": false,
-          "is_under_maintenance": false
-        },
         "14_night": {
-          "location": "parking_1",
-          "km": 1413,
-          "is_idle": true,
-          "is_under_maintenance": false
+          "location": "depot_2",
+          "km": 1937,
+          "is_idle": false,
+          "is_under_maintenance": true
         }
       }
     },
-    "vehicle_9": {
+    "vehicle_10": {
       "initial_state": {
         "location": "depot_2",
-        "km": 18585
+        "km": 4681
       },
       "route_assignments": {
-        "1_day": {
-          "route_id": "route_day1_7",
-          "start_location": "parking_2",
-          "end_location": "parking_1",
-          "distance_km": 298
-        },
+        "1_day": null,
         "1_night": null,
         "2_day": {
-          "route_id": "route_day2_4",
-          "start_location": "parking_1",
+          "route_id": "route_day2_6",
+          "start_location": "depot_1",
           "end_location": "depot_2",
-          "distance_km": 179
+          "distance_km": 145
         },
         "2_night": null,
         "3_day": {
-          "route_id": "route_day3_2",
-          "start_location": "parking_1",
-          "end_location": "depot_2",
-          "distance_km": 64
+          "route_id": "route_day3_6",
+          "start_location": "depot_2",
+          "end_location": "depot_1",
+          "distance_km": 117
         },
         "3_night": null,
         "4_day": {
-          "route_id": "route_day4_7",
+          "route_id": "route_day4_3",
           "start_location": "depot_1",
-          "end_location": "parking_1",
-          "distance_km": 68
+          "end_location": "depot_2",
+          "distance_km": 136
         },
         "4_night": null,
-        "5_day": {
-          "route_id": "route_day5_3",
-          "start_location": "parking_2",
-          "end_location": "parking_2",
-          "distance_km": 98
-        },
+        "5_day": null,
         "5_night": null,
         "6_day": {
-          "route_id": "route_day6_1",
+          "route_id": "route_day6_6",
           "start_location": "depot_1",
           "end_location": "depot_2",
-          "distance_km": 99
+          "distance_km": 216
         },
         "6_night": null,
-        "7_day": null,
-        "7_night": null,
-        "8_day": {
-          "route_id": "route_day8_3",
-          "start_location": "depot_1",
-          "end_location": "depot_2",
-          "distance_km": 153
+        "7_day": {
+          "route_id": "route_day7_1",
+          "start_location": "depot_2",
+          "end_location": "depot_1",
+          "distance_km": 104
         },
+        "7_night": null,
+        "8_day": null,
         "8_night": null,
         "9_day": {
-          "route_id": "route_day9_1",
-          "start_location": "parking_1",
-          "end_location": "parking_2",
-          "distance_km": 130
+          "route_id": "route_day9_6",
+          "start_location": "depot_1",
+          "end_location": "depot_2",
+          "distance_km": 122
         },
         "9_night": null,
         "10_day": {
-          "route_id": "route_day10_2",
+          "route_id": "route_day10_1",
           "start_location": "depot_2",
-          "end_location": "parking_1",
-          "distance_km": 79
+          "end_location": "depot_1",
+          "distance_km": 290
         },
         "10_night": null,
         "11_day": {
-          "route_id": "route_day11_3",
-          "start_location": "parking_2",
-          "end_location": "parking_2",
-          "distance_km": 193
+          "route_id": "route_day11_1",
+          "start_location": "depot_1",
+          "end_location": "depot_2",
+          "distance_km": 247
         },
         "11_night": null,
         "12_day": {
-          "route_id": "route_day12_4",
+          "route_id": "route_day12_7",
           "start_location": "depot_2",
-          "end_location": "depot_2",
-          "distance_km": 299
+          "end_location": "depot_1",
+          "distance_km": 118
         },
         "12_night": null,
         "13_day": {
           "route_id": "route_day13_1",
           "start_location": "depot_1",
-          "end_location": "parking_2",
+          "end_location": "depot_2",
           "distance_km": 106
         },
         "13_night": null,
@@ -2864,356 +3989,23 @@
         {
           "maintenance_id": "corrective_1",
           "maintenance_type": "corrective",
-          "start_day": 10,
+          "start_day": 1,
           "start_shift": "day",
-          "end_day": 10,
+          "end_day": 1,
           "end_shift": "night",
-          "depot": "depot_2",
-          "km_at_start": 1089,
+          "depot": "depot_1",
+          "km_at_start": 0,
           "required_manhours": 7
         },
         {
           "maintenance_id": "corrective_1",
-          "maintenance_type": "corrective",
-          "start_day": 12,
-          "start_shift": "day",
-          "end_day": 12,
-          "end_shift": "night",
-          "depot": "depot_2",
-          "km_at_start": 1361,
-          "required_manhours": 7
-        },
-        {
-          "maintenance_id": "corrective_2",
-          "maintenance_type": "corrective",
-          "start_day": 10,
-          "start_shift": "day",
-          "end_day": 10,
-          "end_shift": "night",
-          "depot": "depot_2",
-          "km_at_start": 1089,
-          "required_manhours": 3
-        },
-        {
-          "maintenance_id": "corrective_2",
-          "maintenance_type": "corrective",
-          "start_day": 12,
-          "start_shift": "day",
-          "end_day": 12,
-          "end_shift": "night",
-          "depot": "depot_2",
-          "km_at_start": 1361,
-          "required_manhours": 3
-        },
-        {
-          "maintenance_id": "corrective_3",
-          "maintenance_type": "corrective",
-          "start_day": 7,
-          "start_shift": "night",
-          "end_day": 8,
-          "end_shift": "day",
-          "depot": "depot_2",
-          "km_at_start": 806,
-          "required_manhours": 11
-        },
-        {
-          "maintenance_id": "corrective_4",
           "maintenance_type": "corrective",
           "start_day": 2,
-          "start_shift": "night",
-          "end_day": 3,
-          "end_shift": "day",
-          "depot": "depot_2",
-          "km_at_start": 477,
-          "required_manhours": 3
-        }
-      ],
-      "states": {
-        "1_day": {
-          "location": "parking_2",
-          "km": 0,
-          "is_idle": false,
-          "is_under_maintenance": false
-        },
-        "1_night": {
-          "location": "parking_1",
-          "km": 298,
-          "is_idle": true,
-          "is_under_maintenance": false
-        },
-        "2_day": {
-          "location": "parking_1",
-          "km": 298,
-          "is_idle": false,
-          "is_under_maintenance": false
-        },
-        "2_night": {
-          "location": "depot_2",
-          "km": 477,
-          "is_idle": false,
-          "is_under_maintenance": true
-        },
-        "3_day": {
-          "location": "parking_1",
-          "km": 477,
-          "is_idle": false,
-          "is_under_maintenance": true
-        },
-        "3_night": {
-          "location": "depot_2",
-          "km": 541,
-          "is_idle": true,
-          "is_under_maintenance": false
-        },
-        "4_day": {
-          "location": "depot_1",
-          "km": 541,
-          "is_idle": false,
-          "is_under_maintenance": false
-        },
-        "4_night": {
-          "location": "parking_1",
-          "km": 609,
-          "is_idle": true,
-          "is_under_maintenance": false
-        },
-        "5_day": {
-          "location": "parking_2",
-          "km": 609,
-          "is_idle": false,
-          "is_under_maintenance": false
-        },
-        "5_night": {
-          "location": "parking_2",
-          "km": 707,
-          "is_idle": true,
-          "is_under_maintenance": false
-        },
-        "6_day": {
-          "location": "depot_1",
-          "km": 707,
-          "is_idle": false,
-          "is_under_maintenance": false
-        },
-        "6_night": {
-          "location": "depot_2",
-          "km": 806,
-          "is_idle": true,
-          "is_under_maintenance": false
-        },
-        "7_day": {
-          "location": "depot_1",
-          "km": 806,
-          "is_idle": true,
-          "is_under_maintenance": false
-        },
-        "7_night": {
-          "location": "depot_2",
-          "km": 806,
-          "is_idle": false,
-          "is_under_maintenance": true
-        },
-        "8_day": {
-          "location": "depot_1",
-          "km": 806,
-          "is_idle": false,
-          "is_under_maintenance": true
-        },
-        "8_night": {
-          "location": "depot_2",
-          "km": 959,
-          "is_idle": true,
-          "is_under_maintenance": false
-        },
-        "9_day": {
-          "location": "parking_1",
-          "km": 959,
-          "is_idle": false,
-          "is_under_maintenance": false
-        },
-        "9_night": {
-          "location": "parking_2",
-          "km": 1089,
-          "is_idle": true,
-          "is_under_maintenance": false
-        },
-        "10_day": {
-          "location": "depot_2",
-          "km": 1089,
-          "is_idle": false,
-          "is_under_maintenance": true
-        },
-        "10_night": {
-          "location": "parking_1",
-          "km": 1168,
-          "is_idle": false,
-          "is_under_maintenance": true
-        },
-        "11_day": {
-          "location": "parking_2",
-          "km": 1168,
-          "is_idle": false,
-          "is_under_maintenance": false
-        },
-        "11_night": {
-          "location": "parking_2",
-          "km": 1361,
-          "is_idle": true,
-          "is_under_maintenance": false
-        },
-        "12_day": {
-          "location": "depot_2",
-          "km": 1361,
-          "is_idle": false,
-          "is_under_maintenance": true
-        },
-        "12_night": {
-          "location": "depot_2",
-          "km": 1660,
-          "is_idle": false,
-          "is_under_maintenance": true
-        },
-        "13_day": {
-          "location": "depot_1",
-          "km": 1660,
-          "is_idle": false,
-          "is_under_maintenance": false
-        },
-        "13_night": {
-          "location": "parking_2",
-          "km": 1766,
-          "is_idle": true,
-          "is_under_maintenance": false
-        },
-        "14_day": {
-          "location": "depot_1",
-          "km": 1766,
-          "is_idle": true,
-          "is_under_maintenance": false
-        },
-        "14_night": {
-          "location": "depot_1",
-          "km": 1766,
-          "is_idle": true,
-          "is_under_maintenance": false
-        }
-      }
-    },
-    "vehicle_10": {
-      "initial_state": {
-        "location": "parking_2",
-        "km": 4681
-      },
-      "route_assignments": {
-        "1_day": {
-          "route_id": "route_day1_2",
-          "start_location": "parking_2",
-          "end_location": "parking_1",
-          "distance_km": 106
-        },
-        "1_night": null,
-        "2_day": {
-          "route_id": "route_day2_1",
-          "start_location": "parking_1",
-          "end_location": "parking_1",
-          "distance_km": 78
-        },
-        "2_night": null,
-        "3_day": {
-          "route_id": "route_day3_5",
-          "start_location": "depot_2",
-          "end_location": "depot_2",
-          "distance_km": 218
-        },
-        "3_night": null,
-        "4_day": {
-          "route_id": "route_day4_5",
-          "start_location": "depot_2",
-          "end_location": "depot_1",
-          "distance_km": 68
-        },
-        "4_night": null,
-        "5_day": {
-          "route_id": "route_day5_5",
-          "start_location": "parking_2",
-          "end_location": "parking_1",
-          "distance_km": 158
-        },
-        "5_night": null,
-        "6_day": {
-          "route_id": "route_day6_3",
-          "start_location": "parking_2",
-          "end_location": "depot_2",
-          "distance_km": 121
-        },
-        "6_night": null,
-        "7_day": {
-          "route_id": "route_day7_3",
-          "start_location": "parking_2",
-          "end_location": "depot_1",
-          "distance_km": 149
-        },
-        "7_night": null,
-        "8_day": {
-          "route_id": "route_day8_7",
-          "start_location": "parking_1",
-          "end_location": "depot_2",
-          "distance_km": 117
-        },
-        "8_night": null,
-        "9_day": {
-          "route_id": "route_day9_7",
-          "start_location": "depot_2",
-          "end_location": "parking_2",
-          "distance_km": 263
-        },
-        "9_night": null,
-        "10_day": {
-          "route_id": "route_day10_6",
-          "start_location": "parking_1",
-          "end_location": "parking_2",
-          "distance_km": 114
-        },
-        "10_night": null,
-        "11_day": {
-          "route_id": "route_day11_2",
-          "start_location": "depot_2",
-          "end_location": "parking_1",
-          "distance_km": 91
-        },
-        "11_night": null,
-        "12_day": {
-          "route_id": "route_day12_8",
-          "start_location": "depot_2",
-          "end_location": "depot_1",
-          "distance_km": 147
-        },
-        "12_night": null,
-        "13_day": {
-          "route_id": "route_day13_8",
-          "start_location": "depot_1",
-          "end_location": "depot_1",
-          "distance_km": 274
-        },
-        "13_night": null,
-        "14_day": {
-          "route_id": "route_day14_5",
-          "start_location": "depot_1",
-          "end_location": "parking_2",
-          "distance_km": 280
-        },
-        "14_night": null
-      },
-      "maintenance_activities": [
-        {
-          "maintenance_id": "corrective_1",
-          "maintenance_type": "corrective",
-          "start_day": 3,
           "start_shift": "day",
-          "end_day": 3,
+          "end_day": 2,
           "end_shift": "night",
-          "depot": "depot_2",
-          "km_at_start": 184,
+          "depot": "depot_1",
+          "km_at_start": 0,
           "required_manhours": 7
         },
         {
@@ -3223,8 +4015,30 @@
           "start_shift": "day",
           "end_day": 4,
           "end_shift": "night",
-          "depot": "depot_2",
-          "km_at_start": 402,
+          "depot": "depot_1",
+          "km_at_start": 262,
+          "required_manhours": 7
+        },
+        {
+          "maintenance_id": "corrective_1",
+          "maintenance_type": "corrective",
+          "start_day": 6,
+          "start_shift": "day",
+          "end_day": 6,
+          "end_shift": "night",
+          "depot": "depot_1",
+          "km_at_start": 398,
+          "required_manhours": 7
+        },
+        {
+          "maintenance_id": "corrective_1",
+          "maintenance_type": "corrective",
+          "start_day": 8,
+          "start_shift": "day",
+          "end_day": 8,
+          "end_shift": "night",
+          "depot": "depot_1",
+          "km_at_start": 718,
           "required_manhours": 7
         },
         {
@@ -3234,8 +4048,8 @@
           "start_shift": "day",
           "end_day": 9,
           "end_shift": "night",
-          "depot": "depot_2",
-          "km_at_start": 1015,
+          "depot": "depot_1",
+          "km_at_start": 718,
           "required_manhours": 7
         },
         {
@@ -3245,41 +4059,52 @@
           "start_shift": "day",
           "end_day": 11,
           "end_shift": "night",
-          "depot": "depot_2",
-          "km_at_start": 1392,
+          "depot": "depot_1",
+          "km_at_start": 1130,
           "required_manhours": 7
         },
         {
           "maintenance_id": "corrective_1",
           "maintenance_type": "corrective",
-          "start_day": 12,
+          "start_day": 13,
           "start_shift": "day",
-          "end_day": 12,
+          "end_day": 13,
           "end_shift": "night",
-          "depot": "depot_2",
-          "km_at_start": 1483,
+          "depot": "depot_1",
+          "km_at_start": 1495,
           "required_manhours": 7
         },
         {
           "maintenance_id": "corrective_2",
           "maintenance_type": "corrective",
-          "start_day": 3,
+          "start_day": 1,
           "start_shift": "day",
-          "end_day": 3,
+          "end_day": 1,
           "end_shift": "night",
-          "depot": "depot_2",
-          "km_at_start": 184,
+          "depot": "depot_1",
+          "km_at_start": 0,
           "required_manhours": 3
         },
         {
           "maintenance_id": "corrective_3",
           "maintenance_type": "corrective",
-          "start_day": 3,
+          "start_day": 1,
           "start_shift": "day",
-          "end_day": 3,
+          "end_day": 1,
           "end_shift": "night",
-          "depot": "depot_2",
-          "km_at_start": 184,
+          "depot": "depot_1",
+          "km_at_start": 0,
+          "required_manhours": 11
+        },
+        {
+          "maintenance_id": "corrective_3",
+          "maintenance_type": "corrective",
+          "start_day": 2,
+          "start_shift": "day",
+          "end_day": 2,
+          "end_shift": "night",
+          "depot": "depot_1",
+          "km_at_start": 0,
           "required_manhours": 11
         },
         {
@@ -3289,8 +4114,30 @@
           "start_shift": "day",
           "end_day": 4,
           "end_shift": "night",
-          "depot": "depot_2",
-          "km_at_start": 402,
+          "depot": "depot_1",
+          "km_at_start": 262,
+          "required_manhours": 11
+        },
+        {
+          "maintenance_id": "corrective_3",
+          "maintenance_type": "corrective",
+          "start_day": 6,
+          "start_shift": "day",
+          "end_day": 6,
+          "end_shift": "night",
+          "depot": "depot_1",
+          "km_at_start": 398,
+          "required_manhours": 11
+        },
+        {
+          "maintenance_id": "corrective_3",
+          "maintenance_type": "corrective",
+          "start_day": 8,
+          "start_shift": "day",
+          "end_day": 8,
+          "end_shift": "night",
+          "depot": "depot_1",
+          "km_at_start": 718,
           "required_manhours": 11
         },
         {
@@ -3300,8 +4147,8 @@
           "start_shift": "day",
           "end_day": 9,
           "end_shift": "night",
-          "depot": "depot_2",
-          "km_at_start": 1015,
+          "depot": "depot_1",
+          "km_at_start": 718,
           "required_manhours": 11
         },
         {
@@ -3311,188 +4158,188 @@
           "start_shift": "day",
           "end_day": 11,
           "end_shift": "night",
-          "depot": "depot_2",
-          "km_at_start": 1392,
+          "depot": "depot_1",
+          "km_at_start": 1130,
           "required_manhours": 11
         },
         {
           "maintenance_id": "corrective_3",
           "maintenance_type": "corrective",
-          "start_day": 12,
+          "start_day": 13,
           "start_shift": "day",
-          "end_day": 12,
+          "end_day": 13,
           "end_shift": "night",
-          "depot": "depot_2",
-          "km_at_start": 1483,
+          "depot": "depot_1",
+          "km_at_start": 1495,
           "required_manhours": 11
         }
       ],
       "states": {
         "1_day": {
-          "location": "parking_2",
+          "location": "depot_1",
           "km": 0,
           "is_idle": false,
-          "is_under_maintenance": false
+          "is_under_maintenance": true
         },
         "1_night": {
-          "location": "parking_1",
-          "km": 106,
-          "is_idle": true,
-          "is_under_maintenance": false
+          "location": "depot_1",
+          "km": 0,
+          "is_idle": false,
+          "is_under_maintenance": true
         },
         "2_day": {
-          "location": "parking_1",
-          "km": 106,
+          "location": "depot_1",
+          "km": 0,
           "is_idle": false,
-          "is_under_maintenance": false
+          "is_under_maintenance": true
         },
         "2_night": {
-          "location": "parking_1",
-          "km": 184,
-          "is_idle": true,
-          "is_under_maintenance": false
+          "location": "depot_2",
+          "km": 145,
+          "is_idle": false,
+          "is_under_maintenance": true
         },
         "3_day": {
           "location": "depot_2",
-          "km": 184,
+          "km": 145,
           "is_idle": false,
-          "is_under_maintenance": true
+          "is_under_maintenance": false
         },
         "3_night": {
-          "location": "depot_2",
-          "km": 402,
-          "is_idle": false,
-          "is_under_maintenance": true
+          "location": "depot_1",
+          "km": 262,
+          "is_idle": true,
+          "is_under_maintenance": false
         },
         "4_day": {
-          "location": "depot_2",
-          "km": 402,
+          "location": "depot_1",
+          "km": 262,
           "is_idle": false,
           "is_under_maintenance": true
         },
         "4_night": {
-          "location": "depot_1",
-          "km": 470,
+          "location": "depot_2",
+          "km": 398,
           "is_idle": false,
           "is_under_maintenance": true
         },
         "5_day": {
-          "location": "parking_2",
-          "km": 470,
-          "is_idle": false,
+          "location": "depot_2",
+          "km": 398,
+          "is_idle": true,
           "is_under_maintenance": false
         },
         "5_night": {
-          "location": "parking_1",
-          "km": 628,
+          "location": "depot_1",
+          "km": 398,
           "is_idle": true,
           "is_under_maintenance": false
         },
         "6_day": {
-          "location": "parking_2",
-          "km": 628,
+          "location": "depot_1",
+          "km": 398,
           "is_idle": false,
-          "is_under_maintenance": false
+          "is_under_maintenance": true
         },
         "6_night": {
           "location": "depot_2",
-          "km": 749,
-          "is_idle": true,
-          "is_under_maintenance": false
+          "km": 614,
+          "is_idle": false,
+          "is_under_maintenance": true
         },
         "7_day": {
-          "location": "parking_2",
-          "km": 749,
+          "location": "depot_2",
+          "km": 614,
           "is_idle": false,
           "is_under_maintenance": false
         },
         "7_night": {
           "location": "depot_1",
-          "km": 898,
+          "km": 718,
           "is_idle": true,
           "is_under_maintenance": false
         },
         "8_day": {
-          "location": "parking_1",
-          "km": 898,
+          "location": "depot_1",
+          "km": 718,
           "is_idle": false,
-          "is_under_maintenance": false
+          "is_under_maintenance": true
         },
         "8_night": {
-          "location": "depot_2",
-          "km": 1015,
-          "is_idle": true,
-          "is_under_maintenance": false
+          "location": "depot_1",
+          "km": 718,
+          "is_idle": false,
+          "is_under_maintenance": true
         },
         "9_day": {
-          "location": "depot_2",
-          "km": 1015,
+          "location": "depot_1",
+          "km": 718,
           "is_idle": false,
           "is_under_maintenance": true
         },
         "9_night": {
-          "location": "parking_2",
-          "km": 1278,
+          "location": "depot_2",
+          "km": 840,
           "is_idle": false,
           "is_under_maintenance": true
         },
         "10_day": {
-          "location": "parking_1",
-          "km": 1278,
+          "location": "depot_2",
+          "km": 840,
           "is_idle": false,
           "is_under_maintenance": false
         },
         "10_night": {
-          "location": "parking_2",
-          "km": 1392,
+          "location": "depot_1",
+          "km": 1130,
           "is_idle": true,
           "is_under_maintenance": false
         },
         "11_day": {
-          "location": "depot_2",
-          "km": 1392,
+          "location": "depot_1",
+          "km": 1130,
           "is_idle": false,
           "is_under_maintenance": true
         },
         "11_night": {
-          "location": "parking_1",
-          "km": 1483,
+          "location": "depot_2",
+          "km": 1377,
           "is_idle": false,
           "is_under_maintenance": true
         },
         "12_day": {
           "location": "depot_2",
-          "km": 1483,
+          "km": 1377,
           "is_idle": false,
-          "is_under_maintenance": true
+          "is_under_maintenance": false
         },
         "12_night": {
           "location": "depot_1",
-          "km": 1630,
-          "is_idle": false,
-          "is_under_maintenance": true
-        },
-        "13_day": {
-          "location": "depot_1",
-          "km": 1630,
-          "is_idle": false,
-          "is_under_maintenance": false
-        },
-        "13_night": {
-          "location": "depot_1",
-          "km": 1904,
+          "km": 1495,
           "is_idle": true,
           "is_under_maintenance": false
         },
-        "14_day": {
+        "13_day": {
           "location": "depot_1",
-          "km": 1904,
+          "km": 1495,
           "is_idle": false,
+          "is_under_maintenance": true
+        },
+        "13_night": {
+          "location": "depot_2",
+          "km": 1601,
+          "is_idle": false,
+          "is_under_maintenance": true
+        },
+        "14_day": {
+          "location": "depot_2",
+          "km": 1601,
+          "is_idle": true,
           "is_under_maintenance": false
         },
         "14_night": {
-          "location": "parking_2",
-          "km": 2184,
+          "location": "parking_1",
+          "km": 1601,
           "is_idle": true,
           "is_under_maintenance": false
         }
@@ -3501,7 +4348,7 @@
   },
   "optimization_info": {
     "status": "OPTIMAL",
-    "wall_time": 2.7722429,
+    "wall_time": 1.5974091000000001,
     "objective_value": 0.0
   }
 }

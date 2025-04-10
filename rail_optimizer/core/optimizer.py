@@ -431,6 +431,56 @@ def solve_rail_optimization(data: Dict[str, Any], time_limit_seconds: int = 60) 
                 if curr_shift_idx + 1 < len(all_shifts_with_initial) and not maint_active_in_shift:
                     model.Add(loc_start_vs[(vehicle_id, curr_shift_idx + 1)] == loc_start_vs[(vehicle_id, curr_shift_idx)])\
                         .OnlyEnforceIf(idle_lit)
+            
+            # NEW: Enforce location continuity for night shifts
+            # If this is a night shift, the vehicle's location at the end of the night shift
+            # must be the same as its location at the start of the next day shift
+            if shift == "night" and curr_shift_idx + 1 < len(all_shifts_with_initial):
+                next_day, next_shift = all_shifts_with_initial[curr_shift_idx + 1]
+                
+                # Only apply if the next shift is a day shift
+                if next_shift == "day":
+                    # Create a Boolean variable for the night shift state
+                    night_var_name = f"night_{vehicle_id}_{day}_{shift}"
+                    night_lit = model.NewBoolVar(night_var_name)
+                    
+                    # night_lit is always true for night shifts
+                    model.Add(night_lit == 1)
+                    
+                    # If it's a night shift, the vehicle's location at the start of the next day shift
+                    # must be the same as its location at the start of this night shift
+                    model.Add(loc_start_vs[(vehicle_id, curr_shift_idx + 1)] == loc_start_vs[(vehicle_id, curr_shift_idx)])\
+                        .OnlyEnforceIf(night_lit)
+            
+            # NEW: Enforce location continuity for transitions between day and night shifts
+            # If this is a day shift, the vehicle's location at the start of the next night shift
+            # must be the same as its location at the end of this day shift
+            if shift == "day" and curr_shift_idx + 1 < len(all_shifts_with_initial):
+                next_day, next_shift = all_shifts_with_initial[curr_shift_idx + 1]
+                
+                # Only apply if the next shift is a night shift
+                if next_shift == "night":
+                    # Check if the vehicle is assigned to any route in this day shift
+                    assigned_to_route = False
+                    for route in shift_routes:
+                        route_id = route["id"]
+                        if (vehicle_id, route_id) in assign_vr:
+                            route_assigned_lit = assign_vr[(vehicle_id, route_id)]
+                            
+                            # If the vehicle is assigned to this route, its location at the start of the next night shift
+                            # must be the same as the route's end location
+                            if curr_shift_idx + 1 < len(all_shifts_with_initial):
+                                end_location = route["end_location"]
+                                end_location_index = location_id_to_index[end_location]
+                                model.Add(loc_start_vs[(vehicle_id, curr_shift_idx + 1)] == end_location_index)\
+                                    .OnlyEnforceIf(route_assigned_lit)
+                            
+                            assigned_to_route = True
+                    
+                    # If the vehicle is not assigned to any route and not under maintenance,
+                    # its location at the start of the next night shift must be the same as its location at the start of this day shift
+                    if not assigned_to_route and not maint_active_in_shift:
+                        model.Add(loc_start_vs[(vehicle_id, curr_shift_idx + 1)] == loc_start_vs[(vehicle_id, curr_shift_idx)])
     
     # C5: Location Capacity Constraint - Ensure number of vehicles at each location doesn't exceed capacity
     for idx, (day, shift) in enumerate(all_shifts_with_initial):
